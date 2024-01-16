@@ -1,3 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.SqlServer.Management.Smo;
+using Npgsql.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+
 namespace Zusmmen;
 
 public class Program
@@ -8,7 +13,7 @@ public class Program
 
         // Add services to the container.
         builder.Services.AddControllersWithViews();
-
+        builder.Services.AddDbContext<ZusammenDbContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
@@ -21,6 +26,7 @@ public class Program
 
         app.UseHttpsRedirection();
         app.UseStaticFiles();
+        
 
         app.UseRouting();
 
