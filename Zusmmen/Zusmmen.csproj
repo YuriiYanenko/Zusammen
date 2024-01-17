@@ -21,4 +21,18 @@
       </None>
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Pages\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AdditionalFiles Include="Views\Video\Room.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\..\..\video">
+        <Link>wwwroot\videos\video</Link>
+      </Content>
+    </ItemGroup>
+
 </Project>

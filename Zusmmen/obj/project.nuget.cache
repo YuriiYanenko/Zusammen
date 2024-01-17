@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8ktDAjyj2NpBQ/O8nlro56sBukr/I7iC3H0/7uAdhm8+PJZrKV6MA2U9BgGTSR6h++SD9QPzGi34JiwFNsFQfA==",
+  "dgSpecHash": "eDNjry8rEsiFcCL7qJg+mFAgwBuudwcMq5otwpIIEg0hlkxG0LoNrXs/ymgwKkiMUaNIjW9KLsqk8qc1fejG1g==",
   "success": true,
-  "projectFilePath": "/home/yurii/RiderProjects/Zusmmen/Zusmmen/Zusmmen.csproj",
+  "projectFilePath": "/home/yurii/RiderProjects/Zusammen/Zusmmen/Zusmmen.csproj",
   "expectedPackageFiles": [
     "/home/yurii/.nuget/packages/bouncycastle.netcore/1.8.3/bouncycastle.netcore.1.8.3.nupkg.sha512",
     "/home/yurii/.nuget/packages/google.protobuf/3.11.4/google.protobuf.3.11.4.nupkg.sha512",

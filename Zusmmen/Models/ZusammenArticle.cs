@@ -2,7 +2,7 @@ using System;
 
 namespace Zusmmen.Models;
 
-public class Rooms
+public class rooms
 {
     public int Id { get; set; }
     public char[] Name { get; set; }
@@ -11,15 +11,15 @@ public class Rooms
     public int[] FilmsId { get; set; }
 }
 
-public class Films
+public class films
 {
-    public int Id { get; set; }
-    public string Name { get; set; }
-    public string Genre { get; set; }
-    public string Description { get; set; }
-    public string Director { get; set; }
-    public string Actors { get; set; }
-    public string Tags { get; set; }
-    public int Year { get; set; }
-    public string Path { get; set; }
+    public int id { get; set; }
+    public string name { get; set; }
+    public string genre { get; set; }
+    public string director { get; set; }
+    public string actors { get; set; }
+    public string description { get; set; }
+    public string tags { get; set; }
+    public string path { get; set; }
+    public int year { get; set; }
 }

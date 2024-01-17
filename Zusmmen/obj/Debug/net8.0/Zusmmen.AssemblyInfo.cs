@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Zusmmen")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4e246ee1481b8f1f00419c25a40e3ec6a582b9a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17c36341543f8a7c6dd4a4121a11cb3ebdca740f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Zusmmen")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Zusmmen")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

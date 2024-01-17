@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/yurii/RiderProjects/Zusmmen/Zusmmen/Zusmmen.csproj": {}
+    "/home/yurii/RiderProjects/Zusammen/Zusmmen/Zusmmen.csproj": {}
   },
   "projects": {
-    "/home/yurii/RiderProjects/Zusmmen/Zusmmen/Zusmmen.csproj": {
+    "/home/yurii/RiderProjects/Zusammen/Zusmmen/Zusmmen.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/yurii/RiderProjects/Zusmmen/Zusmmen/Zusmmen.csproj",
+        "projectUniqueName": "/home/yurii/RiderProjects/Zusammen/Zusmmen/Zusmmen.csproj",
         "projectName": "Zusmmen",
-        "projectPath": "/home/yurii/RiderProjects/Zusmmen/Zusmmen/Zusmmen.csproj",
+        "projectPath": "/home/yurii/RiderProjects/Zusammen/Zusmmen/Zusmmen.csproj",
         "packagesPath": "/home/yurii/.nuget/packages/",
-        "outputPath": "/home/yurii/RiderProjects/Zusmmen/Zusmmen/obj/",
+        "outputPath": "/home/yurii/RiderProjects/Zusammen/Zusmmen/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/yurii/.nuget/NuGet/NuGet.Config"
@@ -74,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/yurii/.dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

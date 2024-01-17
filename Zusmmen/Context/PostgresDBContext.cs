@@ -11,6 +11,8 @@ public class ZusammenDbContext:DbContext
     {
     }    
     
-    public DbSet<Rooms> Rooms { get; set; }
-    public DbSet<Films> Films { get; set; }
+    //object of rooms table
+    public DbSet<rooms> rooms { get; set; }
+    //object of film table
+    public DbSet<films> films { get; set; }
 }

@@ -1,0 +1,17 @@
+@model Zusmmen.Models.films
+
+@{
+    ViewBag.Name = "Room";
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2 id="film-name">@Model.name</h2>
+<div id="test">
+    <p> Name: @Model.name</p>
+    <p> Genre: @Model.genre</p>
+    <p> @Model.description</p>
+    <video src = @Url.Action("PlayVideo", "Video", new {id = @Model.id}) preload="auto">
+    </video>
+</div>
+
