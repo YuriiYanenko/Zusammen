@@ -16,16 +16,17 @@ public class ZusammenDbController : Controller
         _context = context;
     }
     
-    //Gets List of values from films table.
+    //Gets List of values from films table Method GET.
     [HttpGet]
     public async Task<ActionResult<IEnumerable<films>>> GetFilms()
     {
         return await _context.films.ToListAsync();
     }
 
+    //Returns film object (row from films table) with specified id attribute. HTTP method GET. 
     [HttpGet("{id}")]
     public async Task<ActionResult<films>> GetFilmById(int id)
-    {
+    {   
         var film = await _context.films.FindAsync(id);
         if (null == film)
         {
@@ -35,12 +36,42 @@ public class ZusammenDbController : Controller
         return film;
     }
 
-    [HttpPost]
+    public async Task<ActionResult<List<films>>> GetFilmByName(string name)
+    {
+        name = "*" + name + "*";
+        var film = await _context.films.Where(e => e.name == name).ToListAsync();
+        if (film.Count == 0)
+        {
+            return NotFound();
+        }
+
+        return film;
+    }
+    
+    // Add row to films table. HTTP method POSt.
+    [HttpPost] 
     public async Task<IActionResult> AddFilm(films filmToAdd)
     {
         _context.films.Add(filmToAdd);
         await _context.SaveChangesAsync();
-
         return CreatedAtAction("GetFilmById", new { id = filmToAdd.id }, filmToAdd);
+    }
+
+    public async Task<ActionResult<rooms>> OpenRoomById(int roomId)
+    {
+        var room = await _context.rooms.FindAsync(roomId);
+        if (null == room)
+            return NotFound();
+        return room;
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> CreateRoom(rooms room)
+    {
+        
+        room.id = _context.rooms.Last().id+1;
+        _context.rooms.Add(room);
+        await _context.SaveChangesAsync();
+        return CreatedAtAction("OpenRoomById", new {roomId = room.id}, room);
     }
 }

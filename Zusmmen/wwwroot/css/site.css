@@ -2,6 +2,16 @@ html {
   font-size: 14px;
 }
 
+.video-container{
+  width: 30%;
+  height: 40%;
+}
+
+video{
+  width: 100%;
+  height: 100%  ;
+}
+
 #film-name{
   text-align: center;
 }
@@ -269,4 +279,8 @@ p
   text-decoration: none;
   color: #333;
   display: block;
+}
+
+header{
+  height: 20%;
 }

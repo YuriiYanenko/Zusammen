@@ -7,10 +7,12 @@ namespace Zusmmen.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly ZusammenDbContext _context;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, ZusammenDbContext context)
     {
         _logger = logger;
+        _context = context;
     }
 
     public IActionResult Index()
@@ -27,5 +29,13 @@ public class HomeController : Controller
     public IActionResult Error()
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+    }
+    
+    [HttpPost]
+    public IActionResult FilmView(int filmId)
+    {
+        var dbController = new ZusammenDbController(_context);
+        var filmData = dbController.GetFilmById(filmId);
+        return View(filmData.Result.Value);
     }
 }

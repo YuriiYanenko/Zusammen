@@ -1,0 +1,24 @@
+@* Підключення моделі таблиці films *@
+@model Zusmmen.Models.films
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+@* C# code insertion. Convert array of genres attribute to string *@
+@{
+    string[] data = @Model.genre;
+    string genres = "";
+    foreach (var item in data)
+    {
+        genres += item + " ";
+    }
+}
+<h2 class="text-center" xmlns="http://www.w3.org/1999/html">@Model.name</h2>
+<div>
+    <p>Жанр: @genres</p>
+    <p style="text-align: center"><b>Про фільм</b></p>
+    <p>@Model.description</p>
+</div>
+<div>
+    <button>Додати до перегляду</button>
+</div>

@@ -1,5 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using Microsoft.SqlServer.Management.Smo;
 using Npgsql.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -13,7 +12,9 @@ public class Program
 
         // Add services to the container.
         builder.Services.AddControllersWithViews();
-        builder.Services.AddDbContext<ZusammenDbContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+        // Connect to database using "DefaultConnection" field from 'appsetings.json'. 
+        builder.Services.AddDbContext<ZusammenDbContext>(
+            options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
