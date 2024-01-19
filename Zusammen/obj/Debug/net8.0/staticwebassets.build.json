@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8fcNoKkF9v7Inh7vPk8LNFG/DyzfRl1h3daHyoa4+IQ=",
+  "Hash": "Yh7qg6YJsLRdCPgQa/09upWrHNPj1G/lrjDuLxZHH5o=",
   "Source": "Zusammen",
   "BasePath": "_content/Zusammen",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/site.css"
+    },
+    {
+      "Identity": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/МонахиняII.jpg",
+      "SourceId": "Zusammen",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/",
+      "BasePath": "_content/Zusammen",
+      "RelativePath": "img/МонахиняII.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/МонахиняII.jpg"
     },
     {
       "Identity": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/favicon.ico",

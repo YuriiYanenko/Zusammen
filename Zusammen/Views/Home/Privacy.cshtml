@@ -2,8 +2,9 @@
     ViewData["Title"] = "Privacy Policy";
 }
 <h1>@ViewData["Title"]</h1>
-@Html.BeginForm("Room", "Video", new{roomId = 1}){
+@Html.BeginForm("Room", "Video", FormMethod.Post){
 <div class="video-container">
+    <input type="number" name="roomId"/>
     <button id="send-to-room">Go to room</button>
 </div>
 }

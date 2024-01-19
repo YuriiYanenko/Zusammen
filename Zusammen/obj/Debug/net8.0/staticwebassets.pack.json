@@ -57,6 +57,10 @@
       "PackagePath": "staticwebassets/img/user.ico"
     },
     {
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/МонахиняII.jpg",
+      "PackagePath": "staticwebassets/img/МонахиняII.jpg"
+    },
+    {
       "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },

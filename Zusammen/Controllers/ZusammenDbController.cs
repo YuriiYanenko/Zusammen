@@ -28,9 +28,11 @@ public class ZusammenDbController : Controller
     public async Task<ActionResult<films>> GetFilmById(int id)
     {   
         var film = await _context.films.FindAsync(id);
+        var notFoundFilm = new films();
+        notFoundFilm.id = 0;
         if (null == film)
         {
-            return NotFound();
+            return notFoundFilm;
         }
 
         return film;
