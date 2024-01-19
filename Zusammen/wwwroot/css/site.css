@@ -32,7 +32,7 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+  
   background-color: #161616;
   height: 100vh;
   display: grid;
@@ -86,56 +86,45 @@ ul
 {
   transform: scaleX(1);
 }
-.slides-container 
+.btn
 {
+  position: absolute;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.btn.previous
+{
+  top: 40%;
+  left: 0;
+}
+.btn.next
+{
+  top: 40%;
+  right: 0;
+}
+.slides-container {
   width: 23vw;
   height: 55vh;
-  display: flex;
+  display: grid;
   position: relative;
 }
-.slide 
-{
+
+.slide {
   display: flex;
-  margin-right: 10px; 
+  margin-right: 10px;
   width: 100%;
   height: 100%;
   position: absolute;
   transition: transform 800ms ease-in-out;
 }
 
-.slide img 
-{
-  width: 90%;
-  height: 90%;
+.slide img {
+  width: 100%;
+  height:100%;
   border-radius: 1.5rem;
   border: 2px solid white;
 }
-
-.btn 
-{
-  border: none;
-  cursor: pointer;
-  transform: translateY(-50%);
-  position: absolute;
-  background: #ffffff;
-}
-.btn.previous 
-{
-  top: 40%;
-  left: 0;
-}
-.btn.next 
-{
-  top: 40%;
-  right: 0;
-}
-* 
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body 
 {
   height: 100vh;
@@ -143,6 +132,7 @@ body
 }
 p
 {
+  padding-top: 20px;
   font-size: 30px;
   color: white;
   text-align: center;
@@ -163,7 +153,7 @@ p
 
 .image-container img 
 {
-  margin-left: 80px;
+  margin-left: 65px;
   margin-top: 50px;
   border-radius: 1.5rem;
   border: 2px solid white;
@@ -173,7 +163,7 @@ p
 {
   position: relative; 
   text-align: center;
-  margin-left: 80px;
+  margin-left: 65px;
   margin-top: 10px; 
   color: white;
 }
