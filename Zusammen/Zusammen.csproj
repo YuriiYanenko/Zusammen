@@ -24,10 +24,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Pages\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <AdditionalFiles Include="Views\Video\Room.cshtml" />
     </ItemGroup>
 

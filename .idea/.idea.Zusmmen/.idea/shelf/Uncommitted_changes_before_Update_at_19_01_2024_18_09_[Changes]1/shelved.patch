@@ -1,0 +1,30 @@
+Index: Zusmmen/obj/rider.project.restore.info
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>17052351855885786
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Zusmmen/obj/rider.project.restore.info b/Zusmmen/obj/rider.project.restore.info
+--- a/Zusmmen/obj/rider.project.restore.info	
++++ b/Zusmmen/obj/rider.project.restore.info	
+@@ -1,1 +1,1 @@
+-17052351855885786
+\ No newline at end of file
++17056060916263524
+\ No newline at end of file
+Index: Zusmmen/obj/project.packagespec.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\"restore\":{\"projectUniqueName\":\"/Users/valeriya/RiderProjects/Zusammen/Zusmmen/Zusmmen.csproj\",\"projectName\":\"Zusmmen\",\"projectPath\":\"/Users/valeriya/RiderProjects/Zusammen/Zusmmen/Zusmmen.csproj\",\"outputPath\":\"/Users/valeriya/RiderProjects/Zusammen/Zusmmen/obj/\",\"projectStyle\":\"PackageReference\",\"originalTargetFrameworks\":[\"net8.0\"],\"sources\":{\"/usr/local/share/dotnet/library-packs\":{},\"https://api.nuget.org/v3/index.json\":{}},\"frameworks\":{\"net8.0\":{\"targetAlias\":\"net8.0\",\"projectReferences\":{}}},\"warningProperties\":{\"warnAsError\":[\"NU1605\"]}}\"frameworks\":{\"net8.0\":{\"targetAlias\":\"net8.0\",\"dependencies\":{\"Microsoft.EntityFrameworkCore\":{\"target\":\"Package\",\"version\":\"[8.0.1, )\"},\"Npgsql.EntityFrameworkCore.PostgreSQL\":{\"target\":\"Package\",\"version\":\"[8.0.0, )\"},\"QueryFirst.CoreLib\":{\"target\":\"Package\",\"version\":\"[0.0.4, )\"},\"System.Data.SqlClient\":{\"target\":\"Package\",\"version\":\"[4.8.6, )\"}},\"imports\":[\"net461\",\"net462\",\"net47\",\"net471\",\"net472\",\"net48\",\"net481\"],\"assetTargetFallback\":true,\"warn\":true,\"frameworkReferences\":{\"Microsoft.AspNetCore.App\":{\"privateAssets\":\"none\"},\"Microsoft.NETCore.App\":{\"privateAssets\":\"all\"}},\"runtimeIdentifierGraphPath\":\"/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json\"}}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Zusmmen/obj/project.packagespec.json b/Zusmmen/obj/project.packagespec.json
+--- a/Zusmmen/obj/project.packagespec.json	
++++ b/Zusmmen/obj/project.packagespec.json	
+@@ -1,1 +1,1 @@
+-"restore":{"projectUniqueName":"/Users/valeriya/RiderProjects/Zusammen/Zusmmen/Zusmmen.csproj","projectName":"Zusmmen","projectPath":"/Users/valeriya/RiderProjects/Zusammen/Zusmmen/Zusmmen.csproj","outputPath":"/Users/valeriya/RiderProjects/Zusammen/Zusmmen/obj/","projectStyle":"PackageReference","originalTargetFrameworks":["net8.0"],"sources":{"/usr/local/share/dotnet/library-packs":{},"https://api.nuget.org/v3/index.json":{}},"frameworks":{"net8.0":{"targetAlias":"net8.0","projectReferences":{}}},"warningProperties":{"warnAsError":["NU1605"]}}"frameworks":{"net8.0":{"targetAlias":"net8.0","dependencies":{"Microsoft.EntityFrameworkCore":{"target":"Package","version":"[8.0.1, )"},"Npgsql.EntityFrameworkCore.PostgreSQL":{"target":"Package","version":"[8.0.0, )"},"QueryFirst.CoreLib":{"target":"Package","version":"[0.0.4, )"},"System.Data.SqlClient":{"target":"Package","version":"[4.8.6, )"}},"imports":["net461","net462","net47","net471","net472","net48","net481"],"assetTargetFallback":true,"warn":true,"frameworkReferences":{"Microsoft.AspNetCore.App":{"privateAssets":"none"},"Microsoft.NETCore.App":{"privateAssets":"all"}},"runtimeIdentifierGraphPath":"/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"}}
+\ No newline at end of file
++"restore":{"projectUniqueName":"D:\\Projects\\Zusammen\\Zusmmen\\Zusmmen.csproj","projectName":"Zusmmen","projectPath":"D:\\Projects\\Zusammen\\Zusmmen\\Zusmmen.csproj","outputPath":"D:\\Projects\\Zusammen\\Zusmmen\\obj\\","projectStyle":"PackageReference","fallbackFolders":["D:\\Program\\Visual Studio 2022\\Tool_SDKs\\NuGetPackages"],"originalTargetFrameworks":["net8.0"],"sources":{"C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\":{},"https://api.nuget.org/v3/index.json":{}},"frameworks":{"net8.0":{"targetAlias":"net8.0","projectReferences":{}}},"warningProperties":{"warnAsError":["NU1605"]}}"frameworks":{"net8.0":{"targetAlias":"net8.0","dependencies":{"Microsoft.EntityFrameworkCore":{"target":"Package","version":"[8.0.1, )"},"Npgsql.EntityFrameworkCore.PostgreSQL":{"target":"Package","version":"[8.0.0, )"},"QueryFirst.CoreLib":{"target":"Package","version":"[0.0.4, )"},"System.Data.SqlClient":{"target":"Package","version":"[4.8.6, )"}},"imports":["net461","net462","net47","net471","net472","net48","net481"],"assetTargetFallback":true,"warn":true,"frameworkReferences":{"Microsoft.AspNetCore.App":{"privateAssets":"none"},"Microsoft.NETCore.App":{"privateAssets":"all"}},"runtimeIdentifierGraphPath":"C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"}}
+\ No newline at end of file
