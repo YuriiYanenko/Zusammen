@@ -1,0 +1,268 @@
+Index: Zusmmen/Program.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>namespace Zusmmen;\r\n\r\npublic class Program\r\n{\r\n    public static void Main(string[] args)\r\n    {\r\n        var builder = WebApplication.CreateBuilder(args);\r\n\r\n        // Add services to the container.\r\n        builder.Services.AddControllersWithViews();\r\n\r\n        var app = builder.Build();\r\n\r\n        // Configure the HTTP request pipeline.\r\n        if (!app.Environment.IsDevelopment())\r\n        {\r\n            app.UseExceptionHandler(\"/Home/Error\");\r\n            // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.\r\n            app.UseHsts();\r\n        }\r\n\r\n        app.UseHttpsRedirection();\r\n        app.UseStaticFiles();\r\n\r\n        app.UseRouting();\r\n\r\n        app.UseAuthorization();\r\n\r\n        app.MapControllerRoute(\r\n            name: \"default\",\r\n            pattern: \"{controller=Home}/{action=Index}/{id?}\");\r\n\r\n        app.Run();\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Zusmmen/Program.cs b/Zusmmen/Program.cs
+--- a/Zusmmen/Program.cs	(revision e4e246ee1481b8f1f00419c25a40e3ec6a582b9a)
++++ b/Zusmmen/Program.cs	(date 1705239053216)
+@@ -1,3 +1,4 @@
++using System;
+ namespace Zusmmen;
+ 
+ public class Program
+Index: Zusmmen/obj/project.assets.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"version\": 3,\r\n  \"targets\": {\r\n    \"net8.0\": {}\r\n  },\r\n  \"libraries\": {},\r\n  \"projectFileDependencyGroups\": {\r\n    \"net8.0\": []\r\n  },\r\n  \"packageFolders\": {\r\n    \"/home/yurii/.nuget/packages/\": {}\r\n  },\r\n  \"project\": {\r\n    \"version\": \"1.0.0\",\r\n    \"restore\": {\r\n      \"projectUniqueName\": \"/home/yurii/RiderProjects/Zusmmen/Zusmmen/Zusmmen.csproj\",\r\n      \"projectName\": \"Zusmmen\",\r\n      \"projectPath\": \"/home/yurii/RiderProjects/Zusmmen/Zusmmen/Zusmmen.csproj\",\r\n      \"packagesPath\": \"/home/yurii/.nuget/packages/\",\r\n      \"outputPath\": \"/home/yurii/RiderProjects/Zusmmen/Zusmmen/obj/\",\r\n      \"projectStyle\": \"PackageReference\",\r\n      \"configFilePaths\": [\r\n        \"/home/yurii/.nuget/NuGet/NuGet.Config\"\r\n      ],\r\n      \"originalTargetFrameworks\": [\r\n        \"net8.0\"\r\n      ],\r\n      \"sources\": {\r\n        \"https://api.nuget.org/v3/index.json\": {}\r\n      },\r\n      \"frameworks\": {\r\n        \"net8.0\": {\r\n          \"targetAlias\": \"net8.0\",\r\n          \"projectReferences\": {}\r\n        }\r\n      },\r\n      \"warningProperties\": {\r\n        \"warnAsError\": [\r\n          \"NU1605\"\r\n        ]\r\n      }\r\n    },\r\n    \"frameworks\": {\r\n      \"net8.0\": {\r\n        \"targetAlias\": \"net8.0\",\r\n        \"imports\": [\r\n          \"net461\",\r\n          \"net462\",\r\n          \"net47\",\r\n          \"net471\",\r\n          \"net472\",\r\n          \"net48\",\r\n          \"net481\"\r\n        ],\r\n        \"assetTargetFallback\": true,\r\n        \"warn\": true,\r\n        \"frameworkReferences\": {\r\n          \"Microsoft.AspNetCore.App\": {\r\n            \"privateAssets\": \"none\"\r\n          },\r\n          \"Microsoft.NETCore.App\": {\r\n            \"privateAssets\": \"all\"\r\n          }\r\n        },\r\n        \"runtimeIdentifierGraphPath\": \"/usr/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json\"\r\n      }\r\n    }\r\n  }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Zusmmen/obj/project.assets.json b/Zusmmen/obj/project.assets.json
+--- a/Zusmmen/obj/project.assets.json	(revision e4e246ee1481b8f1f00419c25a40e3ec6a582b9a)
++++ b/Zusmmen/obj/project.assets.json	(date 1705239389721)
+@@ -8,24 +8,26 @@
+     "net8.0": []
+   },
+   "packageFolders": {
+-    "/home/yurii/.nuget/packages/": {}
++    "C:\\Users\\Maria\\.nuget\\packages\\": {}
+   },
+   "project": {
+     "version": "1.0.0",
+     "restore": {
+-      "projectUniqueName": "/home/yurii/RiderProjects/Zusmmen/Zusmmen/Zusmmen.csproj",
++      "projectUniqueName": "D:\\Projects\\Zusammen\\Zusmmen\\Zusmmen.csproj",
+       "projectName": "Zusmmen",
+-      "projectPath": "/home/yurii/RiderProjects/Zusmmen/Zusmmen/Zusmmen.csproj",
+-      "packagesPath": "/home/yurii/.nuget/packages/",
+-      "outputPath": "/home/yurii/RiderProjects/Zusmmen/Zusmmen/obj/",
++      "projectPath": "D:\\Projects\\Zusammen\\Zusmmen\\Zusmmen.csproj",
++      "packagesPath": "C:\\Users\\Maria\\.nuget\\packages\\",
++      "outputPath": "D:\\Projects\\Zusammen\\Zusmmen\\obj\\",
+       "projectStyle": "PackageReference",
+       "configFilePaths": [
+-        "/home/yurii/.nuget/NuGet/NuGet.Config"
++        "C:\\Users\\Maria\\AppData\\Roaming\\NuGet\\NuGet.Config",
++        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+       ],
+       "originalTargetFrameworks": [
+         "net8.0"
+       ],
+       "sources": {
++        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+         "https://api.nuget.org/v3/index.json": {}
+       },
+       "frameworks": {
+@@ -62,7 +64,7 @@
+             "privateAssets": "all"
+           }
+         },
+-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
++        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+       }
+     }
+   }
+Index: Zusmmen/obj/Zusmmen.csproj.nuget.dgspec.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"format\": 1,\r\n  \"restore\": {\r\n    \"/home/yurii/RiderProjects/Zusmmen/Zusmmen/Zusmmen.csproj\": {}\r\n  },\r\n  \"projects\": {\r\n    \"/home/yurii/RiderProjects/Zusmmen/Zusmmen/Zusmmen.csproj\": {\r\n      \"version\": \"1.0.0\",\r\n      \"restore\": {\r\n        \"projectUniqueName\": \"/home/yurii/RiderProjects/Zusmmen/Zusmmen/Zusmmen.csproj\",\r\n        \"projectName\": \"Zusmmen\",\r\n        \"projectPath\": \"/home/yurii/RiderProjects/Zusmmen/Zusmmen/Zusmmen.csproj\",\r\n        \"packagesPath\": \"/home/yurii/.nuget/packages/\",\r\n        \"outputPath\": \"/home/yurii/RiderProjects/Zusmmen/Zusmmen/obj/\",\r\n        \"projectStyle\": \"PackageReference\",\r\n        \"configFilePaths\": [\r\n          \"/home/yurii/.nuget/NuGet/NuGet.Config\"\r\n        ],\r\n        \"originalTargetFrameworks\": [\r\n          \"net8.0\"\r\n        ],\r\n        \"sources\": {\r\n          \"https://api.nuget.org/v3/index.json\": {}\r\n        },\r\n        \"frameworks\": {\r\n          \"net8.0\": {\r\n            \"targetAlias\": \"net8.0\",\r\n            \"projectReferences\": {}\r\n          }\r\n        },\r\n        \"warningProperties\": {\r\n          \"warnAsError\": [\r\n            \"NU1605\"\r\n          ]\r\n        }\r\n      },\r\n      \"frameworks\": {\r\n        \"net8.0\": {\r\n          \"targetAlias\": \"net8.0\",\r\n          \"imports\": [\r\n            \"net461\",\r\n            \"net462\",\r\n            \"net47\",\r\n            \"net471\",\r\n            \"net472\",\r\n            \"net48\",\r\n            \"net481\"\r\n          ],\r\n          \"assetTargetFallback\": true,\r\n          \"warn\": true,\r\n          \"frameworkReferences\": {\r\n            \"Microsoft.AspNetCore.App\": {\r\n              \"privateAssets\": \"none\"\r\n            },\r\n            \"Microsoft.NETCore.App\": {\r\n              \"privateAssets\": \"all\"\r\n            }\r\n          },\r\n          \"runtimeIdentifierGraphPath\": \"/usr/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json\"\r\n        }\r\n      }\r\n    }\r\n  }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Zusmmen/obj/Zusmmen.csproj.nuget.dgspec.json b/Zusmmen/obj/Zusmmen.csproj.nuget.dgspec.json
+--- a/Zusmmen/obj/Zusmmen.csproj.nuget.dgspec.json	(revision e4e246ee1481b8f1f00419c25a40e3ec6a582b9a)
++++ b/Zusmmen/obj/Zusmmen.csproj.nuget.dgspec.json	(date 1705239389780)
+@@ -1,25 +1,27 @@
+ {
+   "format": 1,
+   "restore": {
+-    "/home/yurii/RiderProjects/Zusmmen/Zusmmen/Zusmmen.csproj": {}
++    "D:\\Projects\\Zusammen\\Zusmmen\\Zusmmen.csproj": {}
+   },
+   "projects": {
+-    "/home/yurii/RiderProjects/Zusmmen/Zusmmen/Zusmmen.csproj": {
++    "D:\\Projects\\Zusammen\\Zusmmen\\Zusmmen.csproj": {
+       "version": "1.0.0",
+       "restore": {
+-        "projectUniqueName": "/home/yurii/RiderProjects/Zusmmen/Zusmmen/Zusmmen.csproj",
++        "projectUniqueName": "D:\\Projects\\Zusammen\\Zusmmen\\Zusmmen.csproj",
+         "projectName": "Zusmmen",
+-        "projectPath": "/home/yurii/RiderProjects/Zusmmen/Zusmmen/Zusmmen.csproj",
+-        "packagesPath": "/home/yurii/.nuget/packages/",
+-        "outputPath": "/home/yurii/RiderProjects/Zusmmen/Zusmmen/obj/",
++        "projectPath": "D:\\Projects\\Zusammen\\Zusmmen\\Zusmmen.csproj",
++        "packagesPath": "C:\\Users\\Maria\\.nuget\\packages\\",
++        "outputPath": "D:\\Projects\\Zusammen\\Zusmmen\\obj\\",
+         "projectStyle": "PackageReference",
+         "configFilePaths": [
+-          "/home/yurii/.nuget/NuGet/NuGet.Config"
++          "C:\\Users\\Maria\\AppData\\Roaming\\NuGet\\NuGet.Config",
++          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+         ],
+         "originalTargetFrameworks": [
+           "net8.0"
+         ],
+         "sources": {
++          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+           "https://api.nuget.org/v3/index.json": {}
+         },
+         "frameworks": {
+@@ -56,7 +58,7 @@
+               "privateAssets": "all"
+             }
+           },
+-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
++          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+         }
+       }
+     }
+Index: Zusmmen/obj/Debug/net8.0/Zusmmen.AssemblyInfo.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>//------------------------------------------------------------------------------\r\n// <auto-generated>\r\n//     This code was generated by a tool.\r\n//\r\n//     Changes to this file may cause incorrect behavior and will be lost if\r\n//     the code is regenerated.\r\n// </auto-generated>\r\n//------------------------------------------------------------------------------\r\n\r\nusing System;\r\nusing System.Reflection;\r\n\r\n[assembly: System.Reflection.AssemblyCompanyAttribute(\"Zusmmen\")]\r\n[assembly: System.Reflection.AssemblyConfigurationAttribute(\"Debug\")]\r\n[assembly: System.Reflection.AssemblyFileVersionAttribute(\"1.0.0.0\")]\r\n[assembly: System.Reflection.AssemblyInformationalVersionAttribute(\"1.0.0\")]\r\n[assembly: System.Reflection.AssemblyProductAttribute(\"Zusmmen\")]\r\n[assembly: System.Reflection.AssemblyTitleAttribute(\"Zusmmen\")]\r\n[assembly: System.Reflection.AssemblyVersionAttribute(\"1.0.0.0\")]\r\n\r\n// Generated by the MSBuild WriteCodeFragment class.\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Zusmmen/obj/Debug/net8.0/Zusmmen.AssemblyInfo.cs b/Zusmmen/obj/Debug/net8.0/Zusmmen.AssemblyInfo.cs
+--- a/Zusmmen/obj/Debug/net8.0/Zusmmen.AssemblyInfo.cs	(revision e4e246ee1481b8f1f00419c25a40e3ec6a582b9a)
++++ b/Zusmmen/obj/Debug/net8.0/Zusmmen.AssemblyInfo.cs	(date 1705239380660)
+@@ -13,10 +13,10 @@
+ [assembly: System.Reflection.AssemblyCompanyAttribute("Zusmmen")]
+ [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+ [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
++[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4e246ee1481b8f1f00419c25a40e3ec6a582b9a")]
+ [assembly: System.Reflection.AssemblyProductAttribute("Zusmmen")]
+ [assembly: System.Reflection.AssemblyTitleAttribute("Zusmmen")]
+ [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+ 
+-// Generated by the MSBuild WriteCodeFragment class.
++// Создано классом WriteCodeFragment MSBuild.
+ 
+Index: Zusmmen/obj/Debug/net8.0/Zusmmen.GeneratedMSBuildEditorConfig.editorconfig
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>is_global = true\r\nbuild_property.TargetFramework = net8.0\r\nbuild_property.TargetPlatformMinVersion = \r\nbuild_property.UsingMicrosoftNETSdkWeb = true\r\nbuild_property.ProjectTypeGuids = \r\nbuild_property.InvariantGlobalization = \r\nbuild_property.PlatformNeutralAssembly = \r\nbuild_property.EnforceExtendedAnalyzerRules = \r\nbuild_property._SupportedPlatformList = Linux,macOS,Windows\r\nbuild_property.RootNamespace = Zusmmen\r\nbuild_property.RootNamespace = Zusmmen\r\nbuild_property.ProjectDir = /home/yurii/RiderProjects/Zusmmen/Zusmmen/\r\nbuild_property.EnableComHosting = \r\nbuild_property.EnableGeneratedComInterfaceComImportInterop = \r\nbuild_property.RazorLangVersion = 8.0\r\nbuild_property.SupportLocalizedComponentNames = \r\nbuild_property.GenerateRazorMetadataSourceChecksumAttributes = \r\nbuild_property.MSBuildProjectDirectory = /home/yurii/RiderProjects/Zusmmen/Zusmmen\r\nbuild_property._RazorSourceGeneratorDebug = \r\n\r\n[/home/yurii/RiderProjects/Zusmmen/Zusmmen/Views/Home/Index.cshtml]\r\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=\r\nbuild_metadata.AdditionalFiles.CssScope = \r\n\r\n[/home/yurii/RiderProjects/Zusmmen/Zusmmen/Views/Home/Privacy.cshtml]\r\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==\r\nbuild_metadata.AdditionalFiles.CssScope = \r\n\r\n[/home/yurii/RiderProjects/Zusmmen/Zusmmen/Views/Shared/Error.cshtml]\r\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==\r\nbuild_metadata.AdditionalFiles.CssScope = \r\n\r\n[/home/yurii/RiderProjects/Zusmmen/Zusmmen/Views/Shared/_ValidationScriptsPartial.cshtml]\r\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s\r\nbuild_metadata.AdditionalFiles.CssScope = \r\n\r\n[/home/yurii/RiderProjects/Zusmmen/Zusmmen/Views/_ViewImports.cshtml]\r\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==\r\nbuild_metadata.AdditionalFiles.CssScope = \r\n\r\n[/home/yurii/RiderProjects/Zusmmen/Zusmmen/Views/_ViewStart.cshtml]\r\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=\r\nbuild_metadata.AdditionalFiles.CssScope = \r\n\r\n[/home/yurii/RiderProjects/Zusmmen/Zusmmen/Views/Shared/_Layout.cshtml]\r\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s\r\nbuild_metadata.AdditionalFiles.CssScope = b-2am28z37hv\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Zusmmen/obj/Debug/net8.0/Zusmmen.GeneratedMSBuildEditorConfig.editorconfig b/Zusmmen/obj/Debug/net8.0/Zusmmen.GeneratedMSBuildEditorConfig.editorconfig
+--- a/Zusmmen/obj/Debug/net8.0/Zusmmen.GeneratedMSBuildEditorConfig.editorconfig	(revision e4e246ee1481b8f1f00419c25a40e3ec6a582b9a)
++++ b/Zusmmen/obj/Debug/net8.0/Zusmmen.GeneratedMSBuildEditorConfig.editorconfig	(date 1705239380535)
+@@ -9,39 +9,39 @@
+ build_property._SupportedPlatformList = Linux,macOS,Windows
+ build_property.RootNamespace = Zusmmen
+ build_property.RootNamespace = Zusmmen
+-build_property.ProjectDir = /home/yurii/RiderProjects/Zusmmen/Zusmmen/
++build_property.ProjectDir = D:\Projects\Zusammen\Zusmmen\
+ build_property.EnableComHosting = 
+ build_property.EnableGeneratedComInterfaceComImportInterop = 
+ build_property.RazorLangVersion = 8.0
+ build_property.SupportLocalizedComponentNames = 
+ build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+-build_property.MSBuildProjectDirectory = /home/yurii/RiderProjects/Zusmmen/Zusmmen
++build_property.MSBuildProjectDirectory = D:\Projects\Zusammen\Zusmmen
+ build_property._RazorSourceGeneratorDebug = 
+ 
+-[/home/yurii/RiderProjects/Zusmmen/Zusmmen/Views/Home/Index.cshtml]
+-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
++[D:/Projects/Zusammen/Zusmmen/Views/Home/Index.cshtml]
++build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[/home/yurii/RiderProjects/Zusmmen/Zusmmen/Views/Home/Privacy.cshtml]
+-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
++[D:/Projects/Zusammen/Zusmmen/Views/Home/Privacy.cshtml]
++build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[/home/yurii/RiderProjects/Zusmmen/Zusmmen/Views/Shared/Error.cshtml]
+-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
++[D:/Projects/Zusammen/Zusmmen/Views/Shared/Error.cshtml]
++build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[/home/yurii/RiderProjects/Zusmmen/Zusmmen/Views/Shared/_ValidationScriptsPartial.cshtml]
+-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
++[D:/Projects/Zusammen/Zusmmen/Views/Shared/_ValidationScriptsPartial.cshtml]
++build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[/home/yurii/RiderProjects/Zusmmen/Zusmmen/Views/_ViewImports.cshtml]
+-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
++[D:/Projects/Zusammen/Zusmmen/Views/_ViewImports.cshtml]
++build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[/home/yurii/RiderProjects/Zusmmen/Zusmmen/Views/_ViewStart.cshtml]
+-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
++[D:/Projects/Zusammen/Zusmmen/Views/_ViewStart.cshtml]
++build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[/home/yurii/RiderProjects/Zusmmen/Zusmmen/Views/Shared/_Layout.cshtml]
+-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+-build_metadata.AdditionalFiles.CssScope = b-2am28z37hv
++[D:/Projects/Zusammen/Zusmmen/Views/Shared/_Layout.cshtml]
++build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
++build_metadata.AdditionalFiles.CssScope = b-9bj8qo1obi
+Index: Zusmmen/obj/project.packagespec.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\"restore\":{\"projectUniqueName\":\"/home/yurii/RiderProjects/Zusmmen/Zusmmen/Zusmmen.csproj\",\"projectName\":\"Zusmmen\",\"projectPath\":\"/home/yurii/RiderProjects/Zusmmen/Zusmmen/Zusmmen.csproj\",\"outputPath\":\"/home/yurii/RiderProjects/Zusmmen/Zusmmen/obj/\",\"projectStyle\":\"PackageReference\",\"originalTargetFrameworks\":[\"net8.0\"],\"sources\":{\"https://api.nuget.org/v3/index.json\":{}},\"frameworks\":{\"net8.0\":{\"targetAlias\":\"net8.0\",\"projectReferences\":{}}},\"warningProperties\":{\"warnAsError\":[\"NU1605\"]}}\"frameworks\":{\"net8.0\":{\"targetAlias\":\"net8.0\",\"imports\":[\"net461\",\"net462\",\"net47\",\"net471\",\"net472\",\"net48\",\"net481\"],\"assetTargetFallback\":true,\"warn\":true,\"frameworkReferences\":{\"Microsoft.AspNetCore.App\":{\"privateAssets\":\"none\"},\"Microsoft.NETCore.App\":{\"privateAssets\":\"all\"}},\"runtimeIdentifierGraphPath\":\"/usr/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json\"}}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Zusmmen/obj/project.packagespec.json b/Zusmmen/obj/project.packagespec.json
+--- a/Zusmmen/obj/project.packagespec.json	(revision e4e246ee1481b8f1f00419c25a40e3ec6a582b9a)
++++ b/Zusmmen/obj/project.packagespec.json	(date 1705239381364)
+@@ -1,1 +1,1 @@
+-"restore":{"projectUniqueName":"/home/yurii/RiderProjects/Zusmmen/Zusmmen/Zusmmen.csproj","projectName":"Zusmmen","projectPath":"/home/yurii/RiderProjects/Zusmmen/Zusmmen/Zusmmen.csproj","outputPath":"/home/yurii/RiderProjects/Zusmmen/Zusmmen/obj/","projectStyle":"PackageReference","originalTargetFrameworks":["net8.0"],"sources":{"https://api.nuget.org/v3/index.json":{}},"frameworks":{"net8.0":{"targetAlias":"net8.0","projectReferences":{}}},"warningProperties":{"warnAsError":["NU1605"]}}"frameworks":{"net8.0":{"targetAlias":"net8.0","imports":["net461","net462","net47","net471","net472","net48","net481"],"assetTargetFallback":true,"warn":true,"frameworkReferences":{"Microsoft.AspNetCore.App":{"privateAssets":"none"},"Microsoft.NETCore.App":{"privateAssets":"all"}},"runtimeIdentifierGraphPath":"/usr/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"}}
+\ No newline at end of file
++"restore":{"projectUniqueName":"D:\\Projects\\Zusammen\\Zusmmen\\Zusmmen.csproj","projectName":"Zusmmen","projectPath":"D:\\Projects\\Zusammen\\Zusmmen\\Zusmmen.csproj","outputPath":"D:\\Projects\\Zusammen\\Zusmmen\\obj\\","projectStyle":"PackageReference","originalTargetFrameworks":["net8.0"],"sources":{"C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\":{},"https://api.nuget.org/v3/index.json":{}},"frameworks":{"net8.0":{"targetAlias":"net8.0","projectReferences":{}}},"warningProperties":{"warnAsError":["NU1605"]}}"frameworks":{"net8.0":{"targetAlias":"net8.0","imports":["net461","net462","net47","net471","net472","net48","net481"],"assetTargetFallback":true,"warn":true,"frameworkReferences":{"Microsoft.AspNetCore.App":{"privateAssets":"none"},"Microsoft.NETCore.App":{"privateAssets":"all"}},"runtimeIdentifierGraphPath":"C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"}}
+\ No newline at end of file
+Index: Zusmmen/obj/Zusmmen.csproj.nuget.g.props
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"no\"?>\r\n<Project ToolsVersion=\"14.0\" xmlns=\"http://schemas.microsoft.com/developer/msbuild/2003\">\r\n  <PropertyGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\r\n    <RestoreSuccess Condition=\" '$(RestoreSuccess)' == '' \">True</RestoreSuccess>\r\n    <RestoreTool Condition=\" '$(RestoreTool)' == '' \">NuGet</RestoreTool>\r\n    <ProjectAssetsFile Condition=\" '$(ProjectAssetsFile)' == '' \">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>\r\n    <NuGetPackageRoot Condition=\" '$(NuGetPackageRoot)' == '' \">/home/yurii/.nuget/packages/</NuGetPackageRoot>\r\n    <NuGetPackageFolders Condition=\" '$(NuGetPackageFolders)' == '' \">/home/yurii/.nuget/packages/</NuGetPackageFolders>\r\n    <NuGetProjectStyle Condition=\" '$(NuGetProjectStyle)' == '' \">PackageReference</NuGetProjectStyle>\r\n    <NuGetToolVersion Condition=\" '$(NuGetToolVersion)' == '' \">6.8.0</NuGetToolVersion>\r\n  </PropertyGroup>\r\n  <ItemGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\r\n    <SourceRoot Include=\"/home/yurii/.nuget/packages/\" />\r\n  </ItemGroup>\r\n</Project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Zusmmen/obj/Zusmmen.csproj.nuget.g.props b/Zusmmen/obj/Zusmmen.csproj.nuget.g.props
+--- a/Zusmmen/obj/Zusmmen.csproj.nuget.g.props	(revision e4e246ee1481b8f1f00419c25a40e3ec6a582b9a)
++++ b/Zusmmen/obj/Zusmmen.csproj.nuget.g.props	(date 1705238971387)
+@@ -4,12 +4,12 @@
+     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+-    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/home/yurii/.nuget/packages/</NuGetPackageRoot>
+-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/home/yurii/.nuget/packages/</NuGetPackageFolders>
++    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
++    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Maria\.nuget\packages\</NuGetPackageFolders>
+     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.8.0</NuGetToolVersion>
+   </PropertyGroup>
+   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+-    <SourceRoot Include="/home/yurii/.nuget/packages/" />
++    <SourceRoot Include="C:\Users\Maria\.nuget\packages\" />
+   </ItemGroup>
+ </Project>
+\ No newline at end of file
+Index: Zusmmen/obj/rider.project.restore.info
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>17052351855885786
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Zusmmen/obj/rider.project.restore.info b/Zusmmen/obj/rider.project.restore.info
+--- a/Zusmmen/obj/rider.project.restore.info	(revision e4e246ee1481b8f1f00419c25a40e3ec6a582b9a)
++++ b/Zusmmen/obj/rider.project.restore.info	(date 1705239389844)
+@@ -1,1 +1,1 @@
+-17052351855885786
+\ No newline at end of file
++17052393897809262
+\ No newline at end of file

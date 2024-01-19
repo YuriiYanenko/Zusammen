@@ -1,0 +1,19 @@
+<changelist name="Uncommitted_changes_before_Update_at_19_01_2024_18_09_[Changes]1" date="1705680607442" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/.idea.Zusmmen/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2024_18_09_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 19.01.2024 18:09 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="Zusmmen/obj/Debug/net8.0/Zusmmen.AssemblyInfoInputs.cache" />
+    <option name="AFTER_PATH" value="Zusmmen/obj/Debug/net8.0/Zusmmen.AssemblyInfoInputs.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Zusmmen/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2024_18_09_[Changes]1/Zusmmen.AssemblyInfoInputs.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Zusmmen/obj/project.nuget.cache" />
+    <option name="AFTER_PATH" value="Zusmmen/obj/project.nuget.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Zusmmen/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2024_18_09_[Changes]1/project.nuget.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Zusmmen/obj/Debug/net8.0/Zusmmen.assets.cache" />
+    <option name="AFTER_PATH" value="Zusmmen/obj/Debug/net8.0/Zusmmen.assets.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Zusmmen/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2024_18_09_[Changes]1/Zusmmen.assets.cache" />
+  </binary>
+</changelist>
