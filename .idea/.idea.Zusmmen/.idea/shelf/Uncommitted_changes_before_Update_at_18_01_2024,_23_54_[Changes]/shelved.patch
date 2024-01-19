@@ -1,0 +1,355 @@
+Index: Zusmmen/Views/Home/Index.cshtml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@{\n    ViewData[\"Title\"] = \"FILMS\";\n}\n\n<div class=\"text-center\">\n    \n</div>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Zusmmen/Views/Home/Index.cshtml b/Zusmmen/Views/Home/Index.cshtml
+--- a/Zusmmen/Views/Home/Index.cshtml	(revision 696d215ba3704552be11c3ec95bbf9acbde1ecaf)
++++ b/Zusmmen/Views/Home/Index.cshtml	(date 1705614303885)
+@@ -1,7 +1,41 @@
+ @{
+     ViewData["Title"] = "FILMS";
+ }
++<body>
++<button class="btn previous" data-button="previous">
++        <img src="../left.ico" style="width: 20px; height: 20px;">
++    </button>
++<div class="slides-container">
++    <div class="slide" data-slide>
++        <img src="../image1.png ">
++    </div>
++    <div class="slide" data-slide>
++        <img src="../image2.png" alt="Image">
++    </div>
++    <div class="slide" data-slide>
++        <img src="../image3.png" alt="Image">
++    </div>
++    <div class="slide" data-slide>
++        <img src="../image4.png" alt="Image">
++    </div>
++</div>
++<button class="btn next" data-button="next">
++        <img src="../right.ico" style="width: 20px; height: 20px;">
++    </button>
+ 
+-<div class="text-center">
+-    
+-</div>
+\ No newline at end of file
++<p>Рекомендації</p>
++<div class="cont">
++    <div class="image-container">
++        <img src="../film1.png" alt="Image">
++        <div class="image-caption">Велика сім'я</div>
++    </div>
++    <div class="image-container">
++        <img src="../film2.png" alt="Image">
++        <div class="image-caption">Людина невидимка. Повернення</div>
++    </div>
++    <div class="image-container">
++        <img src="../film3.png" alt="Image">
++        <div class="image-caption">Диявол носить Прада</div>
++    </div>
++</div>
++</body>
+\ No newline at end of file
+Index: Zusmmen/Views/Shared/_Layout.cshtml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"utf-8\"/>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\n    <title>@ViewData[\"Title\"] - Zusammen</title>\n    <link rel=\"stylesheet\" href=\"~/lib/bootstrap/dist/css/bootstrap.min.css\"/>\n    <link rel=\"stylesheet\" href=\"~/css/site.css\" asp-append-version=\"true\"/>\n    <link rel=\"stylesheet\" href=\"~/Zusmmen.styles.css\" asp-append-version=\"true\"/>\n</head>\n<body>\n<header>\n    <nav class=\"navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3\">\n        <div class=\"container-fluid\">\n            <a class=\"navbar-brand\" asp-area=\"\" asp-controller=\"Home\" asp-action=\"Index\" style=\"color: #296B6A; font-size: 30px;\">ZU</a>\n           \n            <a class=\"navbar-brand text-white\" asp-area=\"\" asp-controller=\"Home\" asp-action=\"Index\" style=\"font-size: 30px\">SAMMEN</a>\n\n            <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\".navbar-collapse\" aria-controls=\"navbarSupportedContent\"\n                    aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n                <span class=\"navbar-toggler-icon\"></span>\n            </button>\n            <div class=\"search-box\">\n                <input type=\"text\" placeholder=\"Search\" class=\"search-input\">\n                <a href=\"#\" class=\"search-btn\">\n                    <img src=\"search.ico \" style=\"width: 20px; height: 20px;\">\n                </a>\n            </div>\n            <div class=\"icon\">\n                <img src=\"user.ico \" style=\"width: 20px; height: 20px;\">\n                 <div class=\"dropdown\">\n                    <ul>\n                      <li><a href=\"#\" style=\"color: #000000\">Sign In</a></li>\n                      <li><a href=\"#\" style=\"color: #000000\">Log In</a></li>\n                    </ul>\n                  </div>\n            </div>\n            <div class=\"navbar-collapse collapse d-sm-inline-flex justify-content-between\">\n                <ul class=\"navbar-nav \">\n                    <li class=\"nav-item\">\n                        <a class=\"nav-link text-white\" asp-area=\"\" asp-controller=\"Home\" asp-action=\"Index\">MOVIES</a>\n                    </li>\n                    <li class=\"nav-item\">\n                        <a class=\"nav-link text-white\" asp-area=\"\" asp-controller=\"Home\" asp-action=\"Privacy\">SERIES</a>\n                    </li>\n                    <li class=\"nav-item\">\n                        <a class=\"nav-link text-white\" asp-area=\"\" asp-controller=\"Home\" asp-action=\"\">ABOUT US</a>\n                    </li>\n                </ul>\n            </div>\n        </div>\n    </nav>\n  \n</header>\n<div class=\"slides-container\">\n    <div class=\"slide\" data-slide>\n        <img src=\"image1.png \">\n    </div>\n    <div class=\"slide\" data-slide>\n        <img src=\"image2.png\" alt=\"Image\">\n    </div>\n    <div class=\"slide\" data-slide>\n        <img src=\"image3.png\" alt=\"Image\">\n    </div>\n    <div class=\"slide\" data-slide>\n        <img src=\"image4.png\" alt=\"Image\">\n    </div>\n</div>\n<button class=\"btn previous\" data-button=\"previous\">\n        <img src=\"left.ico\" style=\"width: 20px; height: 20px;\">\n    </button>\n<button class=\"btn next\" data-button=\"next\">\n    <img src=\"right.ico\" style=\"width: 20px; height: 20px;\">\n</button>\n<p>Recommended</p>\n<div class=\"cont\">\n<div class=\"image-container\">\n    <img src=\"film1.png\" alt=\"Image\">\n    <div class=\"image-caption\">Extended Family</div>\n</div>\n<div class=\"image-container\">\n    <img src=\"film2.png\" alt=\"Image\">\n    <div class=\"image-caption\">Fear The Invisible Man</div>\n</div>\n<div class=\"image-container\">\n    <img src=\"film3.png\" alt=\"Image\">\n    <div class=\"image-caption\">The Devil Wears Prada</div>\n    </div>\n</div>\n<div class=\"container\">\n    <main role=\"main\" class=\"pb-3\">\n        @RenderBody()\n    </main>\n</div>\n\n<!--<footer class=\"border-top footer text-muted\">\n    <div class=\"container\">\n        &copy; 2024 - Zusammen - <a asp-area=\"\" asp-controller=\"Home\" asp-action=\"Privacy\">Privacy</a>\n    </div>\n</footer>-->\n\n<script src=\"~/lib/jquery/dist/jquery.min.js\"></script>\n<script src=\"~/lib/bootstrap/dist/js/bootstrap.bundle.min.js\"></script>\n<script src=\"~/js/site.js\" asp-append-version=\"true\"></script>\n@await RenderSectionAsync(\"Scripts\", required: false)\n</body>\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Zusmmen/Views/Shared/_Layout.cshtml b/Zusmmen/Views/Shared/_Layout.cshtml
+--- a/Zusmmen/Views/Shared/_Layout.cshtml	(revision 696d215ba3704552be11c3ec95bbf9acbde1ecaf)
++++ b/Zusmmen/Views/Shared/_Layout.cshtml	(date 1705610170242)
+@@ -21,72 +21,34 @@
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="search-box">
+-                <input type="text" placeholder="Search" class="search-input">
++                <input type="text" placeholder="Пошук" class="search-input">
+                 <a href="#" class="search-btn">
+-                    <img src="search.ico " style="width: 20px; height: 20px;">
++                    <img src="../search.ico " style="width: 20px; height: 20px;">
+                 </a>
+             </div>
+             <div class="icon">
+-                <img src="user.ico " style="width: 20px; height: 20px;">
++                <img src="../user.ico " style="width: 20px; height: 20px;">
+                  <div class="dropdown">
+                     <ul>
+-                      <li><a href="#" style="color: #000000">Sign In</a></li>
+-                      <li><a href="#" style="color: #000000">Log In</a></li>
++                      <li><a href="#" style="color: #000000">Зареєструватися</a></li>
++                      <li><a href="#" style="color: #000000">Увійти</a></li>
+                     </ul>
+                   </div>
+             </div>
+             <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                 <ul class="navbar-nav ">
+                     <li class="nav-item">
+-                        <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">MOVIES</a>
+-                    </li>
+-                    <li class="nav-item">
+-                        <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">SERIES</a>
++                        <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">ФІЛЬМИ</a>
+                     </li>
+                     <li class="nav-item">
+-                        <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="">ABOUT US</a>
++                        <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="">ПРО НАС</a>
+                     </li>
+                 </ul>
+             </div>
+         </div>
+     </nav>
+-  
+ </header>
+-<div class="slides-container">
+-    <div class="slide" data-slide>
+-        <img src="image1.png ">
+-    </div>
+-    <div class="slide" data-slide>
+-        <img src="image2.png" alt="Image">
+-    </div>
+-    <div class="slide" data-slide>
+-        <img src="image3.png" alt="Image">
+-    </div>
+-    <div class="slide" data-slide>
+-        <img src="image4.png" alt="Image">
+-    </div>
+-</div>
+-<button class="btn previous" data-button="previous">
+-        <img src="left.ico" style="width: 20px; height: 20px;">
+-    </button>
+-<button class="btn next" data-button="next">
+-    <img src="right.ico" style="width: 20px; height: 20px;">
+-</button>
+-<p>Recommended</p>
+-<div class="cont">
+-<div class="image-container">
+-    <img src="film1.png" alt="Image">
+-    <div class="image-caption">Extended Family</div>
+-</div>
+-<div class="image-container">
+-    <img src="film2.png" alt="Image">
+-    <div class="image-caption">Fear The Invisible Man</div>
+-</div>
+-<div class="image-container">
+-    <img src="film3.png" alt="Image">
+-    <div class="image-caption">The Devil Wears Prada</div>
+-    </div>
+-</div>
++
+ <div class="container">
+     <main role="main" class="pb-3">
+         @RenderBody()
+Index: Zusmmen/wwwroot/css/site.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>html {\n  font-size: 14px;\n}\n\n#film-name{\n  text-align: center;\n}\n\n@media (min-width: 768px) {\n  html {\n    font-size: 16px;\n  }\n}\n\n.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {\n  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;\n}\n\nhtml {\n  position: relative;\n  min-height: 100%;\n}\n\nbody {\n  margin-bottom: 60px;\n  background-color: #161616;\n  height: 100vh;\n  display: grid;\n}\n\n.container-fluid\n{\n  background-color: #161616;\n}\n.navbar\n{\n  background-color: #161616;\n}\nul\n{\n  display: flex;\n  gap: 1rem;\n  list-style: none;\n}\n.nav-link::after\n{\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 3px;\n  background: #296B6A;\n  transform: scaleX(0);\n  transition: all 0.6s ease;\n}\n.nav-link\n{\n  text-decoration: none;\n  font-size: 22px;\n  padding: 1rem 2rem;\n  position: relative;\n}\n.nav-link::before\n{\n  top: 0;\n  left: 0;\n  transform-origin: right;\n}\n.nav-link::after\n{\n  bottom: 0;\n  left: 0;\n  transform-origin: left;\n}\n.nav-link:hover::before,\n.nav-link:hover::after\n{\n  transform: scaleX(1);\n}\n.slides-container \n{\n  width: 23vw;\n  height: 55vh;\n  display: flex;\n  position: relative;\n}\n.slide \n{\n  display: flex;\n  margin-right: 10px; \n  width: 100%;\n  height: 100%;\n  position: absolute;\n  transition: transform 800ms ease-in-out;\n}\n\n.slide img \n{\n  width: 90%;\n  height: 90%;\n  border-radius: 1.5rem;\n  border: 2px solid white;\n}\n\n.btn \n{\n  border: none;\n  cursor: pointer;\n  transform: translateY(-50%);\n  position: absolute;\n  background: #ffffff;\n}\n.btn.previous \n{\n  top: 40%;\n  left: 0;\n}\n.btn.next \n{\n  top: 40%;\n  right: 0;\n}\n* \n{\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nbody \n{\n  height: 100vh;\n  background-color: #161616;\n}\np\n{\n  font-size: 30px;\n  color: white;\n  text-align: center;\n}\n.cont\n{\n  display: flex;\n  flex-direction: row;\n}\n.image-container \n{\n  position: relative;\n  text-align: center;\n  margin-right: 100px;\n  width: 100%;\n  height: auto;\n}\n\n.image-container img \n{\n  margin-left: 80px;\n  margin-top: 50px;\n  border-radius: 1.5rem;\n  border: 2px solid white;\n}\n\n.image-caption \n{\n  position: relative; \n  text-align: center;\n  margin-left: 80px;\n  margin-top: 10px; \n  color: white;\n}\n.search-box\n{\n  position: absolute;\n  top: 47%;\n  right: 10%;\n  transform: translate(-10%,-50%);\n  height: 60px;\n  background: #ffffff;\n  line-height:40px;\n  padding: 10px;\n  border-radius: 60px;\n}\n.search-input\n{\n  background: #ffffff;\n  color: #296B6A;\n  outline: none;\n  border: none;\n  width: 0px;\n  float: left;\n  font-size:14px;\n  transition: 0.6s ease;\n  font-family:sans-serif;\n}\n.search-btn\n{\n  display:flex;\n  justify-content: center;\n  align-items: center;\n  text-decoration:none;\n  background: #ffffff;\n  padding: 12px;\n  border-radius: 50%;\n  float: right;\n  transition: 0.4s ease;\n}\n.search-box:hover > .search-input\n{\n  width: 240px;\n  margin: 0px 8px;\n}\n.search-input:focus\n{\n  width: 240px;\n  margin: 0px 8px;\n}\n.search-box:hover > .search-btn\n{\n  background: #296B6A;\n}\n.icon \n{\n  position: absolute;\n  top: 10%;\n  right: 3%;\n  background: #ffffff;\n  width: 63px;\n  height: 60px;\n  border-radius: 57%;\n  display:flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.dropdown \n{\n  display: none; \n  position: absolute;\n  top: 100%;\n  right: 0;\n  background: #296B6A;\n  width: 150px; \n  border-radius: 10px;\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n  z-index: 1;\n  transition: opacity 0.3s ease, visibility 0.3s ease;\n}\n\n.icon:hover .dropdown \n{\n  display: block;\n}\n\n.dropdown ul \n{\n  list-style: none;\n  padding: 0;\n  margin: 0;\n  flex-direction: column;\n}\n\n.dropdown li \n{\n  padding: 10px;\n  text-align: center;\n}\n\n.dropdown a \n{\n  text-decoration: none;\n  color: #333;\n  display: block;\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Zusmmen/wwwroot/css/site.css b/Zusmmen/wwwroot/css/site.css
+--- a/Zusmmen/wwwroot/css/site.css	(revision 696d215ba3704552be11c3ec95bbf9acbde1ecaf)
++++ b/Zusmmen/wwwroot/css/site.css	(date 1705614328731)
+@@ -22,7 +22,7 @@
+ }
+ 
+ body {
+-  margin-bottom: 60px;
++  
+   background-color: #161616;
+   height: 100vh;
+   display: grid;
+@@ -76,49 +76,49 @@
+ {
+   transform: scaleX(1);
+ }
+-.slides-container 
++.btn
++{
++  position: absolute;
++  transform: translateY(-50%);
++  background-color: #ffffff;
++  cursor: pointer;
++}
++.btn.previous
++{
++  top: 40%;
++  left: 0;
++}
++.btn.next
++{
++  top: 40%;
++  right: 0;
++}
++.slides-container
+ {
+   width: 23vw;
+   height: 55vh;
+-  display: flex;
++  display: grid;
+   position: relative;
+ }
+-.slide 
++.slide
+ {
+   display: flex;
+-  margin-right: 10px; 
++  margin-right: 10px;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   transition: transform 800ms ease-in-out;
+ }
+ 
+-.slide img 
++.slide img
+ {
+-  width: 90%;
+-  height: 90%;
++  width: 100%;
++  height: 100%;
+   border-radius: 1.5rem;
+   border: 2px solid white;
+ }
+ 
+-.btn 
+-{
+-  border: none;
+-  cursor: pointer;
+-  transform: translateY(-50%);
+-  position: absolute;
+-  background: #ffffff;
+-}
+-.btn.previous 
+-{
+-  top: 40%;
+-  left: 0;
+-}
+-.btn.next 
+-{
+-  top: 40%;
+-  right: 0;
+-}
++
+ * 
+ {
+   margin: 0;
+@@ -133,6 +133,7 @@
+ }
+ p
+ {
++  padding-top: 20px;
+   font-size: 30px;
+   color: white;
+   text-align: center;
+@@ -153,7 +154,7 @@
+ 
+ .image-container img 
+ {
+-  margin-left: 80px;
++  margin-left: 65px;
+   margin-top: 50px;
+   border-radius: 1.5rem;
+   border: 2px solid white;
+@@ -163,7 +164,7 @@
+ {
+   position: relative; 
+   text-align: center;
+-  margin-left: 80px;
++  margin-left: 65px;
+   margin-top: 10px; 
+   color: white;
+ }
+Index: Zusmmen/obj/Zusmmen.csproj.nuget.dgspec.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\n  \"format\": 1,\n  \"restore\": {\n    \"/home/yurii/RiderProjects/Zusammen/Zusmmen/Zusmmen.csproj\": {}\n  },\n  \"projects\": {\n    \"/home/yurii/RiderProjects/Zusammen/Zusmmen/Zusmmen.csproj\": {\n      \"version\": \"1.0.0\",\n      \"restore\": {\n        \"projectUniqueName\": \"/home/yurii/RiderProjects/Zusammen/Zusmmen/Zusmmen.csproj\",\n        \"projectName\": \"Zusmmen\",\n        \"projectPath\": \"/home/yurii/RiderProjects/Zusammen/Zusmmen/Zusmmen.csproj\",\n        \"packagesPath\": \"/home/yurii/.nuget/packages/\",\n        \"outputPath\": \"/home/yurii/RiderProjects/Zusammen/Zusmmen/obj/\",\n        \"projectStyle\": \"PackageReference\",\n        \"configFilePaths\": [\n          \"/home/yurii/.nuget/NuGet/NuGet.Config\"\n        ],\n        \"originalTargetFrameworks\": [\n          \"net8.0\"\n        ],\n        \"sources\": {\n          \"https://api.nuget.org/v3/index.json\": {}\n        },\n        \"frameworks\": {\n          \"net8.0\": {\n            \"targetAlias\": \"net8.0\",\n            \"projectReferences\": {}\n          }\n        },\n        \"warningProperties\": {\n          \"warnAsError\": [\n            \"NU1605\"\n          ]\n        }\n      },\n      \"frameworks\": {\n        \"net8.0\": {\n          \"targetAlias\": \"net8.0\",\n          \"dependencies\": {\n            \"Microsoft.EntityFrameworkCore\": {\n              \"target\": \"Package\",\n              \"version\": \"[8.0.1, )\"\n            },\n            \"Npgsql.EntityFrameworkCore.PostgreSQL\": {\n              \"target\": \"Package\",\n              \"version\": \"[8.0.0, )\"\n            },\n            \"QueryFirst.CoreLib\": {\n              \"target\": \"Package\",\n              \"version\": \"[0.0.4, )\"\n            },\n            \"System.Data.SqlClient\": {\n              \"target\": \"Package\",\n              \"version\": \"[4.8.6, )\"\n            }\n          },\n          \"imports\": [\n            \"net461\",\n            \"net462\",\n            \"net47\",\n            \"net471\",\n            \"net472\",\n            \"net48\",\n            \"net481\"\n          ],\n          \"assetTargetFallback\": true,\n          \"warn\": true,\n          \"frameworkReferences\": {\n            \"Microsoft.AspNetCore.App\": {\n              \"privateAssets\": \"none\"\n            },\n            \"Microsoft.NETCore.App\": {\n              \"privateAssets\": \"all\"\n            }\n          },\n          \"runtimeIdentifierGraphPath\": \"/home/yurii/.dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json\"\n        }\n      }\n    }\n  }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Zusmmen/obj/Zusmmen.csproj.nuget.dgspec.json b/Zusmmen/obj/Zusmmen.csproj.nuget.dgspec.json
+--- a/Zusmmen/obj/Zusmmen.csproj.nuget.dgspec.json	(revision 696d215ba3704552be11c3ec95bbf9acbde1ecaf)
++++ b/Zusmmen/obj/Zusmmen.csproj.nuget.dgspec.json	(date 1705601749703)
+@@ -1,25 +1,26 @@
+ {
+   "format": 1,
+   "restore": {
+-    "/home/yurii/RiderProjects/Zusammen/Zusmmen/Zusmmen.csproj": {}
++    "/Users/valeriya/RiderProjects/Zusammen/Zusmmen/Zusmmen.csproj": {}
+   },
+   "projects": {
+-    "/home/yurii/RiderProjects/Zusammen/Zusmmen/Zusmmen.csproj": {
++    "/Users/valeriya/RiderProjects/Zusammen/Zusmmen/Zusmmen.csproj": {
+       "version": "1.0.0",
+       "restore": {
+-        "projectUniqueName": "/home/yurii/RiderProjects/Zusammen/Zusmmen/Zusmmen.csproj",
++        "projectUniqueName": "/Users/valeriya/RiderProjects/Zusammen/Zusmmen/Zusmmen.csproj",
+         "projectName": "Zusmmen",
+-        "projectPath": "/home/yurii/RiderProjects/Zusammen/Zusmmen/Zusmmen.csproj",
+-        "packagesPath": "/home/yurii/.nuget/packages/",
+-        "outputPath": "/home/yurii/RiderProjects/Zusammen/Zusmmen/obj/",
++        "projectPath": "/Users/valeriya/RiderProjects/Zusammen/Zusmmen/Zusmmen.csproj",
++        "packagesPath": "/Users/valeriya/.nuget/packages/",
++        "outputPath": "/Users/valeriya/RiderProjects/Zusammen/Zusmmen/obj/",
+         "projectStyle": "PackageReference",
+         "configFilePaths": [
+-          "/home/yurii/.nuget/NuGet/NuGet.Config"
++          "/Users/valeriya/.nuget/NuGet/NuGet.Config"
+         ],
+         "originalTargetFrameworks": [
+           "net8.0"
+         ],
+         "sources": {
++          "/usr/local/share/dotnet/library-packs": {},
+           "https://api.nuget.org/v3/index.json": {}
+         },
+         "frameworks": {
+@@ -74,7 +75,7 @@
+               "privateAssets": "all"
+             }
+           },
+-          "runtimeIdentifierGraphPath": "/home/yurii/.dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
++          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+         }
+       }
+     }
+Index: Zusmmen/obj/Debug/net8.0/Zusmmen.AssemblyInfo.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>//------------------------------------------------------------------------------\n// <auto-generated>\n//     This code was generated by a tool.\n//\n//     Changes to this file may cause incorrect behavior and will be lost if\n//     the code is regenerated.\n// </auto-generated>\n//------------------------------------------------------------------------------\n\nusing System;\nusing System.Reflection;\n\n[assembly: System.Reflection.AssemblyCompanyAttribute(\"Zusmmen\")]\n[assembly: System.Reflection.AssemblyConfigurationAttribute(\"Debug\")]\n[assembly: System.Reflection.AssemblyFileVersionAttribute(\"1.0.0.0\")]\n[assembly: System.Reflection.AssemblyInformationalVersionAttribute(\"1.0.0\")]\n[assembly: System.Reflection.AssemblyProductAttribute(\"Zusmmen\")]\n[assembly: System.Reflection.AssemblyTitleAttribute(\"Zusmmen\")]\n[assembly: System.Reflection.AssemblyVersionAttribute(\"1.0.0.0\")]\n\n// Generated by the MSBuild WriteCodeFragment class.\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Zusmmen/obj/Debug/net8.0/Zusmmen.AssemblyInfo.cs b/Zusmmen/obj/Debug/net8.0/Zusmmen.AssemblyInfo.cs
+--- a/Zusmmen/obj/Debug/net8.0/Zusmmen.AssemblyInfo.cs	(revision 696d215ba3704552be11c3ec95bbf9acbde1ecaf)
++++ b/Zusmmen/obj/Debug/net8.0/Zusmmen.AssemblyInfo.cs	(date 1705601749897)
+@@ -13,7 +13,7 @@
+ [assembly: System.Reflection.AssemblyCompanyAttribute("Zusmmen")]
+ [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+ [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
++[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+696d215ba3704552be11c3ec95bbf9acbde1ecaf")]
+ [assembly: System.Reflection.AssemblyProductAttribute("Zusmmen")]
+ [assembly: System.Reflection.AssemblyTitleAttribute("Zusmmen")]
+ [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+Index: Zusmmen/obj/rider.project.restore.info
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>17052351855885786
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Zusmmen/obj/rider.project.restore.info b/Zusmmen/obj/rider.project.restore.info
+--- a/Zusmmen/obj/rider.project.restore.info	(revision 696d215ba3704552be11c3ec95bbf9acbde1ecaf)
++++ b/Zusmmen/obj/rider.project.restore.info	(date 1705604888161)
+@@ -1,1 +1,1 @@
+-17052351855885786
+\ No newline at end of file
++17056017497039730
+\ No newline at end of file
