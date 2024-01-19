@@ -43,7 +43,7 @@ public class ZusammenDbController : Controller
     {
         // Get all films where name contains specified value and convert it to list.
         var film = await _context.films.
-            Where(e => e.name.Contains(name, StringComparison.CurrentCultureIgnoreCase)).
+            Where(e => EF.Functions.Like(e.name.ToLower(), $"%{name.ToLower()}%")).
             ToListAsync();
         if (film.Count == 0)
         {
@@ -71,10 +71,11 @@ public class ZusammenDbController : Controller
         return room;
     }
 
+    // Метод додавання нової кімнати до бази даних.
     [HttpPost]
     public async Task<IActionResult> CreateRoom(rooms room)
     {
-        
+        // Автоматичне інкременування id кімнати.
         room.id = _context.rooms.Last().id+1;
         _context.rooms.Add(room);
         await _context.SaveChangesAsync();
