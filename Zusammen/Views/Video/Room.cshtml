@@ -1,0 +1,20 @@
+@using System.Net
+@model Zusammen.Models.RoomAndFilm
+
+@{
+    ViewBag.Name = "Room";
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+<h2 id="film-name">@Model.Room.name </h2>
+<input id="hidded" value="@Model.FilmPath"></input>
+<div>
+    <div class="video-container">
+        <video id="film-video" src='' preload="auto" autoplay="autoplay" controls="controls">
+        </video>
+    </div>
+    <button id="start">Start video</button>
+</div>
+<script src = "~/lib/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/videoRecieve.js"></script>
+

@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+@Html.BeginForm("Room", "Video", new{roomId = 1}){
+<div class="video-container">
+    <button id="send-to-room">Go to room</button>
+</div>
+}
+
