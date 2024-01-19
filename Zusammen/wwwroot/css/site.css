@@ -42,6 +42,10 @@ body {
 {
   background-color: #161616;
 }
+.container-logo
+{
+  margin-left: 0;
+}
 .navbar
 {
   background-color: #161616;
@@ -108,6 +112,7 @@ ul
   height: 55vh;
   display: grid;
   position: relative;
+  margin-left: -62px;
 }
 
 .slide {
@@ -220,7 +225,7 @@ p
 .icon 
 {
   position: absolute;
-  top: 10%;
+  top: 15%;
   right: 3%;
   background: #ffffff;
   width: 63px;
