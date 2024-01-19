@@ -8,7 +8,353 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcc3dd6e-a107-4c52-82d1-39af79da25ea" name="Changes" comment="Add streaming video. Connected the signalr.js library" />
+    <list default="true" id="dcc3dd6e-a107-4c52-82d1-39af79da25ea" name="Changes" comment="Add film and room pages. Moved images to img directory.">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Zusmmen/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/Hubs/VideoHub.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/bin/Debug/net8.0/Zusammen.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/bin/Debug/net8.0/Zusammen.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/obj/Debug/net8.0/Zusmmen.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/obj/rider.project.restore.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/js/videoRecieve.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/browser/signalr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/browser/signalr.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/browser/signalr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/browser/signalr.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/AbortController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/AbortController.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/AccessTokenHttpClient.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/AccessTokenHttpClient.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/DefaultHttpClient.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/DefaultHttpClient.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/DefaultReconnectPolicy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/DefaultReconnectPolicy.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/DynamicImports.browser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/DynamicImports.browser.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/DynamicImports.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/DynamicImports.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/Errors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/Errors.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/FetchHttpClient.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/FetchHttpClient.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/HandshakeProtocol.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/HandshakeProtocol.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/HeaderNames.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/HeaderNames.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/HttpClient.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/HttpClient.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/HttpConnection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/HttpConnection.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/HubConnection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/HubConnection.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/HubConnectionBuilder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/HubConnectionBuilder.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/IConnection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/IConnection.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/IHttpConnectionOptions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/IHttpConnectionOptions.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/IHubProtocol.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/IHubProtocol.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/ILogger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/ILogger.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/IRetryPolicy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/IRetryPolicy.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/IStatefulReconnectOptions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/IStatefulReconnectOptions.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/ITransport.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/ITransport.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/JsonHubProtocol.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/JsonHubProtocol.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/Loggers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/Loggers.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/LongPollingTransport.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/LongPollingTransport.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/MessageBuffer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/MessageBuffer.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/Polyfills.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/Polyfills.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/ServerSentEventsTransport.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/ServerSentEventsTransport.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/Stream.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/Stream.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/Subject.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/Subject.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/TextMessageFormat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/TextMessageFormat.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/Utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/Utils.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/WebSocketTransport.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/WebSocketTransport.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/XhrHttpClient.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/XhrHttpClient.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/browser-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/browser-index.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/cjs/index.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/AbortController.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/AbortController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/AbortController.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/AccessTokenHttpClient.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/AccessTokenHttpClient.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/AccessTokenHttpClient.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/DefaultHttpClient.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/DefaultHttpClient.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/DefaultHttpClient.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/DefaultReconnectPolicy.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/DefaultReconnectPolicy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/DefaultReconnectPolicy.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/DynamicImports.browser.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/DynamicImports.browser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/DynamicImports.browser.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/DynamicImports.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/DynamicImports.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/DynamicImports.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/Errors.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/Errors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/Errors.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/FetchHttpClient.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/FetchHttpClient.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/FetchHttpClient.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/HandshakeProtocol.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/HandshakeProtocol.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/HandshakeProtocol.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/HeaderNames.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/HeaderNames.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/HeaderNames.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/HttpClient.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/HttpClient.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/HttpClient.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/HttpConnection.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/HttpConnection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/HttpConnection.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/HubConnection.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/HubConnection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/HubConnection.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/HubConnectionBuilder.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/HubConnectionBuilder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/HubConnectionBuilder.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/IConnection.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/IConnection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/IConnection.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/IHttpConnectionOptions.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/IHttpConnectionOptions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/IHttpConnectionOptions.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/IHubProtocol.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/IHubProtocol.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/IHubProtocol.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/ILogger.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/ILogger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/ILogger.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/IRetryPolicy.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/IRetryPolicy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/IRetryPolicy.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/IStatefulReconnectOptions.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/IStatefulReconnectOptions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/IStatefulReconnectOptions.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/ITransport.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/ITransport.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/ITransport.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/JsonHubProtocol.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/JsonHubProtocol.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/JsonHubProtocol.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/Loggers.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/Loggers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/Loggers.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/LongPollingTransport.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/LongPollingTransport.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/LongPollingTransport.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/MessageBuffer.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/MessageBuffer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/MessageBuffer.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/Polyfills.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/Polyfills.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/Polyfills.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/ServerSentEventsTransport.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/ServerSentEventsTransport.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/ServerSentEventsTransport.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/Stream.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/Stream.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/Stream.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/Subject.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/Subject.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/Subject.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/TextMessageFormat.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/TextMessageFormat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/TextMessageFormat.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/Utils.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/Utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/Utils.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/WebSocketTransport.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/WebSocketTransport.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/WebSocketTransport.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/XhrHttpClient.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/XhrHttpClient.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/XhrHttpClient.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/browser-index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/browser-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/browser-index.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/esm/index.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/webworker/signalr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/webworker/signalr.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/webworker/signalr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/dist/webworker/signalr.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/AbortController.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/AccessTokenHttpClient.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/DefaultHttpClient.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/DefaultReconnectPolicy.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/DynamicImports.browser.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/DynamicImports.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/Errors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/FetchHttpClient.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/HandshakeProtocol.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/HeaderNames.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/HttpClient.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/HttpConnection.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/HubConnection.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/HubConnectionBuilder.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/IConnection.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/IHttpConnectionOptions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/IHubProtocol.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/ILogger.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/IRetryPolicy.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/IStatefulReconnectOptions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/ITransport.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/JsonHubProtocol.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/Loggers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/LongPollingTransport.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/MessageBuffer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/Polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/ServerSentEventsTransport.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/Stream.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/Subject.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/TextMessageFormat.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/Utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/WebSocketTransport.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/XhrHttpClient.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/browser-index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/signalr/src/third-party-notices.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Zusmmen/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Zusmmen/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Zusmmen/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Zusmmen/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/Context/PostgresDBContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/Context/PostgresDBContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/Controllers/StreamController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/Controllers/StreamController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/Controllers/VideoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/Controllers/VideoController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/Controllers/ZusammenDbController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/Controllers/ZusammenDbController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/Models/ErrorViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/Models/ErrorViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/Models/ZusammenDbModels.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/Models/ZusammenDbModels.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/Src/VideoStream.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/Src/VideoStream.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/Views/Home/FilmView.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/Views/Home/FilmView.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/Views/Home/Privacy.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/Views/Home/Privacy.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/Views/Shared/Error.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/Views/Shared/Error.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/Views/Shared/_Layout.cshtml.css" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/Views/Shared/_Layout.cshtml.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/Views/Shared/_ValidationScriptsPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/Views/Shared/_ValidationScriptsPartial.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/Views/Video/Room.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/Views/Video/Room.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/Views/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/Views/_ViewImports.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/Views/_ViewStart.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/Views/_ViewStart.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/Web.config" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/Web.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/Zusmmen.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/Zusammen.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/obj/Debug/net8.0/Zusmmen.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/obj/Debug/net8.0/Zusmmen.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/obj/Debug/net8.0/Zusmmen.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/obj/Debug/net8.0/Zusmmen.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/obj/Debug/net8.0/Zusmmen.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/obj/Debug/net8.0/Zusmmen.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/obj/Debug/net8.0/Zusmmen.GlobalUsings.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/obj/Debug/net8.0/Zusmmen.RazorAssemblyInfo.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/obj/Debug/net8.0/Zusmmen.RazorAssemblyInfo.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/obj/Debug/net8.0/Zusmmen.RazorAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/obj/Debug/net8.0/Zusmmen.RazorAssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/obj/Debug/net8.0/Zusmmen.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/obj/Debug/net8.0/Zusmmen.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/obj/Zusmmen.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/obj/Zusmmen.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/obj/Zusmmen.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/obj/Zusmmen.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/obj/Zusmmen.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/obj/Zusmmen.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/obj/rider.project.restore.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/img/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/img/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/img/film1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/img/film1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/img/film2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/img/film2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/img/film3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/img/film3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/img/image1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/img/image1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/img/image2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/img/image2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/img/image3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/img/image3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/img/image4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/img/image4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/img/left.ico" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/img/left.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/img/right.ico" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/img/right.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/img/search.ico" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/img/search.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/img/user.ico" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/img/user.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/js/site.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/jquery-validation/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/jquery-validation/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/jquery-validation/dist/additional-methods.js" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/jquery-validation/dist/additional-methods.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/jquery-validation/dist/jquery.validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/jquery-validation/dist/jquery.validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/jquery/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/jquery/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/jquery/dist/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/jquery/dist/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/jquery/dist/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/jquery/dist/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/lib/jquery/dist/jquery.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/lib/jquery/dist/jquery.min.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zusmmen/wwwroot/videos/video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/Zusammen/wwwroot/videos/video.mp4" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,7 +455,7 @@
       <workItem from="1705491299154" duration="17772000" />
       <workItem from="1705578550844" duration="3920000" />
       <workItem from="1705599879927" duration="2617000" />
-      <workItem from="1705603163228" duration="25533000" />
+      <workItem from="1705603163228" duration="24224000" />
     </task>
     <task id="LOCAL-00001" summary="Add connection to database">
       <option name="closed" value="true" />
@@ -127,15 +473,7 @@
       <option name="project" value="LOCAL" />
       <updated>1705614571508</updated>
     </task>
-    <task id="LOCAL-00003" summary="Add streaming video. Connected the signalr.js library">
-      <option name="closed" value="true" />
-      <created>1705630607345</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1705630607346</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +484,6 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Add connection to database" />
     <MESSAGE value="Add film and room pages. Moved images to img directory." />
-    <MESSAGE value="Add streaming video. Connected the signalr.js library" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add streaming video. Connected the signalr.js library" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add film and room pages. Moved images to img directory." />
   </component>
 </project>
