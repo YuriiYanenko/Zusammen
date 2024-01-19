@@ -5,7 +5,8 @@
 <div class="text-center">
   <div class="slides-container">
       <div class="slide" data-slide>
-          <img src="../img/image1.png ">
+          @Html.BeginForm("FilmView", "Home", new{filmId = 2})
+          <button><img src="../img/image1.png "></button>
       </div>
       <div class="slide" data-slide>
           <img src="../img/image2.png" alt="Image">
