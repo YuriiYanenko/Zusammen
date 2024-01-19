@@ -1,10 +1,10 @@
-﻿@{
+﻿@using Google.Protobuf.WellKnownTypes
+@{
     ViewData["Title"] = "Privacy Policy";
 }
+@Html.BeginForm("Room", "Video", FormMethod.Get){
 <h1>@ViewData["Title"]</h1>
-@Html.BeginForm("Room", "Video", new{roomId = 1}){
-<div class="video-container">
-    <button id="send-to-room">Go to room</button>
-</div>
+<input type="text" id="roomId" name="roomId"/>
+<input type="submit" value="Go to room"/>
 }
 

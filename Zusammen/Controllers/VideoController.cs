@@ -22,7 +22,7 @@ public class VideoController : Controller
     }
     
     // Returns new View of room page.
-    [HttpPost]
+    [HttpGet]
     public IActionResult Room(int roomId)
     {
         var dbController = new ZusammenDbController(_dbContext);
@@ -33,7 +33,6 @@ public class VideoController : Controller
         var room = dbController.OpenRoomById(roomId);
         // Getting path to film video from room.
         var filmPath = dbController.GetFilmById(room.Result.Value.film_id);
-        
         activeRoom.Room = room.Result.Value;
         activeRoom.FilmPath = filmPath.Result.Value.video_path;
         

@@ -7,7 +7,8 @@
     Layout = "_Layout";
 }
 <h2 id="film-name">@Model.Room.name </h2>
-<input id="hidded" value="@Model.FilmPath"></input>
+<input type="text" id="path" value="@Model.FilmPath"/>
+<input type="number" id="roomId" value="@Model.Room.id"/>
 <div>
     <div class="video-container">
         <video id="film-video" src='' preload="auto" autoplay="autoplay" controls="controls">
@@ -17,4 +18,3 @@
 </div>
 <script src = "~/lib/signalr/dist/browser/signalr.js"></script>
 <script src="~/js/videoRecieve.js"></script>
-

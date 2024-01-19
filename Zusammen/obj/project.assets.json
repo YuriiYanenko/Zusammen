@@ -7969,11 +7969,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/yurii/RiderProjects/Zusammen/Zusmmen/Zusmmen.csproj",
-      "projectName": "Zusmmen",
-      "projectPath": "/home/yurii/RiderProjects/Zusammen/Zusmmen/Zusmmen.csproj",
+      "projectUniqueName": "/home/yurii/RiderProjects/Zusammen/Zusammen/Zusammen.csproj",
+      "projectName": "Zusammen",
+      "projectPath": "/home/yurii/RiderProjects/Zusammen/Zusammen/Zusammen.csproj",
       "packagesPath": "/home/yurii/.nuget/packages/",
-      "outputPath": "/home/yurii/RiderProjects/Zusammen/Zusmmen/obj/",
+      "outputPath": "/home/yurii/RiderProjects/Zusammen/Zusammen/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/yurii/.nuget/NuGet/NuGet.Config"

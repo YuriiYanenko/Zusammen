@@ -6,7 +6,7 @@ namespace Zusammen.Models;
 public class rooms
 {
     public int id { get; set; }
-    public char[] name { get; set; }
+    public string name { get; set; }
     public int admin_id { get; set; }
     public int[] members_id { get; set; }
     public int film_id { get; set; }
