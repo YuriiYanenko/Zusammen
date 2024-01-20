@@ -1,20 +1,27 @@
 using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Zusammen.Models;
 
-// Rooms table object model. 
+// Rooms table object model.
+[Table("rooms")]
 public class rooms
 {
+    [Key]
     public int id { get; set; }
     public string name { get; set; }
     public int admin_id { get; set; }
     public int[] members_id { get; set; }
+
     public int film_id { get; set; }
 }
 
 // Films table object model.
+[Table("films")]
 public class films
 {
+    [Key]
     public int id { get; set; }
     public string name { get; set; }
     public string[] genre { get; set; }
