@@ -24,12 +24,16 @@
             @using (Html.BeginForm("FilmSearch", "Home", FormMethod.Post))
             {
                 <div class="search-box">
-                    <input type="text" placeholder="Пошук" name="searchName" class="search-input">
+                    <input type="text" placeholder="Пошук" name="searchName" class="search-input" id="siteSearchInput">
                     <a href="#" class="search-btn">
                         <img src="../img/search.ico " style="width: 20px; height: 20px;">
                     </a>
                 </div>
             }
+            <div id="results"></div>
+            
+            <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+            <script src="~/js/searchSite.js"></script>
             <div class="icon">
                 <img src="../img/user.ico " style="width: 20px; height: 20px;">
                  <div class="dropdown">
