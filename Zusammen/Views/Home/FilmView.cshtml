@@ -6,62 +6,41 @@
 }
 @* C# code insertion. Convert array of genres attribute to string *@
 @{
-    //Втягуємо список жанрів
+    //Витягуємо список жанрів
     string[] genresdata = @Model.genre;
     string genres = "";
-    for (int i = 0; i < genresdata.Length; i++)
+    foreach (var item in genresdata)
     {
-        if (i == genresdata.Length - 1)
-        {
-            genres += genresdata[i] + " ";  
-        }
-        else
-        {
-            genres += genresdata[i] + ", ";
-        }
+        genres += item + ", ";
     }
-    //Втягуємо cписок акторів 
+    genres = genres.Remove(genres.LastIndexOf(','));
+    //Витягуємо cписок акторів 
     string[] actorsdata = @Model.actors;
     string actors = "";
-    for (int i = 0; i < actorsdata.Length; i++)
+    foreach (var item in actorsdata)
     {
-        if (i == actorsdata.Length - 1)
-        {
-            actors += actorsdata[i] + " ";  
-        }
-        else
-        {
-            actors += actorsdata[i] + ", ";
-        }
+        actors += item + ", ";
     }
-    //Втягуємо cписок режесерів 
+    actors = actors.Remove(actors.LastIndexOf(','));
+    //Витягуємо cписок режесерів 
     string[] directorsdata = @Model.director;
     string directors = "";
-    for (int i = 0; i < directorsdata.Length; i++)
+    foreach (var item in directorsdata)
     {
-        if (i == directorsdata.Length - 1)
-        {
-            directors += directorsdata[i] + " ";  
-        }
-        else
-        {
-            directors += directorsdata[i] + ", ";
-        }
+        directors += item + ", ";
     }
-    //Втягуємо cписок країн 
+    directors = directors.Remove(directors.LastIndexOf(','));
+    //Витягуємо cписок країн 
     string[] countrydata = @Model.country;
     string country = "";
-    for (int i = 0; i < countrydata.Length; i++)
+    foreach (var item in countrydata)
     {
-        if (i == countrydata.Length - 1)
-        {
-            country += countrydata[i] + " ";  
-        }
-        else
-        {
-            country += countrydata[i] + ", ";
-        }
+        country += item + ", ";
     }
+    country = country.Remove(country.LastIndexOf(','));
+    //Перетворюєми хвилини у формат (години:хвилини)
+    int timedata = @Model.time;
+    string time = $"{timedata / 60}:{timedata % 60}";
 }
 <div class="text-center">
     <div class="slides-container">
@@ -104,7 +83,7 @@
                 <p class="basicsymbols">Режисер: <span class="bluesymbols">@directors</span></p> <!--Тут передається director-->
                 <p class="basicsymbols">Актори: <span class="bluesymbols">@actors</span></p> 
                 <!--Тут передається actors-->
-                <p class="basicsymbols">Тривалість: <span class="bluesymbols">@Model.time хвилин (1:50)</span></p> <!--Тут передається time-->
+                <p class="basicsymbols">Тривалість: <span class="bluesymbols">@Model.time хвилин (@time)</span></p> <!--Тут передається time-->
                 <p class="basicsymbols">Мова озвучки: <span class="bluesymbols">@Model.voice</span></p> <!--Тут передається voice-->
                 <h3 class="h3films"> Про фільм "@Model.name"</h3>  <!--Тут передається name та description-->
                 <p style="text-indent: 15px;" class="basicsymbols">@Model.description</p>
