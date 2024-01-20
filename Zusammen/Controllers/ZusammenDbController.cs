@@ -73,14 +73,16 @@ public class ZusammenDbController : Controller
 
     // Метод додавання нової кімнати до бази даних.
     [HttpPost]
-    public async Task<IActionResult> CreateRoom(string nameOfRoom, int filmId)
+    public async Task<IActionResult> CreateRoom(int filmId)
     {
+        var film = GetFilmById(filmId).Result.Value;
         var roomList = await _context.rooms.ToListAsync();
         var lastRoom = roomList[roomList.Count - 1];
         var room = new rooms();
         // Автоматичне інкременування id кімнати.
+        room.name = film.name;
         room.id = lastRoom.id +1 ;
-        room.name = nameOfRoom;
+
         room.admin_id = 1;
         room.film_id = filmId;
         room.members_id = new[] { 1 };
