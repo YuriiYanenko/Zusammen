@@ -8,16 +8,14 @@
 }
 
 <h2 id="film-name">@Model.Room.name </h2>
-
-<div>
-    <div class="video-container">
-       
-        <video id="film-video" src='' preload="auto" autoplay="autoplay" controls="controls">
-        </video>
+<div class="flexdivrow">
+    <div style="width: 60%; height: 600px; background-color: rgb(88, 87, 87);">
+        <video id="film-video" src='' preload="auto" autoplay="autoplay" controls="controls"></video>
     </div>
-    <button id="start">Start video</button>
+    <div style="width: 40%; height: 600px; background-color: rgb(3, 91, 93);">
+    </div>
 </div>
-
+<button id="start">Start video</button>
 <script src = "~/lib/signalr/dist/browser/signalr.js"></script>
 
 <script type="text/javascript">
