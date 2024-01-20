@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hjwNY9mYzAvIsgiNPhFMIKC5F4tydnA5otXA6PsrrsI=",
+  "Hash": "0uQEuIE3++ZWk3wAeoq6TILlTnC70dpTKfYnBjMZgUI=",
   "Source": "Zusammen",
   "BasePath": "_content/Zusammen",
   "Mode": "Default",
@@ -74,12 +74,12 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\Projects\\Zusammen\\Zusammen\\wwwroot\\img\\МонахиняII.jpg",
+      "Identity": "D:\\Projects\\Zusammen\\Zusammen\\wwwroot\\img\\dakend.jpg",
       "SourceId": "Zusammen",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\Zusammen\\Zusammen\\wwwroot\\",
       "BasePath": "_content/Zusammen",
-      "RelativePath": "img/МонахиняII.jpg",
+      "RelativePath": "img/dakend.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -90,7 +90,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\МонахиняII.jpg"
+      "OriginalItemSpec": "wwwroot\\img\\dakend.jpg"
     },
     {
       "Identity": "D:\\Projects\\Zusammen\\Zusammen\\wwwroot\\img\\favicon.ico",
@@ -148,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Napoleon.jpg"
+    },
+    {
+      "Identity": "D:\\Projects\\Zusammen\\Zusammen\\wwwroot\\img\\NunII.jpg",
+      "SourceId": "Zusammen",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Zusammen\\Zusammen\\wwwroot\\",
+      "BasePath": "_content/Zusammen",
+      "RelativePath": "img/NunII.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\NunII.jpg"
     },
     {
       "Identity": "D:\\Projects\\Zusammen\\Zusammen\\wwwroot\\img\\right.ico",

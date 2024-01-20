@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\img\\Napoleon.jpg"
     },
     {
+      "Id": "D:\\Projects\\Zusammen\\Zusammen\\wwwroot\\img\\NunII.jpg",
+      "PackagePath": "staticwebassets\\img\\NunII.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Zusammen\\Zusammen\\wwwroot\\img\\dakend.jpg",
+      "PackagePath": "staticwebassets\\img\\dakend.jpg"
+    },
+    {
       "Id": "D:\\Projects\\Zusammen\\Zusammen\\wwwroot\\img\\favicon.ico",
       "PackagePath": "staticwebassets\\img\\favicon.ico"
     },
@@ -31,10 +39,6 @@
     {
       "Id": "D:\\Projects\\Zusammen\\Zusammen\\wwwroot\\img\\user.ico",
       "PackagePath": "staticwebassets\\img\\user.ico"
-    },
-    {
-      "Id": "D:\\Projects\\Zusammen\\Zusammen\\wwwroot\\img\\МонахиняII.jpg",
-      "PackagePath": "staticwebassets\\img\\МонахиняII.jpg"
     },
     {
       "Id": "D:\\Projects\\Zusammen\\Zusammen\\wwwroot\\js\\site.js",
