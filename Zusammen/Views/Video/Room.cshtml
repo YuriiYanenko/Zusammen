@@ -1,20 +1,41 @@
-@using System.Net
+
 @model Zusammen.Models.RoomAndFilm
 
 @{
     ViewBag.Name = "Room";
-    ViewBag.Title = "title";
+    ViewBag.Title = "Room " + @Model.Room.name;
     Layout = "_Layout";
 }
+
 <h2 id="film-name">@Model.Room.name </h2>
-<input id="hidded" value="@Model.FilmPath"></input>
+
 <div>
     <div class="video-container">
+       
         <video id="film-video" src='' preload="auto" autoplay="autoplay" controls="controls">
         </video>
     </div>
     <button id="start">Start video</button>
 </div>
+
 <script src = "~/lib/signalr/dist/browser/signalr.js"></script>
+
+<script type="text/javascript">
+
+// Функція для отримання даних з моделі. Повертає об'єкт, який містить id кімнати та шлях до відео.
+function getModelData(){
+    
+    const roomId = @Model.Room.id;
+    const filmPath = "@Model.FilmPath";
+    
+    let modelInfo = {
+        id: parseInt(roomId),
+        videoPath: filmPath
+    };
+    
+    return modelInfo;
+}
+
+</script>
 <script src="~/js/videoRecieve.js"></script>
 

@@ -28,9 +28,11 @@ public class ZusammenDbController : Controller
     public async Task<ActionResult<films>> GetFilmById(int id)
     {   
         var film = await _context.films.FindAsync(id);
+        var notFoundFilm = new films();
+        notFoundFilm.id = 0;
         if (null == film)
         {
-            return NotFound();
+            return notFoundFilm;
         }
 
         return film;
@@ -41,7 +43,7 @@ public class ZusammenDbController : Controller
     {
         // Get all films where name contains specified value and convert it to list.
         var film = await _context.films.
-            Where(e => e.name.Contains(name, StringComparison.CurrentCultureIgnoreCase)).
+            Where(e => EF.Functions.Like(e.name.ToLower(), $"%{name.ToLower()}%")).
             ToListAsync();
         if (film.Count == 0)
         {
@@ -69,13 +71,31 @@ public class ZusammenDbController : Controller
         return room;
     }
 
+    // Метод додавання нової кімнати до бази даних.
     [HttpPost]
-    public async Task<IActionResult> CreateRoom(rooms room)
+    public async Task<IActionResult> CreateRoom(string nameOfRoom, int filmId)
     {
-        
-        room.id = _context.rooms.Last().id+1;
+        var roomList = await _context.rooms.ToListAsync();
+        var lastRoom = roomList[roomList.Count - 1];
+        var room = new rooms();
+        // Автоматичне інкременування id кімнати.
+        room.id = lastRoom.id +1 ;
+        room.name = nameOfRoom;
+        room.admin_id = 1;
+        room.film_id = filmId;
+        room.members_id = new[] { 1 };
         _context.rooms.Add(room);
         await _context.SaveChangesAsync();
-        return CreatedAtAction("OpenRoomById", new {roomId = room.id}, room);
+        return View("~/Views/Video/Room.cshtml", CreateCombinedTable(room).Result.Value);
+        //return CreatedAtAction("OpenRoomById", new {roomId = room.id}, room);
+    }
+
+    public async Task<ActionResult<RoomAndFilm>> CreateCombinedTable(rooms room)
+    {
+        RoomAndFilm roomAndFilm = new RoomAndFilm();
+        var filmPath = GetFilmById(room.film_id).Result.Value.video_path;
+        roomAndFilm.Room = room;
+        roomAndFilm.FilmPath = filmPath;
+        return roomAndFilm;
     }
 }

@@ -30,6 +30,14 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+
+    [HttpPost]
+    public IActionResult FilmSearch(string searchName)
+    {
+        var dbController = new ZusammenDbController(_context);
+        var findedFilms = dbController.GetFilmByName(searchName);
+        return View(findedFilms.Result.Value);
+    }
     
     [HttpPost]
     public IActionResult FilmView(int filmId)

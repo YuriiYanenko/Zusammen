@@ -39,6 +39,4 @@ public class VideoController : Controller
         
         return View(activeRoom);
     }
-
-    // Plays first film from queue.
 }
