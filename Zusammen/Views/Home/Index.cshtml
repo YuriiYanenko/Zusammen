@@ -11,7 +11,10 @@
           }
       </div>
       <div class="slide" data-slide>
-          <img src="../img/NunII.jpg" alt="Image">
+          @using (Html.BeginForm("FilmView", "Home", new { filmId = 1 }))
+          { 
+              <button><img src="../img/NunII.jpg" alt="Image"></button>
+          }
       </div>
       <div class="slide" data-slide>
           <img src="../img/image3.png" alt="Image">

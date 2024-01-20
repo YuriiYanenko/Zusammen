@@ -331,4 +331,12 @@ header{
   0px 0px 15px rgb(4, 199, 179);
   color: black;
 }
-
+.footer{
+  width: 100%;
+  height: 100px;
+}
+.footer-img{
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
