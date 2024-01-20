@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZIp5yFqqwK7xUhdg4WIvm4+43kUuG8Ta5wV0dVTGQug=",
+  "Hash": "gmIv7NGPtELABC9GTdXtSxrts5Y7Wls6x0t4XikEcjM=",
   "Source": "Zusammen",
   "BasePath": "_content/Zusammen",
   "Mode": "Default",
@@ -93,25 +93,6 @@
       "OriginalItemSpec": "wwwroot/img/МонахиняII.jpg"
     },
     {
-      "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/dakend.jpg",
-      "SourceId": "Zusammen",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/",
-      "BasePath": "_content/Zusammen",
-      "RelativePath": "img/dakend.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/dakend.jpg"
-    },
-    {
       "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/favicon.ico",
       "SourceId": "Zusammen",
       "SourceType": "Discovered",
@@ -186,6 +167,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/film3.png"
+    },
+    {
+      "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/footer.jpg",
+      "SourceId": "Zusammen",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/",
+      "BasePath": "_content/Zusammen",
+      "RelativePath": "img/footer.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/footer.jpg"
     },
     {
       "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/image1.png",

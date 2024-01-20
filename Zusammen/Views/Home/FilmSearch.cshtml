@@ -13,12 +13,13 @@
 @foreach(var item in Model)
 {
     var path = item.image_path;
+    var movie = item.name;
 <script>
 
     $("#search-result-list").append(
                 '<li>'+
                     '<img src="@path" alt="">'+
-                     '<span></span>' +
+                     '<span>@movie</span>' +
                 '</li>'
             );
             

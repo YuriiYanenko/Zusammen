@@ -17,10 +17,6 @@
       "PackagePath": "staticwebassets/img/NunII.jpg"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/dakend.jpg",
-      "PackagePath": "staticwebassets/img/dakend.jpg"
-    },
-    {
       "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/favicon.ico",
       "PackagePath": "staticwebassets/img/favicon.ico"
     },
@@ -35,6 +31,10 @@
     {
       "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/film3.png",
       "PackagePath": "staticwebassets/img/film3.png"
+    },
+    {
+      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/footer.jpg",
+      "PackagePath": "staticwebassets/img/footer.jpg"
     },
     {
       "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/image1.png",

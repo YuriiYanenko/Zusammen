@@ -6,7 +6,6 @@ $(document).ready(function () {
         $.ajax({
             url: 'ZusammenDb/GetFilms/',
             type: 'POST',
-            dataType: 'json',
             data: $(this).serialize(),
             success: function (data) {
                 displayResults(data);
