@@ -6,76 +6,117 @@
 }
 @* C# code insertion. Convert array of genres attribute to string *@
 @{
-    string[] data = @Model.genre;
+    //Втягуємо список жанрів
+    string[] genresdata = @Model.genre;
     string genres = "";
-    foreach (var item in data)
+    for (int i = 0; i < genresdata.Length; i++)
     {
-        genres += item + " ";
+        if (i == genresdata.Length - 1)
+        {
+            genres += genresdata[i] + " ";  
+        }
+        else
+        {
+            genres += genresdata[i] + ", ";
+        }
+    }
+    //Втягуємо cписок акторів 
+    string[] actorsdata = @Model.actors;
+    string actors = "";
+    for (int i = 0; i < actorsdata.Length; i++)
+    {
+        if (i == actorsdata.Length - 1)
+        {
+            actors += actorsdata[i] + " ";  
+        }
+        else
+        {
+            actors += actorsdata[i] + ", ";
+        }
+    }
+    //Втягуємо cписок режесерів 
+    string[] directorsdata = @Model.director;
+    string directors = "";
+    for (int i = 0; i < directorsdata.Length; i++)
+    {
+        if (i == directorsdata.Length - 1)
+        {
+            directors += directorsdata[i] + " ";  
+        }
+        else
+        {
+            directors += directorsdata[i] + ", ";
+        }
+    }
+    //Втягуємо cписок країн 
+    string[] countrydata = @Model.country;
+    string country = "";
+    for (int i = 0; i < countrydata.Length; i++)
+    {
+        if (i == countrydata.Length - 1)
+        {
+            country += countrydata[i] + " ";  
+        }
+        else
+        {
+            country += countrydata[i] + ", ";
+        }
     }
 }
-
-<h2 class="text-center" xmlns="http://www.w3.org/1999/html">@Model.name</h2>
-<div>
-    <p>Жанр: @genres</p>
-    <p style="text-align: center"><b>Про фільм</b></p>
-    <p>@Model.description</p>
-</div>
-<div>
-    <button>Додати до перегляду</button>
-</div>
 <div class="text-center">
-  <div class="slides-container">
-      <div class="slide" data-slide>
-          <img src="../img/image1.png ">
-      </div>
-      <div class="slide" data-slide>
-          <img src="../img/image2.png" alt="Image">
-      </div>
-      <div class="slide" data-slide>
-          <img src="../img/image3.png" alt="Image">
-      </div>
-      <div class="slide" data-slide>
-          <img src="../img/image4.png" alt="Image">
-      </div>
-  </div>
-  <button class="btn previous" data-button="previous">
-          <img src="../img/left.ico" style="width: 20px; height: 20px;">
-      </button>
-<button class="btn next" data-button="next">
-    <img src="../img/right.ico" style="width: 20px; height: 20px;">
-</button>
+    <div class="slides-container">
+        <div class="slide" data-slide>
+            <img src="../img/image1.png ">
+        </div>
+        <div class="slide" data-slide>
+            <img src="../img/image2.png" alt="Image">
+        </div>
+        <div class="slide" data-slide>
+            <img src="../img/image3.png" alt="Image">
+        </div>
+        <div class="slide" data-slide>
+            <img src="../img/image4.png" alt="Image">
+        </div>
+    </div>
+    <button class="btn previous" data-button="previous">
+        <img src="../img/left.ico" style="width: 20px; height: 20px;">
+    </button>
+    <button class="btn next" data-button="next">
+        <img src="../img/right.ico" style="width: 20px; height: 20px;">
+    </button>
 </div>
+<!-- -->
 <div class="flexdivrow">
     <div style="width: 30%;"> <!-- Тут буде div із жанрами (панель) --></div>
     <div class="filmesdetal">
         <div>
-            <h3 class="h3films">Монахиня II</h3><!--Тут передається name, тобто назва файлу-->
+            <h3 class="h3films">@Model.name</h3><!--Тут передається name, тобто назва файлу-->
         </div>
         <div class="flexdivrow">
             <div class="filmesdetal_img">
-                <img style="width: 100%; height: 100%;" src="МонахиняII.jpg" alt="Монахиня II"> <!--Тут передається img, тобто постер фільму-->
+                <img style="width: 100%; height: 100%;" src="../wwwroot/img/МонахиняII.jpg" alt="@Model.name"> <!--Тут передається img, тобто постер фільму-->
             </div>
             <div class="filmesdetal_data">
-                <p class="basicsymbols">Якість: <span class="bluesymbols">1080p</span></p><!--Тут передається quality-->
-                <p class="basicsymbols">Рік виходу: <span class="bluesymbols">2023 рік</span></p> <!--Тут передається year (2023)-->
-                <p class="basicsymbols">Країна: <span class="bluesymbols">США</span></p> <!--Тут передається country-->
-                <p class="basicsymbols">Жанр: <span class="bluesymbols">Детектив, Трилери, Жахи</span></p> <!--Тут передається genre-->
-                <p class="basicsymbols">Режисер: <span class="bluesymbols">Michael Chaves</span></p> <!--Тут передається director-->
-                <p class="basicsymbols">Актори: <span class="bluesymbols">Таісса Фарміґа, Йонас Блоке, Сторм Рейд, Анна Попплуелл, Бонні Ааронс, Katelyn Rose Downey</span></p> 
+                <p class="basicsymbols">Якість: <span class="bluesymbols">@Model.quality</span></p><!--Тут передається quality-->
+                <p class="basicsymbols">Рік виходу: <span class="bluesymbols">@Model.year рік</span></p> <!--Тут передається year (2023)-->
+                <p class="basicsymbols">Країна: <span class="bluesymbols">@country</span></p> <!--Тут передається country-->
+                <p class="basicsymbols">Жанр: <span class="bluesymbols">@genres</span></p> <!--Тут передається genre-->
+                <p class="basicsymbols">Режисер: <span class="bluesymbols">@directors</span></p> <!--Тут передається director-->
+                <p class="basicsymbols">Актори: <span class="bluesymbols">@actors</span></p> 
                 <!--Тут передається actors-->
-                <p class="basicsymbols">Тривалість: <span class="bluesymbols">110 хвилин (1:50)</span></p> <!--Тут передається time-->
-                <p class="basicsymbols">Мова озвучки: <span class="bluesymbols">Український дубляж</span></p> <!--Тут передається voice-->
-                <h3 class="h3films"> Про фільм "Монахиня II"</h3>  <!--Тут передається name та description-->
-                <p style="text-indent: 15px;" class="basicsymbols"> Продовження першої частини успішного фільму про пригоди сестри Ірен, яка зіткнулася зі злим демоном. Окуліст Грейс отримує трагічну звістку про смерть свого брата у віддаленому монастирі. За версією своїх наставників він наклав на себе руки. Але героїня не згодна з цим і вирушає до ченців, щоби самостійно з'ясувати причини загибелі брата. Після прибуття на місце Грейс починає відчувати несвідомий страх, який їй вселяють стіни монастиря, обстановка в келіях і виявляє, що в похмурих підземеллях ховається давнє зло. Але місцеві ченці не хочуть їй вірити і всіляко перешкоджають її спробам проникнути у підвал будівлі та переконатися у існуванні темних сил. Дівчина не звикла відступати і попрямувала до архіву для вивчення старовинних праць. Тут вона натрапила на зашифровані послання, які вдалося розшифрувати лише після розмов із черницями. Що ж таки вдалося з'ясувати Грейс і як загинув її брат, яке зло ховається під стінами храму.</p>
+                <p class="basicsymbols">Тривалість: <span class="bluesymbols">@Model.time хвилин (1:50)</span></p> <!--Тут передається time-->
+                <p class="basicsymbols">Мова озвучки: <span class="bluesymbols">@Model.voice</span></p> <!--Тут передається voice-->
+                <h3 class="h3films"> Про фільм "@Model.name"</h3>  <!--Тут передається name та description-->
+                <p style="text-indent: 15px;" class="basicsymbols">@Model.description</p>
             </div>
         </div>
+        <!-- CreateRoom, куди буде відправлений POST-запит -->
         @using (Html.BeginForm("CreateRoom", "ZusammenDb", FormMethod.Post))
         {
             <div>
                 @* <form method="post" action="your_post_endpoint.php"> *@
-                <!-- your_post_endpoint.php - URL, куди буде відправлений POST-запит -->
-                <input type="text" name="nameOfRoom" id="roomName">
-                <input type="hidden" name="filmId" value="1"></input>
+                <input type="text" name="nameOfRoom">
+                <input type="hidden" name="filmId" value="@Model.id"></input>
                 <!-- Перекід на строінку "Моя кімната" -->
                 <button class="buttonroom" type="submit" >Створити кімнату</button>
                 @* </form> *@
