@@ -1,0 +1,28 @@
+@model List<Zusammen.Models.films>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>title</h2>
+<div>
+    <ul id="search-result-list"></ul>
+</div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+@foreach(var item in Model)
+{
+    var path = item.image_path;
+<script>
+
+    $("#search-result-list").append(
+                '<li>'+
+                    '<img src="@path" alt="">'+
+                     '<span></span>' +
+                '</li>'
+            );
+            
+</script>
+}
+    
+        
