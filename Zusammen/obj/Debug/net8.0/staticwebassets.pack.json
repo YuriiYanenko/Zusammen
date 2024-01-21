@@ -9,6 +9,30 @@
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
+      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/Bird_Box.jpg",
+      "PackagePath": "staticwebassets/img/Bird_Box.jpg"
+    },
+    {
+      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/Casablanca.jpg",
+      "PackagePath": "staticwebassets/img/Casablanca.jpg"
+    },
+    {
+      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/Five_Nights_at_Freddy.jpg",
+      "PackagePath": "staticwebassets/img/Five_Nights_at_Freddy.jpg"
+    },
+    {
+      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/Furry_Vegnance.jpg",
+      "PackagePath": "staticwebassets/img/Furry_Vegnance.jpg"
+    },
+    {
+      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/Idiocracy.jpg",
+      "PackagePath": "staticwebassets/img/Idiocracy.jpg"
+    },
+    {
+      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/It.jpg",
+      "PackagePath": "staticwebassets/img/It.jpg"
+    },
+    {
       "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/Napoleon.jpg",
       "PackagePath": "staticwebassets/img/Napoleon.jpg"
     },
