@@ -104,10 +104,11 @@ ul
   right: 0;
 }
 .slides-container {
-  width: 22.5vw;
+  width: 20vw;
   height: 55vh;
   display: grid;
   position: relative;
+  margin-left: -70px;
 }
 
 .slide {

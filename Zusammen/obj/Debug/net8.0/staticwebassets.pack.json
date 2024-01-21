@@ -1221,12 +1221,36 @@
       "PackagePath": "staticwebassets/lib/signalr/src/third-party-notices.txt"
     },
     {
-      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/videos/Morning_motivation.mp4",
-      "PackagePath": "staticwebassets/videos/Morning_motivation.mp4"
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/videos/Bird.mp4",
+      "PackagePath": "staticwebassets/videos/Bird.mp4"
     },
     {
-      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/videos/video.mp4",
-      "PackagePath": "staticwebassets/videos/video.mp4"
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/videos/Casablanca.mp4",
+      "PackagePath": "staticwebassets/videos/Casablanca.mp4"
+    },
+    {
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/videos/FNaF.mp4",
+      "PackagePath": "staticwebassets/videos/FNaF.mp4"
+    },
+    {
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/videos/Furry.mp4",
+      "PackagePath": "staticwebassets/videos/Furry.mp4"
+    },
+    {
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/videos/Idiocracy.mp4",
+      "PackagePath": "staticwebassets/videos/Idiocracy.mp4"
+    },
+    {
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/videos/It.mp4",
+      "PackagePath": "staticwebassets/videos/It.mp4"
+    },
+    {
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/videos/Napoleon.mp4",
+      "PackagePath": "staticwebassets/videos/Napoleon.mp4"
+    },
+    {
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/videos/NunII.mp4",
+      "PackagePath": "staticwebassets/videos/NunII.mp4"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.Zusammen.Microsoft.AspNetCore.StaticWebAssets.props",

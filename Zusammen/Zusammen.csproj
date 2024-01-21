@@ -27,4 +27,8 @@
       <AdditionalFiles Include="Views\Video\Room.cshtml" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="wwwroot\videos\" />
+    </ItemGroup>
+
 </Project>

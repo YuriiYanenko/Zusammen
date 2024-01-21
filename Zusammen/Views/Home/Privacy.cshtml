@@ -4,3 +4,7 @@
     ViewData["Title"] = "Privacy Policy";
 }
 <h1>@ViewData["Title"]</h1>
+@using (Html.BeginForm("Room", "Video", FormMethod.Post))
+{
+    <input type="number" name="roomId"/>
+}
