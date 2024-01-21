@@ -6,7 +6,7 @@
 }
 
 <h2 style="color:white" >Результат пошуку</h2>
-<div>
+<div class="film-container">
     <ul id="search-result-list" style=" margin-left: 10px; color: white"></ul>
 </div>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -17,13 +17,42 @@
 <script>
 
     $("#search-result-list").append(
-                '<li>'+
-                    '<img src="@path" alt=""">'+
-                     '<span style=" margin-left: 60px; color: white; font-size: 30px ">Назва фільму: @movie</span>' +
-                '</li>'
-            );
+         '<li class="film-data">'+
+             '<div class="image-cont">'+    
+                  '<img class="film-image" src="@path" alt=""">'+
+             '</div>'+
+             '<span style=" margin-left: 5px; color: white; font-size: 20px ">Назва фільму: @movie</span>' +
+         '</li>'
+    );
             
 </script>
 }
+
+<style>
+    .image-cont{
+        height: 385px;
+        width: 260px;
+    }
+    .film-image{
+    height: 100%;
+    width: 100%;
+    }
+    
+    .film-container{
+    display: flex;
+    flex-direction: column;
+    }
+    #search-result-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    }
+    li.film-data{
+    flex: 1;
+    max-width: 30vmin;
+    min-width: 20vmax;
+    }
+</style>
     
         
