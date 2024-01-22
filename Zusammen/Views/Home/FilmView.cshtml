@@ -43,31 +43,75 @@
     string time = $"{timedata / 60}:{timedata % 60}";
 }
 <div class="text-center">
-    <div class="slides-container">
+    <div class="slides-container-for-moviepage">
         <div class="slide" data-slide>
-            <img class="image-name" src="../img/Five_Nights_at_Freddy.jpg ">
-            <div class="overlay">
-                <div class="text">П'ять ночей Фредді</div>
-            </div>
+            
+            @using (Html.BeginForm("FilmView", "Home", new { filmId = 6 }))
+            {
+                <button style=" background: none; border: none; width: 100%; height: 100%;">
+                    <img class="image-name" src="../img/Five_Nights_at_Freddy.jpg ">
+                    <div class="overlay">
+                        <div class="text">П`ять ночей Фредді</div>
+                    </div>
+                     </button>
+            }
         </div>
         <div class="slide" data-slide>
+            @using (Html.BeginForm("FilmView", "Home", new { filmId = 4 }))
+            {
+                <button style=" background: none; border: none; width: 100%; height: 100%;">
             <img class="image-name" src="../img/Furry_Vegnance.jpg" alt="Image">
             <div class="overlay">
                 <div class="text">Помста пухнастих</div>
             </div>
+             </button>
+            }
         </div>
         <div class="slide" data-slide>
-            <img class="image-name" src="../img/Bird_Box.jpg" alt="Image">
-            <div class="overlay">
+             @using (Html.BeginForm("FilmView", "Home", new { filmId = 8 }))
+             { 
+                 <button style=" background: none; border: none; width: 100%; height: 100%;">
+               <img class="image-name" src="../img/Bird_Box.jpg" alt="Image">
+               <div class="overlay">
                 <div class="text">Пташиний короб</div>
-            </div>
+               </div>
+             </button>
+             }
         </div>
         <div class="slide" data-slide>
-            <img class="image-name" src="../img/Casablanca.jpg" alt="Image">
-            <div class="overlay">
-                <div class="text">Касабланка</div>
-            </div>
+            @using (Html.BeginForm("FilmView", "Home", new { filmId = 3 }))
+            { 
+                <button style=" background: none; border: none; width: 100%; height: 100%;">
+                   <img class="image-name" src="../img/Casablanca.jpg" alt="Image">
+                <div class="overlay">
+                   <div class="text">Касабланка</div>
+                </div>
+            </button>
+            }
         </div>
+        <div class="slide" data-slide>
+            @using (Html.BeginForm("FilmView", "Home", new { filmId = 5 }))
+            { 
+                <button style=" background: none; border: none; width: 100%; height: 100%;">
+                   <img class="image-name" src="../img/Idiocracy.jpg" alt="Image">
+                <div class="overlay">
+                    <div class="text">Планета ідіотів</div>
+                    </div>
+             </button>
+            }
+        </div>
+        <div class="slide" data-slide>
+            @using (Html.BeginForm("FilmView", "Home", new { filmId = 2 }))
+            { 
+                <button style=" background: none; border: none; width: 100%; height: 100%;">
+                  <img class="image-name" src="../img/It.jpg" alt="Image">
+                <div class="overlay">
+                   <div class="text">Воно</div>
+                </div>
+              </button>
+            }
+        </div>
+        
     </div>
     <button class="btn previous" data-button="previous">
         <img class="image-name" src="../img/left.ico" style="width: 20px; height: 20px;">
