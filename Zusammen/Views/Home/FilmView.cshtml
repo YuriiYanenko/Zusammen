@@ -1,7 +1,7 @@
 @* Підключення моделі таблиці films *@
 @model Zusammen.Models.films
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = "Фільм "+@Model.name;
     Layout = "_Layout";
 }
 @* C# code insertion. Convert array of genres attribute to string *@
@@ -45,36 +45,78 @@
 <div class="text-center">
     <div class="slides-container">
         <div class="slide" data-slide>
-            <img src="../img/image1.png ">
+            <img class="image-name" src="../img/Five_Nights_at_Freddy.jpg ">
+            <div class="overlay">
+                <div class="text">П'ять ночей Фредді</div>
+            </div>
         </div>
         <div class="slide" data-slide>
-            <img src="../img/image2.png" alt="Image">
+            <img class="image-name" src="../img/Furry_Vegnance.jpg" alt="Image">
+            <div class="overlay">
+                <div class="text">Помста пухнастих</div>
+            </div>
         </div>
         <div class="slide" data-slide>
-            <img src="../img/image3.png" alt="Image">
+            <img class="image-name" src="../img/Bird_Box.jpg" alt="Image">
+            <div class="overlay">
+                <div class="text">Пташиний короб</div>
+            </div>
         </div>
         <div class="slide" data-slide>
-            <img src="../img/image4.png" alt="Image">
+            <img class="image-name" src="../img/Casablanca.jpg" alt="Image">
+            <div class="overlay">
+                <div class="text">Касабланка</div>
+            </div>
         </div>
     </div>
     <button class="btn previous" data-button="previous">
-        <img src="../img/left.ico" style="width: 20px; height: 20px;">
+        <img class="image-name" src="../img/left.ico" style="width: 20px; height: 20px;">
     </button>
     <button class="btn next" data-button="next">
-        <img src="../img/right.ico" style="width: 20px; height: 20px;">
+        <img class="image-name" src="../img/right.ico" style="width: 20px; height: 20px;">
     </button>
 </div>
-<!-- -->
+<div style="width: 115%; margin-left: -100px;">
 <div class="flexdivrow" style="padding-top: 70px;">
-    <div style="width: 30%;"> <!-- Тут буде div із жанрами (панель) --></div>
+    <div style="width: 30%; display: flex; background-size: contain;">
+        <form class="filter-genre-year" action="" method="post">
+            <h3 style="font-size: 30px" class="h3films">Жанри</h3>
+            <input class="checkbox-filter" type="checkbox" name="genreArray[]" value="Бойовик" /> <label class="labfilt"> Бойовик</label><br/>
+            <input class="checkbox-filter" type="checkbox" name="genreArray[]" value="Детективи" /> <label class="labfilt"> Детективи</label><br/>
+            <input class="checkbox-filter" type="checkbox" name="genreArray[]" value="Драми" /> <label class="labfilt"> Драми</label><br/>
+            <input class="checkbox-filter" type="checkbox" name="genreArray[]" value="Історичні" /> <label class="labfilt"> Історичні</label><br/>
+            <input class="checkbox-filter" type="checkbox" name="genreArray[]" value="Комедії" /> <label class="labfilt"> Комедії</label><br/>
+            <input class="checkbox-filter" type="checkbox" name="genreArray[]" value="Біографічні" /> <label class="labfilt"> Біографічні</label><br/>
+            <input class="checkbox-filter" type="checkbox" name="genreArray[]" value="Трилери" /> <label class="labfilt"> Трилери</label><br/>
+            <input class="checkbox-filter" type="checkbox" name="genreArray[]" value="Мелодрами" /> <label class="labfilt"> Мелодрами</label><br/>
+            <input class="checkbox-filter" type="checkbox" name="genreArray[]" value="Сімейні" /> <label class="labfilt"> Сімейні</label><br/>
+            <input class="checkbox-filter" type="checkbox" name="genreArray[]" value="Фантастичні" /> <label class="labfilt"> Фантастичні</label><br/>
+            <input class="checkbox-filter" type="checkbox" name="genreArray[]" value="Вестерни" /> <label class="labfilt"> Вестерни</label><br/>
+            <input class="checkbox-filter" type="checkbox" name="genreArray[]" value="Кримінальні" /> <label class="labfilt"> Кримінальні</label><br/>
+            <input class="checkbox-filter" type="checkbox" name="genreArray[]" value="Фентазійні" /> <label class="labfilt"> Фентазійні</label><br/>
+            <input class="checkbox-filter" type="checkbox" name="genreArray[]" value="Військові" /> <label class="labfilt"> Військові</label><br/>
+            <input class="checkbox-filter" type="checkbox" name="genreArray[]" value="Спортивні" /> <label class="labfilt"> Спортивні</label><br/>
+            <input class="checkbox-filter" type="checkbox" name="genreArray[]" value="Документальні" /> <label class="labfilt"> Документальні</label><br/>
+            
+            <!-- Введення значень фільма від і до-->
+            <h3 style="font-size: 30px; padding-top: 20px" class="h3films">Роки</h3>
+            <input class="checkbox-filter" type="checkbox" name="yearArray[]" value="2016, 2024" /> <label class="labfilt"> 2016-2024</label><br/>
+            <input class="checkbox-filter" type="checkbox" name="yearArray[]" value="2010, 2016" /> <label class="labfilt"> 2010-2016</label><br/>
+            <input class="checkbox-filter" type="checkbox" name="yearArray[]" value="2000, 2016" /> <label class="labfilt"> 2000-2016</label><br/>
+            <input class="checkbox-filter" type="checkbox" name="yearArray[]" value="1990, 2000" /> <label class="labfilt"> 1990-2000</label><br/>
+            <input class="checkbox-filter" type="checkbox" name="yearArray[]" value="1980, 1990" /> <label class="labfilt"> 1980-1990</label><br/>
+            <input class="checkbox-filter" type="checkbox" name="yearArray[]" value="1980" /> <label class="labfilt"> До 80-х</label><br/>
+            <!--<input class="filter" type="submit" name="formSubmit" value="Submit" />-->
+            <button type="submit" class="filter">Пошук</button>
+        </form>
+    </div>
     <div class="filmesdetal">
         <div>
-            <h3 class="h3films">@Model.name</h3><!--Тут передається name, тобто назва файлу-->
-              
+            <h3 style="font-size: 30px" class="h3films">@Model.name</h3><!--Тут передається name, тобто назва файлу-->
         </div>
         <div class="flexdivrow">
             <div class="filmesdetal_img">
-               <img style="width: 100%; height: 100%;" src="@Model.image_path" alt="@Model.name"> <!--Тут передається img, тобто постер фільму-->
+                <img style="width: 100%; height: 100%; border-radius:10px; filter: drop-shadow(15px 7px 8px #0a1f1f)" src="@Model.image_path" alt="@Model.name"> <!--Тут передається img, тобто постер фільму-->
             </div>
             <div class="filmesdetal_data">
                 <p class="basicsymbols">Якість: <span class="bluesymbols">@Model.quality</span></p><!--Тут передається quality-->
@@ -102,22 +144,5 @@
         }
     </div>
 </div>
-<div style="padding-top: 40px">
-    <div class="footer">
-        <img src="../img/footer.jpg" alt="footer" class="footer-img">
-    </div>
-    <div class="flexdivrow">
-        <div style="width: 15%;">
-            <div class="container-logo" style="display: flex; flex-direction: column; ">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="color: #296B6A; font-size: 40px; ">ZU</a>
-                <a class="navbar-brand text-white" asp-area="" asp-controller="Home" asp-action="Index" style="font-size: 40px; margin-top: -30px">SAMMEN</a>
-            </div>
-        </div>
-        <div style="width: 85%; display: flex">
-            <p class="basicsymbols" style="align-self: flex-end"> Дивитися фільми онлайн українською безкоштовно та разом з друзями. <br/>
-                Великий список фільмів онлайн тільки у нас. <br/>
-                Знайшли помилку на сторінці - виділіть її та натисніть Ctrl + Enter <br/>
-                Commons (2023 - 2024) Zusammen</p>
-        </div>
-    </div>
 </div>
+

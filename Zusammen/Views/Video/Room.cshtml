@@ -7,15 +7,13 @@
     Layout = "_Layout";
 }
 
-<h2 id="film-name">@Model.Room.name </h2>
-
-<div>
-    <div class="video-container">
-       
-        <video id="film-video" src='' preload="auto" autoplay="autoplay" controls="controls">
-        </video>
+<h2 style="color:white;" id="film-name">Фільм @Model.Room.name </h2>
+<div class="flexdivrow" style="width: 115%;margin-left: -100px;">
+    <button id="start" style="width: 60%; height: 600px; background-color: rgb(88, 87, 87);">
+        <video id="film-video" src='' preload="auto" autoplay="autoplay" controls="controls"></video>
+    </button>
+    <div style="width: 40%; height: 600px; background-color: rgb(3, 91, 93); padding-left: 20px">
     </div>
-    <button id="start">Start video</button>
 </div>
 
 <script src = "~/lib/signalr/dist/browser/signalr.js"></script>
@@ -31,11 +29,9 @@ function getModelData(){
     let modelInfo = {
         id: parseInt(roomId),
         videoPath: filmPath
-    };
-    
+    };  
     return modelInfo;
 }
-
 </script>
 <script src="~/js/videoRecieve.js"></script>
 
