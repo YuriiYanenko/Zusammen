@@ -1,10 +1,10 @@
-#bluesymbols{
+.bluesymbols{
     color:rgb(0, 130, 123);
 }
-#basicsymbols{
+.basicsymbols{
     color:rgb(200, 200, 200);
 }
-#h3films
+.h3films
 {
     color:white;
     margin-left: 2%;
