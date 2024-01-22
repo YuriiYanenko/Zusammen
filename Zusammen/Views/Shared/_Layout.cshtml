@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
     <link rel="stylesheet" href="~/Zusammen.styles.css" asp-append-version="true"/>
 </head>
-<body>
-<header>
+<body style="">
+<header style="">
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
         <div class="container-fluid">
            <div class="container-logo" style="display: flex; flex-direction: column; ">
@@ -61,7 +61,25 @@
         @RenderBody()
     </main>
 </div>
-
+<div style="padding-top: 40px">
+    <div class="footer">
+        <img src="../img/footer.jpg" alt="footer" class="footer-img">
+    </div>
+    <div class="flexdivrow">
+        <div style="width: 15%;">
+            <div class="container-logo" style="display: flex; flex-direction: column; ">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="color: #296B6A; font-size: 40px; ">ZU</a>
+                <a class="navbar-brand text-white" asp-area="" asp-controller="Home" asp-action="Index" style="font-size: 40px; margin-top: -30px">SAMMEN</a>
+            </div>
+        </div>
+        <div style="width: 85%; display: flex">
+            <p class="basicsymbols" style="align-self: flex-end"> Дивитися фільми онлайн українською безкоштовно та разом з друзями. <br/>
+                Великий список фільмів онлайн тільки у нас. <br/>
+                Знайшли помилку на сторінці - виділіть її та натисніть Ctrl + Enter <br/>
+                Commons (2023 - 2024) Zusammen</p>
+        </div>
+    </div>
+</div>
 <!--<footer class="border-top footer text-muted">
     <div class="container">
         &copy; 2024 - Zusammen - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
