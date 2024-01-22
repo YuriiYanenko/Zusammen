@@ -12,10 +12,10 @@
 <header style="">
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
         <div class="container-fluid">
-           <div class="container-logo" style="display: flex; flex-direction: column; ">
-               <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="color: #296B6A; font-size: 40px; ">ZU</a>
-               <a class="navbar-brand text-white" asp-area="" asp-controller="Home" asp-action="Index" style="font-size: 40px; margin-top: -30px">SAMMEN</a>
-           </div>
+            <div class="container-logo" style="display: flex; flex-direction: column; ">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="color: #296B6A; font-size: 40px; ">ZU</a>
+                <a class="navbar-brand text-white" asp-area="" asp-controller="Home" asp-action="Index" style="font-size: 40px; margin-top: -30px">SAMMEN</a>
+            </div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +27,7 @@
                     <input type="text" placeholder="Пошук" name="searchName" class="search-input" id="siteSearchInput">
                     <a href="#" class="search-btn">
                         <button style=" background: none; border: none; width: 20px; height: 20px;justify-content: center; align-items: center; display: flex">
-                                                                                                   
+
                             <img src="../img/search.ico " style="width: 20px; height: 20px;">
                         </button>
                     </a>
@@ -35,12 +35,16 @@
             }
             <div class="icon">
                 <img src="../img/user.ico " style="width: 20px; height: 20px;">
-                 <div class="dropdown">
+                <div class="dropdown">
                     <ul>
-                      <li><a href="#" style="color: #000000">Зареєструватися</a></li>
-                      <li><a href="#" style="color: #000000">Увійти</a></li>
+                        <li>
+                            <a href="#" style="color: #000000">Зареєструватися</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color: #000000">Увійти</a>
+                        </li>
                     </ul>
-                  </div>
+                </div>
             </div>
             <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav ">
@@ -48,7 +52,7 @@
                         <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index" style=" font-size: 30px; ">ФІЛЬМИ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy" style=" font-size: 30px;">ПРО НАС</a>
+                        <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy" style=" font-size: 30px;">Підключитися до кімнати</a>
                     </li>
                 </ul>
             </div>
@@ -61,25 +65,31 @@
         @RenderBody()
     </main>
 </div>
-<div style="padding-top: 40px">
-    <div class="footer">
-        <img src="../img/footer.jpg" alt="footer" class="footer-img">
-    </div>
-    <div class="flexdivrow">
-        <div style="width: 15%;">
-            <div class="container-logo" style="display: flex; flex-direction: column; ">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="color: #296B6A; font-size: 40px; ">ZU</a>
-                <a class="navbar-brand text-white" asp-area="" asp-controller="Home" asp-action="Index" style="font-size: 40px; margin-top: -30px">SAMMEN</a>
+
+    <div style="padding-top: 40px">
+        <div class="footer" style="position: relative">
+            <img src="../img/footer.jpg" alt="footer" class="footer-img">
+        </div>
+        <div class="flexdivrow">
+            <div style="width: 15%;">
+                <div class="container-logo" style="display: flex; flex-direction: column; ">
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="color: #296B6A; font-size: 40px; ">ZU</a>
+                    <a class="navbar-brand text-white" asp-area="" asp-controller="Home" asp-action="Index" style="font-size: 40px; margin-top: -30px">SAMMEN</a>
+                </div>
+            </div>
+            <div style="width: 85%; display: flex">
+                <p class="basicsymbols" style="align-self: flex-end">
+                    Дивитися фільми онлайн українською безкоштовно та разом з друзями. <br/>
+                    Великий список фільмів онлайн тільки у нас. <br/>
+                    Знайшли помилку на сторінці - виділіть її та натисніть Ctrl + Enter <br/>
+                    Commons (2023 - 2024) Zusammen
+                </p>
             </div>
         </div>
-        <div style="width: 85%; display: flex">
-            <p class="basicsymbols" style="align-self: flex-end"> Дивитися фільми онлайн українською безкоштовно та разом з друзями. <br/>
-                Великий список фільмів онлайн тільки у нас. <br/>
-                Знайшли помилку на сторінці - виділіть її та натисніть Ctrl + Enter <br/>
-                Commons (2023 - 2024) Zusammen</p>
-        </div>
     </div>
-</div>
+
+
+
 <!--<footer class="border-top footer text-muted">
     <div class="container">
         &copy; 2024 - Zusammen - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
