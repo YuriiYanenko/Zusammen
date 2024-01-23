@@ -1,6 +1,8 @@
 // Отримання даних про модель.
 let modelData = getModelData();
 
+const video = document.getElementById("film-video");
+
 // Підключення до відео хабу. 
 var connection = new signalR.HubConnectionBuilder().withUrl("/Video/Room/video").build();
 
@@ -9,8 +11,8 @@ document.getElementById("start").disabled = true;
 
 // Метод, який відтворюється при відправлення хабом відповіді.
 connection.on("ReceiveVideo", function (videoPath) {
-    let film = document.getElementById("film-video");
-    film.setAttribute("src", videoPath);
+    video.setAttribute("src", videoPath);
+    document.getElementById("start").disabled=true;
 });
 
 // Початок підключення до хабу. Виклик методу підключення до кімнати (групи перегляду).
@@ -31,9 +33,31 @@ document.getElementById("start").addEventListener("click", function (event) {
     event.preventDefault();
 });
 
-// Add an event listener to leave the room when the page is closed or navigated away
+// Покидання кімнати при закритті вкладки.
 window.addEventListener("beforeunload", function () {
     connection.invoke("LeaveRoom", roomElement.value).catch(function (err) {
         return console.error(err.toString());
     });
 });
+
+// Синхронізація паузи відео в кімнаті.
+connection.on('Stop', function (roomId){
+    video.pause();
+});
+
+video.addEventListener("pause", function () {
+    connection.invoke("StopVideo", modelData.id);
+});
+
+// Синхронізація відтворення відео після паузи.
+connection.on('Play', function (roomId){
+    video.play();
+});
+
+video.addEventListener("play", function () {
+    connection.invoke("PlayVideo", modelData.id);
+});
+
+// Синхронізація перемотки відео.
+// Видалено через помилку зациклення.
+// В розробці...

@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets/img/Bird_Box.jpg"
     },
     {
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/Carret_Left.png",
+      "PackagePath": "staticwebassets/img/Carret_Left.png"
+    },
+    {
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/Carret_Right.png",
+      "PackagePath": "staticwebassets/img/Carret_Right.png"
+    },
+    {
       "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/Casablanca.jpg",
       "PackagePath": "staticwebassets/img/Casablanca.jpg"
     },
