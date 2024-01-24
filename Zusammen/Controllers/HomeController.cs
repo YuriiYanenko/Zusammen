@@ -39,6 +39,16 @@ public class HomeController : Controller
         var findedFilms = dbController.GetFilmByName(searchName);
         return View(findedFilms.Result.Value);
     }
+
+    public IActionResult Login_Sign()
+    {
+        return View();
+    }
+
+    public IActionResult UserProfil()
+    {
+        return View();
+    }
     
     [HttpPost]
     public IActionResult FilmView(int filmId)
