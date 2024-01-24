@@ -57,7 +57,6 @@ connection.on('Play', function (roomId){
 video.addEventListener("play", function () {
     connection.invoke("PlayVideo", modelData.id);
 });
-
 // Синхронізація перемотки відео.
 // Видалено через помилку зациклення.
 // В розробці...
