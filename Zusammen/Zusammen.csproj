@@ -31,4 +31,8 @@
       <Folder Include="wwwroot\videos\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Remove="Views\Home\Account.cshtml" />
+    </ItemGroup>
+
 </Project>
