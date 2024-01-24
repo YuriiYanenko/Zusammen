@@ -37,6 +37,18 @@ public class films
     public int quality { get; set; }
 }
 
+public class users
+{
+    public int id { get; set; }
+    public string name { get; set; }
+    public string email { get; set; }
+    public string password { get; set; }
+    public string status { get; set; }
+    public string profile_description { get; set; }
+    public int[] rooms { get; set; }
+    public string profile_image_path { get; set; }
+}
+
 public class RoomAndFilm
 {
     public rooms Room { get; set; }
