@@ -25,4 +25,17 @@ public class VideoHub : Hub
     {
         await Groups.RemoveFromGroupAsync(Context.ConnectionId, roomId.ToString());
     }
+
+    // Сповіщення всіх підписників групи що відео поставлено на паузу
+    public async Task StopVideo(int roomId)
+    {
+        await Clients.Group(roomId.ToString()).SendAsync("Stop", roomId);
+    }
+
+    // Сповіщення всіх підписників групи що відео відтворюється
+    public async Task PlayVideo(int roomId)
+    {
+        await Clients.Group(roomId.ToString()).SendAsync("Play", roomId);
+    }
+    
 }

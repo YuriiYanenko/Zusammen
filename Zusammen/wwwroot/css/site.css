@@ -32,7 +32,7 @@ html {
 }
 
 body {
-  
+
   background-color: #161616;
   height: 100vh;
   display: grid;
@@ -113,6 +113,14 @@ ul
   display: grid;
   position: relative;
 }
+.slides-container-for-moviepage
+{
+  width: 15vw;
+  height: 25vh;
+  display: grid;
+  position: relative;
+  margin-left: -70px;
+}
 
 .slide {
   display: flex;
@@ -124,8 +132,8 @@ ul
   margin-left: -60px;
 }
 .image-name{
-  display: block; 
-  width: 100%; 
+  display: block;
+  width: 100%;
   height: auto;
 }
 .overlay{
@@ -141,7 +149,7 @@ ul
   border-radius: 20px;
 }
 .slide:hover .overlay {
-  height: 20%;
+  height: 30%;
   opacity: .4;
 }
 .text {
@@ -161,7 +169,7 @@ ul
   border-radius: 1.5rem;
   border: 2px solid white;
 }
-body 
+body
 {
   height: 100vh;
   background-color: #161616;
@@ -178,7 +186,7 @@ p
   display: flex;
   flex-direction: row;
 }
-.image-container 
+.image-container
 {
   position: relative;
   text-align: center;
@@ -187,7 +195,7 @@ p
   height: auto;
 }
 
-.image-container img 
+.image-container img
 {
   margin-left: 65px;
   margin-top: 50px;
@@ -195,12 +203,12 @@ p
   border: 2px solid white;
 }
 
-.image-caption 
+.image-caption
 {
-  position: relative; 
+  position: relative;
   text-align: center;
   margin-left: 65px;
-  margin-top: 10px; 
+  margin-top: 10px;
   color: white;
 }
 .search-box
@@ -268,25 +276,25 @@ p
   cursor: pointer;
 }
 
-.dropdown 
+.dropdown
 {
-  display: none; 
+  display: none;
   position: absolute;
   top: 100%;
   right: 0;
   background: #296B6A;
-  width: 150px; 
+  width: 150px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   z-index: 1;
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.icon:hover .dropdown 
+.icon:hover .dropdown
 {
   display: block;
 }
-.dropdown ul 
+.dropdown ul
 {
   list-style: none;
   padding: 0;
@@ -294,13 +302,13 @@ p
   flex-direction: column;
 }
 
-.dropdown li 
+.dropdown li
 {
   padding: 10px;
   text-align: center;
 }
 
-.dropdown a 
+.dropdown a
 {
   text-decoration: none;
   color: #333;
@@ -398,8 +406,8 @@ header{
 }
 .filter:hover{
   box-shadow: 0px 0px 5px rgb(46, 206, 183),
-              0px 0px 10px rgb(4, 199, 179),
-              0px 0px 15px rgb(4, 199, 179);
+  0px 0px 10px rgb(4, 199, 179),
+  0px 0px 15px rgb(4, 199, 179);
   color: black;
 }
 .checkbox-filter{
