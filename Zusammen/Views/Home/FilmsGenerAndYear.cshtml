@@ -1,56 +1,13 @@
-@* Підключення моделі таблиці films *@
-@model Zusammen.Models.films
+@model List<Zusammen.Models.films>
 @{
-    ViewBag.Title = "Фільм " + @Model.name;
+    ViewBag.Title = "Фільми";
     Layout = "_Layout";
     ViewData["ShowHeader"] = true;
 }
-@* C# code insertion. Convert array of genres attribute to string *@
-@{
-    //Витягуємо список жанрів
-    string[] genresdata = @Model.genre;
-    string genres = "";
-    foreach (var item in genresdata)
-    {
-        genres += item + ", ";
-    }
-
-    genres = genres.Remove(genres.LastIndexOf(','));
-    //Витягуємо cписок акторів 
-    string[] actorsdata = @Model.actors;
-    string actors = "";
-    foreach (var item in actorsdata)
-    {
-        actors += item + ", ";
-    }
-
-    actors = actors.Remove(actors.LastIndexOf(','));
-    //Витягуємо cписок режесерів 
-    string[] directorsdata = @Model.director;
-    string directors = "";
-    foreach (var item in directorsdata)
-    {
-        directors += item + ", ";
-    }
-
-    directors = directors.Remove(directors.LastIndexOf(','));
-    //Витягуємо cписок країн 
-    string[] countrydata = @Model.country;
-    string country = "";
-    foreach (var item in countrydata)
-    {
-        country += item + ", ";
-    }
-
-    country = country.Remove(country.LastIndexOf(','));
-    //Перетворюєми хвилини у формат (години:хвилини)
-    int timedata = @Model.time;
-    string time = $"{timedata / 60}:{timedata % 60}";
-}
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
 <div class="text-center">
     <div class="slides-container-for-moviepage">
         <div class="slide" data-slide>
-
             @using (Html.BeginForm("FilmView", "Home", new { filmId = 6 }))
             {
                 <button style=" background: none; border: none; width: 100%; height: 100%;">
@@ -116,7 +73,6 @@
                 </button>
             }
         </div>
-
     </div>
     <button class="btn previous" data-button="previous">
         <img class="image-name" src="../img/left.ico" style="width: 20px; height: 20px;">
@@ -128,7 +84,7 @@
 <div style="width: 115%; margin-left: -100px;">
     <div class="flexdivrow" style="padding-top: 70px;">
         <div style="width: 30%; display: flex; background-size: contain;">
-            <form class="filter-genre-year" asp-action="FilterFilms" asp-controller="Home" method="post">
+            <form class="filter-genre-year" asp-action="FilterFilms" asp-controller="Home" method="post" style="margin: inherit; margin-left: 40px">
                 <h3 style="font-size: 30px" class="h3films">Жанри</h3>
                 <input class="checkbox-filter" type="checkbox" name="genreArray" value="Екшен"/> <label class="labfilt"> Екшен</label><br/>
                 <input class="checkbox-filter" type="checkbox" name="genreArray" value="Детективи"/> <label class="labfilt"> Детективи</label><br/>
@@ -155,42 +111,66 @@
                 <input class="checkbox-filter" type="checkbox" name="yearArray" value="1990, 2000"/> <label class="labfilt"> 1990-2000</label><br/>
                 <input class="checkbox-filter" type="checkbox" name="yearArray" value="1980, 1990"/> <label class="labfilt"> 1980-1990</label><br/>
                 <input class="checkbox-filter" type="checkbox" name="yearArray" value="1900, 1980"/> <label class="labfilt"> До 80-х</label><br/>
+                <input type="hidden" id="minYear" name="minYear" />
+                <input type="hidden" id="maxYear" name="maxYear" />
                 <!--<input class="filter" type="submit" name="formSubmit" value="Submit" />-->
                 <button id="submit-filter" type="submit" class="filter">Пошук</button>
+                <script>
+                    document.getElementById('submit-filter').addEventListener('click', function() {
+                        var checkboxes = document.querySelectorAll('input[name="yearArray"]:checked');
+                        var yearsArray = Array.from(checkboxes).map(function(checkbox) {
+                            return checkbox.value.split(',').map(function(year) {
+                                return parseInt(year);
+                            });
+                        }).flat();
+                
+                        if (yearsArray.length > 0) {
+                            var minYear = Math.min(...yearsArray);
+                            var maxYear = Math.max(...yearsArray);
+                
+                            document.getElementById('minYear').value = minYear;
+                            document.getElementById('maxYear').value = maxYear;
+                        } else {
+                            minYear = 1900;
+                            maxYear = 2024;
+                                            
+                            document.getElementById('minYear').value = minYear;
+                            document.getElementById('maxYear').value = maxYear;
+                        }
+                    });
+                </script>
             </form>
         </div>
         <div class="filmesdetal">
-            <div>
-                <h3 style="font-size: 30px" class="h3films">@Model.name</h3><!--Тут передається name, тобто назва файлу-->
+            <h2 style="color:#e5e5e5"> Результат пошуку:</h2>
+            <div class="film-container">
+                <ul id="search-result-list" style=" margin-left: 10px; color: #b7b6b6">
+                    @if (Model.Count == 0)
+                    {
+                        <h2 class="NANfilter">Фільми за даними фільтрами не знайдено</h2>
+                    }
+                    else
+                    {
+                        foreach (var item in Model)
+                        {
+                            var path = item.image_path;
+                            var movie = item.name;
+                            var idfilm = item.id;
+                            @using (Html.BeginForm("FilmView", "Home", new { filmId = idfilm }))
+                            {
+                                <li class="film-data">
+                                    <button class="image-cont">
+                                        <img class="image-name" style="border-radius: 20px" src="@path">
+                                        <div class="overlay">
+                                            <div class="text">@movie</div>
+                                        </div>
+                                    </button>
+                                </li>
+                            }
+                        }
+                    }
+                </ul>
             </div>
-            <div class="flexdivrow">
-                <div class="filmesdetal_img">
-                    <img style="width: 100%; height: 100%; border-radius:10px; filter: drop-shadow(15px 7px 8px #0a1f1f)" src="@Model.image_path" alt="@Model.name"> <!--Тут передається img, тобто постер фільму-->
-                </div>
-                <div class="filmesdetal_data">
-                    <p class="basicsymbols">Якість: <span class="bluesymbols">@Model.quality</span></p><!--Тут передається quality-->
-                    <p class="basicsymbols">Рік виходу: <span class="bluesymbols">@Model.year рік</span></p> <!--Тут передається year (2023)-->
-                    <p class="basicsymbols">Країна: <span class="bluesymbols">@country</span></p> <!--Тут передається country-->
-                    <p class="basicsymbols">Жанр: <span class="bluesymbols">@genres</span></p> <!--Тут передається genre-->
-                    <p class="basicsymbols">Режисер: <span class="bluesymbols">@directors</span></p> <!--Тут передається director-->
-                    <p class="basicsymbols">Актори: <span class="bluesymbols">@actors</span></p>
-                    <!--Тут передається actors-->
-                    <p class="basicsymbols">Тривалість: <span class="bluesymbols">@Model.time хвилин (@time)</span></p> <!--Тут передається time-->
-                    <p class="basicsymbols">Мова озвучки: <span class="bluesymbols">@Model.voice</span></p> <!--Тут передається voice-->
-                    <h3 class="h3films"> Про фільм "@Model.name"</h3> <!--Тут передається name та description-->
-                    <p style="text-indent: 15px;" class="basicsymbols">@Model.description</p>
-                </div>
-            </div>
-            <!-- CreateRoom, куди буде відправлений POST-запит -->
-            @using (Html.BeginForm("CreateRoom", "ZusammenDb", FormMethod.Post))
-            {
-                <div>
-                    <!-- Перекід на строінку "Моя кімната" -->
-                    <input type="hidden" name="filmId" value="@Model.id"/>
-                    <button class="buttonroom" type="submit">Створити кімнату</button>
-                    @* </form> *@
-                </div>
-            }
         </div>
     </div>
 </div>
