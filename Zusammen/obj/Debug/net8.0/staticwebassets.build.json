@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rW7W5kyP6dMczj+0biAHfDl0oJBU2JFwzPBfDOGmloc=",
+  "Hash": "v/R8f9cOZWWy6+Wzc8UYW6I7nxE8X7ydujI/ryt9L7U=",
   "Source": "Zusammen",
   "BasePath": "_content/Zusammen",
   "Mode": "Default",
@@ -454,12 +454,12 @@
       "OriginalItemSpec": "wwwroot/img/user.ico"
     },
     {
-      "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/js/searchSite.js",
+      "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/js/Login_Sognup.js",
       "SourceId": "Zusammen",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/",
       "BasePath": "_content/Zusammen",
-      "RelativePath": "js/searchSite.js",
+      "RelativePath": "js/Login_Sognup.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -470,7 +470,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/searchSite.js"
+      "OriginalItemSpec": "wwwroot/js/Login_Sognup.js"
     },
     {
       "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/js/site.js",
@@ -490,6 +490,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/site.js"
+    },
+    {
+      "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/js/upload_foto.js",
+      "SourceId": "Zusammen",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/",
+      "BasePath": "_content/Zusammen",
+      "RelativePath": "js/upload_foto.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/upload_foto.js"
     },
     {
       "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/js/videoRecieve.js",

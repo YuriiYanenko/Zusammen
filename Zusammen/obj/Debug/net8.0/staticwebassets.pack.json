@@ -89,12 +89,16 @@
       "PackagePath": "staticwebassets/img/МонахиняII.jpg"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/js/searchSite.js",
-      "PackagePath": "staticwebassets/js/searchSite.js"
+      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/js/Login_Sognup.js",
+      "PackagePath": "staticwebassets/js/Login_Sognup.js"
     },
     {
       "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/js/upload_foto.js",
+      "PackagePath": "staticwebassets/js/upload_foto.js"
     },
     {
       "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/js/videoRecieve.js",
