@@ -46,5 +46,13 @@ public class HomeController : Controller
         var filmData = dbController.GetFilmById(filmId);
         return View(filmData.Result.Value);
     }
-   
+
+    public IActionResult UserProfil()
+    {
+        return View();
+    }
+    public IActionResult Login_Sign()
+    {
+        return View();
+    }
 }

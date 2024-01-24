@@ -429,9 +429,11 @@ header{
   width: 100%;
   height: 100%;
   font-family: "Roboto", sans-serif;
-  background: linear-gradient(#091e1e,
+  background: linear-gradient(#013131,
+  #091e1e,
   #100f0f,
-  #02181c);
+  #02181c,
+  #013131);
   overflow: hidden;
   margin-top: 350px;
 }
