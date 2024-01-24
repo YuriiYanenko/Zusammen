@@ -420,3 +420,270 @@ header{
   color: white;
   font-size: 17px;
 }
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:500&display=swap);
+.font {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(#091e1e,
+  #100f0f,
+  #02181c);
+  overflow: hidden;
+  margin-top: 350px;
+}
+
+.login-sign-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.login-sign-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.login-sign-container {
+  position: relative;
+  width: 600px;
+  margin: 30px auto 0;
+  height: 320px;
+  background-color: #1E797C;
+  top: 50%;
+  margin-top: -160px;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 10px;
+}
+.login-sign-container .login-sign-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.login-sign-container .login-sign-box:before, .login-sign-container .login-sign-box:after {
+  content: " ";
+  position: absolute;
+  left: 152px;
+  top: 50px;
+  background-color: #004644;
+  transform: rotateX(52deg) rotateY(15deg) rotateZ(-38deg);
+  width: 300px;
+  height: 285px;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.login-sign-container .login-sign-box:after {
+  background-color: #00655f;
+  top: -10px;
+  left: 80px;
+  width: 320px;
+  height: 180px;
+}
+.login-sign-container .login-sign-container-forms {
+  position: relative;
+}
+.login-sign-container .login-sign-btn {
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+  width: 100px;
+  color: #fff;
+  background-color: #000000;
+  opacity: 1;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.login-sign-container .login-sign-btn:hover {
+  opacity: 0.7;
+}
+.login-sign-container .login-sign-btn, .login-sign-container input {
+  padding: 10px 15px;
+}
+.login-sign-container input {
+  margin: 0 auto 15px;
+  display: block;
+  width: 220px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.login-sign-container .login-sign-container-forms .login-sign-container-info {
+  text-align: left;
+  font-size: 0;
+}
+.login-sign-container .login-sign-container-forms .login-sign-container-info .login-sign-info-item {
+  text-align: center;
+  font-size: 16px;
+  width: 300px;
+  height: 320px;
+  display: inline-block;
+  vertical-align: top;
+  color: #faf8f8;
+  opacity: 1;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.login-sign-container .login-sign-container-forms .login-sign-container-info .login-sign-info-item p {
+  font-size: 20px;
+  margin: 20px;
+}
+.login-sign-container .login-sign-container-forms .login-sign-container-info .login-sign-info-item .login-sign-btn {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.login-sign-container .login-sign-container-forms .login-sign-container-info .login-sign-info-item .login-sign-table-cell {
+  padding-right: 35px;
+}
+.login-sign-container .login-sign-container-forms .login-sign-container-info .login-sign-info-item:nth-child(2) .login-sign-table-cell {
+  padding-left: 35px;
+  padding-right: 0;
+}
+.login-sign-container .login-sign-container-form {
+  overflow: hidden;
+  position: absolute;
+  left: 30px;
+  top: -30px;
+  width: 305px;
+  height: 380px;
+  background-color: #fff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.login-sign-container .login-sign-container-form:before {
+  content: "✔";
+  position: absolute;
+  left: 160px;
+  top: -50px;
+  color: #00655f;
+  font-size: 130px;
+  opacity: 0;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.login-sign-container .login-sign-container-form .login-sign-btn {
+  position: relative;
+  box-shadow: 0 0 10px 1px #73ffe5;
+  margin-top: 30px;
+}
+.login-sign-container .login-sign-form-item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+
+}
+.login-sign-container .login-sign-form-item.sign-up {
+  position: absolute;
+  left: -100%;
+  opacity: 0;
+}
+.login-sign-container.log-in .login-sign-box:before {
+  position: absolute;
+  left: 180px;
+  top: 62px;
+  height: 265px;
+}
+.login-sign-container.log-in .login-sign-box:after {
+  top: 22px;
+  left: 192px;
+  width: 324px;
+  height: 220px;
+}
+.login-sign-container.log-in .login-sign-container-form {
+  left: 265px;
+}
+.login-sign-container.log-in .login-sign-container-form .login-sign-form-item.sign-up {
+  left: 0;
+  opacity: 1;
+}
+.login-sign-container.log-in .login-sign-container-form .login-sign-form-item.log-in {
+  left: -100%;
+  opacity: 0;
+}
+.login-sign-container.active {
+  width: 260px;
+  height: 140px;
+  margin-top: -70px;
+}
+.login-sign-container.active .login-sign-container-form {
+  left: 30px;
+  width: 200px;
+  height: 200px;
+}
+.login-sign-container.active .login-sign-container-form:before {
+  content: "✔";
+  position: absolute;
+  left: 51px;
+  top: 5px;
+  color: #024141;
+  font-size: 130px;
+  opacity: 1;
+}
+.login-sign-container.active input, .login-sign-container.active .login-sign-btn, .login-sign-container.active .login-sign-info-item {
+  display: none;
+  opacity: 0;
+  padding: 0px;
+  margin: 0 auto;
+  height: 0;
+}
+.login-sign-container.active .login-sign-form-item {
+  height: 100%;
+}
+.login-sign-container.active .login-sign-container-forms .login-sign-container-info .login-sign-info-item {
+  height: 0%;
+  opacity: 0;
+}
+.login-sign-container .login-sign-container-form{
+  border-radius: 10px;
+}
+.login-sign-container .login-sign-btn {
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+  width: 60px;
+  color: #fff;
+  background-color: #035454;
+  border: 1px solid #048080;
+  opacity: 1;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.login-sign-container .login-sign-btn:hover {
+  opacity: 0.7;
+  background-color: #059696;
+  border-color: #035454;
+}
