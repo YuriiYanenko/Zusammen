@@ -15,4 +15,7 @@ public class ZusammenDbContext:DbContext
     public DbSet<rooms> rooms { get; set; }
     //object of film table
     public DbSet<films> films { get; set; }
+    
+    // Об'єкт таблиці users.
+    public DbSet<users> users { get; set; }
 }

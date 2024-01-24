@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Zusammen.Models;
+using System.Linq;
 
 namespace Zusammen.Controllers;
 
@@ -45,5 +46,24 @@ public class HomeController : Controller
         var dbController = new ZusammenDbController(_context);
         var filmData = dbController.GetFilmById(filmId);
         return View(filmData.Result.Value);
+    }
+
+    [HttpPost]
+    public IActionResult FilterFilms(string[] genreArray, string? yearArray)
+    {
+        var dbController = new ZusammenDbController(_context);
+        string[] years;
+        if (yearArray != null)
+        {
+            years = yearArray.Split(new char[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+        }
+        else
+        {
+            years = new[] {"1900", "2024" };
+        }
+        int[] yearsToInt = new int[] { int.Parse(years[0]), int.Parse(years[1]) };
+        var filteredByGenres = dbController.GetFilmByGenre(genreArray).Result.Value;
+        var filteredByYears = dbController.GetFilmsByYear(yearsToInt).Result.Value;
+        return View("FilmSearch", filteredByGenres.Intersect(filteredByYears).ToList());
     }
 }
