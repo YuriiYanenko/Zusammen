@@ -81,6 +81,10 @@
       "PackagePath": "staticwebassets/img/search.ico"
     },
     {
+      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/upload.jpg",
+      "PackagePath": "staticwebassets/img/upload.jpg"
+    },
+    {
       "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/user.ico",
       "PackagePath": "staticwebassets/img/user.ico"
     },
