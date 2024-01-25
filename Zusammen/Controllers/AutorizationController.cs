@@ -11,7 +11,7 @@ public class AutorizationController : Controller
 {
     private readonly ZusammenDbContext _context;
 
-    public AutorizationController(UserManager<IdentityUser> userManager, ZusammenDbContext context)
+    public AutorizationController(ZusammenDbContext context)
     {
         _context = context;
     }
@@ -19,8 +19,6 @@ public class AutorizationController : Controller
 
     public async Task<ActionResult> Register(RegisterModel model)
     {
-        if (ModelState.IsValid)
-        {
             ZusammenDbController dbController = new ZusammenDbController(_context);
             var userToAdd = new users()
             {
@@ -32,7 +30,6 @@ public class AutorizationController : Controller
                 profile_image_path = "../img/users/std.png"
             };
             dbController.AddUser(userToAdd);
-        }
 
         //return RedirectToAction("Index", "Home");
         
