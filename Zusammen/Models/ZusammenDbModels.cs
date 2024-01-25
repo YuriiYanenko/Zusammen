@@ -67,3 +67,9 @@ public class LoginModel
     public string email { get; set; }
     public string password { get; set; }
 }
+
+public class RegAndLogModel
+{
+    public RegisterModel register { get; set; }
+    public LoginModel login { get; set; }
+}
