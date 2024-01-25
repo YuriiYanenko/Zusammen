@@ -5,94 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>@ViewData["Title"] - Zusammen</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="~/Zusammen.styles.css" asp-append-version="true"/>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/Zusammen.styles.css" asp-append-version="true"/>
 </head>
 <body style="">
-<header style="">
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
-        <div class="container-fluid">
-           <div class="container-logo" style="display: flex; flex-direction: column; ">
-               <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="color: #296B6A; font-size: 40px; ">ZU</a>
-               <a class="navbar-brand text-white" asp-area="" asp-controller="Home" asp-action="Index" style="font-size: 40px; margin-top: -30px">SAMMEN</a>
-           </div>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            @using (Html.BeginForm("FilmSearch", "Home", FormMethod.Post))
-            {
-                <div class="search-box">
-                    <input type="text" placeholder="Пошук" name="searchName" class="search-input" id="siteSearchInput">
-                    <a href="#" class="search-btn">
-                        <button style=" background: none; border: none; width: 20px; height: 20px;justify-content: center; align-items: center; display: flex">
-                                                                                                   
-                            <img src="../img/search.ico " style="width: 20px; height: 20px;">
-                        </button>
-                    </a>
+@if (ViewData["ShowHeader"] as bool? != false)
+    {
+        <header style="">
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
+                <div class="container-fluid">
+                    <div class="container-logo" style="display: flex; flex-direction: column; ">
+                        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="color: #296B6A; font-size: 40px; ">ZU</a>
+                        <a class="navbar-brand text-white" asp-area="" asp-controller="Home" asp-action="Index" style="font-size: 40px; margin-top: -30px">SAMMEN</a>
+                    </div>
+        
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    @using (Html.BeginForm("FilmSearch", "Home", FormMethod.Post))
+                    {
+                        <div class="search-box">
+                            <input type="text" placeholder="Пошук" name="searchName" class="search-input" id="siteSearchInput">
+                            <a href="#" class="search-btn">
+                                <button style=" background: none; border: none; width: 20px; height: 20px;justify-content: center; align-items: center; display: flex">
+        
+                                    <img src="../img/search.ico " style="width: 20px; height: 20px;">
+                                </button>
+                            </a>
+                        </div>
+                    }
+                    @{
+                        bool isUserOnline = false;
+                        if (isUserOnline)
+                        {
+                            @using (Html.BeginForm("UserProfil", "Home"))
+                            {
+                                <button class="icon">
+                                    <img src="../img/user.ico " style="width: 20px; height: 20px;">
+                                </button>
+                            }
+                        }
+                        else
+                        {
+                            @using (Html.BeginForm("Login_Sign", "Home"))
+                            {
+                                <button class="icon">
+                                    <img src="../img/user.ico " style="width: 20px; height: 20px;">
+                                </button>
+                            }
+                        }
+                    }
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="FilmsGenerAndYear"  style=" font-size: 30px; ">ФІЛЬМИ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy" style=" font-size: 30px;">ПРО НАС</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            }
-             @using (Html.BeginForm("UserProfil", "Home", FormMethod.Post))
-             {
-                 <div class="icon">
-                     <button style=" background: none; border: none; ">
-                     <img src="../img/user.ico " style="width: 20px; height: 20px;">
-                     </button>
-                     <div class="dropdown">
-                         <ul>
-                             <li><a href="#" style="color: #000000">Зареєструватися/Увійти</a></li>
-                         </ul>
-                     </div>
-                 </div>
-             }
-             <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav ">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="FilterFilms" style=" font-size: 30px; ">ФІЛЬМИ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy" style=" font-size: 30px;">ПРО НАС</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-
+            </nav>
+        </header>
+    }
 <div class="container">
     <main role="main" class="pb-3">
         @RenderBody()
     </main>
 </div>
-<div style="padding-top: 40px">
-    <div class="footer">
-        <img src="../img/footer.jpg" alt="footer" class="footer-img">
-    </div>
-    <div class="flexdivrow">
-        <div style="width: 15%;">
-            <div class="container-logo" style="display: flex; flex-direction: column; ">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="color: #296B6A; font-size: 40px; ">ZU</a>
-                <a class="navbar-brand text-white" asp-area="" asp-controller="Home" asp-action="Index" style="font-size: 40px; margin-top: -30px">SAMMEN</a>
+@if (ViewData["ShowHeader"] as bool? != false)
+    {<div style="padding-top: 40px">
+            <div class="footer">
+                <img src="../img/footer.jpg" alt="footer" class="footer-img">
+            </div>
+            <div class="flexdivrow">
+                <div style="width: 15%;">
+                    <div class="container-logo" style="display: flex; flex-direction: column; ">
+                        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="color: #296B6A; font-size: 40px; ">ZU</a>
+                        <a class="navbar-brand text-white" asp-area="" asp-controller="Home" asp-action="Index" style="font-size: 40px; margin-top: -30px">SAMMEN</a>
+                    </div>
+                </div>
+                <div style="width: 85%; display: flex">
+                    <p class="basicsymbols" style="align-self: flex-end"> Дивитися фільми онлайн українською безкоштовно та разом з друзями. <br/>
+                        Великий список фільмів онлайн тільки у нас. <br/>
+                        Знайшли помилку на сторінці - виділіть її та натисніть Ctrl + Enter <br/>
+                        Commons (2023 - 2024) Zusammen</p>
+                </div>
             </div>
         </div>
-        <div style="width: 85%; display: flex">
-            <p class="basicsymbols" style="align-self: flex-end"> Дивитися фільми онлайн українською безкоштовно та разом з друзями. <br/>
-                Великий список фільмів онлайн тільки у нас. <br/>
-                Знайшли помилку на сторінці - виділіть її та натисніть Ctrl + Enter <br/>
-                Commons (2023 - 2024) Zusammen</p>
-        </div>
-    </div>
-</div>
-<!--<footer class="border-top footer text-muted">
-    <div class="container">
-        &copy; 2024 - Zusammen - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-    </div>
-</footer>-->
-
+    }
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>
+<script src="~/js/Login_Signup.js" asp-append-version="true"></script>
 
 @await RenderSectionAsync("Scripts", required: false)
 </body>
