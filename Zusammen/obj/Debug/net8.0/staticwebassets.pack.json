@@ -73,16 +73,16 @@
       "PackagePath": "staticwebassets/img/left.ico"
     },
     {
+      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/photo.ico",
+      "PackagePath": "staticwebassets/img/photo.ico"
+    },
+    {
       "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/right.ico",
       "PackagePath": "staticwebassets/img/right.ico"
     },
     {
       "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/search.ico",
       "PackagePath": "staticwebassets/img/search.ico"
-    },
-    {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/upload.jpg",
-      "PackagePath": "staticwebassets/img/upload.jpg"
     },
     {
       "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/user.ico",

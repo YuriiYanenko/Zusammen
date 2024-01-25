@@ -33,6 +33,7 @@
 
     <ItemGroup>
       <Content Remove="Views\Home\Account.cshtml" />
+      <Content Remove="wwwroot\img\upload.jpg" />
     </ItemGroup>
 
 </Project>

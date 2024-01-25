@@ -688,3 +688,99 @@ header{
   background-color: #059696;
   border-color: #035454;
 }
+.photo-change
+{
+  width: 180px;
+  height: 180px;
+  background-color:#296B6A ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.change-profile
+{
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+}
+.change-profile.photo-change
+{
+  margin-right: 100px;
+}
+.dataUs-changes {
+  display: flex;
+  flex-direction: column;
+}
+
+.data-changes
+{
+  font-size: 20px;
+  text-align: justify;
+  color:rgb(200, 200, 200) ;
+}
+
+.buttonroom2
+{
+  margin-top: 20%;
+  margin-left: 77%;
+  width: 150px;
+  height: 30px;
+  background-color: rgb(2, 111, 111);
+  color: aliceblue;
+  border-radius: 50px;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+}
+.buttonroom2:hover
+{
+  box-shadow: 0px 0px 5px rgb(4, 199, 179),
+  0px 0px 10px rgb(4, 199, 179),
+  0px 0px 15px rgb(4, 199, 179);
+  color: black;
+}
+.photo
+{
+  width: 180px;
+  height: 180px;
+  background-color:#296B6A ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+}
+.dataUs 
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.data
+{
+  font-size: 20px;
+  text-align: justify;
+  color:rgb(200, 200, 200) ;
+}
+.profile 
+{
+  display: flex;
+  align-items: center;
+}
+
+.profile .photo 
+{
+  margin-right: 50px; 
+}
+.dataUs .data 
+{
+  color: white;
+  margin: 0;
+}
+
+textarea {
+  height: 20px;
+  font-size: 14px;
+}

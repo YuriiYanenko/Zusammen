@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PE8/CwyqxpA53e5KN+2EqjgyEsWxySE7q7iQA/AUyLw=",
+  "Hash": "CstmrIsSdug3E9Qo5IoCD/x2kBQ41tApw9YHQyU7MEs=",
   "Source": "Zusammen",
   "BasePath": "_content/Zusammen",
   "Mode": "Default",
@@ -397,6 +397,25 @@
       "OriginalItemSpec": "wwwroot/img/NunII.jpg"
     },
     {
+      "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/photo.ico",
+      "SourceId": "Zusammen",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/",
+      "BasePath": "_content/Zusammen",
+      "RelativePath": "img/photo.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/photo.ico"
+    },
+    {
       "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/right.ico",
       "SourceId": "Zusammen",
       "SourceType": "Discovered",
@@ -433,25 +452,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/search.ico"
-    },
-    {
-      "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/upload.jpg",
-      "SourceId": "Zusammen",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/",
-      "BasePath": "_content/Zusammen",
-      "RelativePath": "img/upload.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/upload.jpg"
     },
     {
       "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/user.ico",
