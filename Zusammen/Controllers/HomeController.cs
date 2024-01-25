@@ -59,21 +59,19 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public IActionResult FilterFilms(string[] genreArray, string? yearArray)
+    public IActionResult FilterFilms(string[] genreArray, int? minYear, int? maxYear)
     {
         var dbController = new ZusammenDbController(_context);
-        string[] years;
-        if (yearArray != null)
-        {
-            years = yearArray.Split(new char[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
-        }
-        else
-        {
-            years = new[] {"1900", "2024" };
-        }
-        int[] yearsToInt = new int[] { int.Parse(years[0]), int.Parse(years[1]) };
+        int[] yearsToInt = new int[] { minYear.Value, maxYear.Value };
         var filteredByGenres = dbController.GetFilmByGenre(genreArray).Result.Value;
         var filteredByYears = dbController.GetFilmsByYear(yearsToInt).Result.Value;
-        return View("FilmSearch", filteredByGenres.Intersect(filteredByYears).ToList());
+        return View("FilmsGenerAndYear", filteredByGenres.Intersect(filteredByYears).ToList());
+    }
+
+    public IActionResult FilmsGenerAndYear()
+    {
+        var dbController = new ZusammenDbController(_context);
+        var allFilms = dbController.GetFilms();
+        return View("FilmsGenerAndYear", allFilms.Result.Value.ToList());
     }
 }
