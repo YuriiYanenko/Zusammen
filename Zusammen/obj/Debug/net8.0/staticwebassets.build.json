@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CstmrIsSdug3E9Qo5IoCD/x2kBQ41tApw9YHQyU7MEs=",
+  "Hash": "AdeKZBFDudRjeECwaLY/t0dLv9p9o3QH41vz4YeszpY=",
   "Source": "Zusammen",
   "BasePath": "_content/Zusammen",
   "Mode": "Default",
@@ -473,12 +473,12 @@
       "OriginalItemSpec": "wwwroot/img/user.ico"
     },
     {
-      "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/js/Login_Sognup.js",
+      "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/js/Login_Signup.js",
       "SourceId": "Zusammen",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/",
       "BasePath": "_content/Zusammen",
-      "RelativePath": "js/Login_Sognup.js",
+      "RelativePath": "js/Login_Signup.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -489,7 +489,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/Login_Sognup.js"
+      "OriginalItemSpec": "wwwroot/js/Login_Signup.js"
+    },
+    {
+      "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/js/new_photo.js",
+      "SourceId": "Zusammen",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/",
+      "BasePath": "_content/Zusammen",
+      "RelativePath": "js/new_photo.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/new_photo.js"
     },
     {
       "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/js/site.js",
@@ -509,25 +528,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/site.js"
-    },
-    {
-      "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/js/upload_foto.js",
-      "SourceId": "Zusammen",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/",
-      "BasePath": "_content/Zusammen",
-      "RelativePath": "js/upload_foto.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/upload_foto.js"
     },
     {
       "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/js/videoRecieve.js",

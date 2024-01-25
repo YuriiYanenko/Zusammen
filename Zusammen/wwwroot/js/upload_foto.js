@@ -21,30 +21,3 @@ function toggleContainers()
         dataUsContainer.style.display = 'none'; 
     }
 }
-function openFileExplorer() 
-{
-    document.getElementById('fileInput').click();
-}
-
-function previewImage() 
-{
-    var fileInput = document.getElementById('fileInput');
-    var container = document.getElementById('profileUs');
-    var uploadedImage = document.getElementById('uploadedImage1');
-
-    var file = fileInput.files[0];
-    var reader = new FileReader();
-
-    reader.onload = function(e) 
-    {
-        container.style.background = 'none';
-        uploadedImage.src = e.target.result;
-    };
-
-    reader.readAsDataURL(file);
-}
-function saveChanges() 
-{
-   
-    location.reload();
-}
