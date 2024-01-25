@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "f5BvI0eX2GSjx+YJpHSiOeDjrI2Sxf+iOnqTriBbl8Y=",
+  "Hash": "6QVMyokqioBZxXSefqDZhlvqRQ3gBD8YmW6Aw3/h0dI=",
   "Source": "Zusammen",
   "BasePath": "_content/Zusammen",
   "Mode": "Default",
@@ -397,6 +397,25 @@
       "OriginalItemSpec": "wwwroot/img/NunII.jpg"
     },
     {
+      "Identity": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/photo.ico",
+      "SourceId": "Zusammen",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/",
+      "BasePath": "_content/Zusammen",
+      "RelativePath": "img/photo.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/photo.ico"
+    },
+    {
       "Identity": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/right.ico",
       "SourceId": "Zusammen",
       "SourceType": "Discovered",
@@ -433,25 +452,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/search.ico"
-    },
-    {
-      "Identity": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/upload.jpg",
-      "SourceId": "Zusammen",
-      "SourceType": "Discovered",
-      "ContentRoot": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/",
-      "BasePath": "_content/Zusammen",
-      "RelativePath": "img/upload.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/upload.jpg"
     },
     {
       "Identity": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/user.ico",
