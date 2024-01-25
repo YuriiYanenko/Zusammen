@@ -44,14 +44,15 @@
         </div>
         <div class="login-sign-form-item sign-up">
           <div class="login-sign-table">
-            <div class="login-sign-table-cell">
-              <input name="Username" placeholder="Username" type="text" />
-              <input name="email" placeholder="Email" type="text"/>
-              <input name="Password" placeholder="Password" type="Password"/>
-              <div class="login-sign-btn" style="width: 160px">
-                Зареєструватися
-              </div>
-            </div>
+            <form class="login-sign-table-cell" role="form" asp-action="Register" asp-controller="Autorization" method="post">
+              <input asp-for="name" name="Username" type="text" autocomplete="off" data-val="true" data-val-required="Дане поле є обов'язковим для вводу"  placeholder="Username"/>
+              <span asp-validation-for="name" class="text-danger"></span>
+              <input asp-for="email" name="Email" type="text" autocomplete="off" data-val="true" data-val-required="Дане поле є обов'язковим для вводу" placeholder="Email"/>
+              <span asp-validation-for="email" class="text-danger"></span>
+              <input asp-for="password" name="Password" type="Password" autocomplete="off" data-val="true" data-val-required="Дане поле є обов'язковим для вводу." placeholder="Password"/>
+              <span asp-validation-for="password" class="text-danger"></span>
+              <input type="submit" value="Зареєструватися" class="login-sign-btn" style="width: 160px"/>
+            </form>
           </div>
         </div>
       </div>

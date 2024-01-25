@@ -361,3 +361,15 @@ D:/Projects/Zusammen/Zusammen/obj/Debug/net8.0/refint/Zusammen.dll
 D:/Projects/Zusammen/Zusammen/obj/Debug/net8.0/Zusammen.pdb
 D:/Projects/Zusammen/Zusammen/obj/Debug/net8.0/Zusammen.genruntimeconfig.cache
 D:/Projects/Zusammen/Zusammen/obj/Debug/net8.0/ref/Zusammen.dll
+D:\Projects\Zusammen\Zusammen\obj\Debug\net8.0\Zusammen.csproj.AssemblyReference.cache
+D:\Projects\Zusammen\Zusammen\obj\Debug\net8.0\Zusammen.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Zusammen\Zusammen\obj\Debug\net8.0\Zusammen.AssemblyInfoInputs.cache
+D:\Projects\Zusammen\Zusammen\obj\Debug\net8.0\Zusammen.AssemblyInfo.cs
+D:\Projects\Zusammen\Zusammen\obj\Debug\net8.0\Zusammen.csproj.CoreCompileInputs.cache
+D:\Projects\Zusammen\Zusammen\obj\Debug\net8.0\Zusammen.MvcApplicationPartsAssemblyInfo.cache
+D:\Projects\Zusammen\Zusammen\obj\Debug\net8.0\Zusammen.RazorAssemblyInfo.cache
+D:\Projects\Zusammen\Zusammen\obj\Debug\net8.0\Zusammen.RazorAssemblyInfo.cs
+D:\Projects\Zusammen\Zusammen\obj\Debug\net8.0\Zusammen.sourcelink.json
+D:\Projects\Zusammen\Zusammen\obj\Debug\net8.0\Zusammen.dll
+D:\Projects\Zusammen\Zusammen\obj\Debug\net8.0\refint\Zusammen.dll
+D:\Projects\Zusammen\Zusammen\obj\Debug\net8.0\Zusammen.pdb
