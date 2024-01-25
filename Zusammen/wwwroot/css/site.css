@@ -809,8 +809,8 @@ li.film-data {
   color: white;
   margin: 0;
 }
-
-textarea {
+textarea 
+{
   height: 20px;
   font-size: 14px;
 }
