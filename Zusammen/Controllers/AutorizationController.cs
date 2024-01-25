@@ -11,7 +11,7 @@ public class AutorizationController : Controller
 {
     private readonly ZusammenDbContext _context;
 
-    public AutorizationController(UserManager<IdentityUser> userManager, ZusammenDbContext context)
+    public AutorizationController(ZusammenDbContext context)
     {
         _context = context;
     }
