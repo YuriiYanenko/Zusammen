@@ -74,4 +74,8 @@ public class HomeController : Controller
         var allFilms = dbController.GetFilms();
         return View("FilmsGenerAndYear", allFilms.Result.Value);
     }
+    public IActionResult ChangeUserProfil()
+    {
+        return View();
+    }
 }

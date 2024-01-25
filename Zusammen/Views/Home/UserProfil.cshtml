@@ -1,45 +1,22 @@
-
+@model Zusammen.Models.users
 @{
     ViewBag.Title = "Обліковий запис";
     ViewData["ShowHeader"] = true;
 }
-
-<script src="~/js/upload_foto.js"></script> 
-<div class="profile" id="profileUs">
-     <div class="photo" >
-         <img src="../img/photo.ico">
+<script src="~/js/new_photo.js"></script> 
+<div class="profile" id="profileUs" >
+    <div class="photo" id="uploadedImage1">
+        <img src="../img/photo.ico">
     </div>
     <div class="dataUs">
-             <p class="data">Нікнейм: </p>
-             <p class="data">Ваші дані: </p>
-             <p class="data">Кімнати: </p>
-             <p class="data">Статус: </p>
+        <p class="data">Нікнейм:<span>@Model.name</span> </p>
+        <p class="data">Про себе:<span>@Model.profile_description</span> </p>
+        <p class="data">Кімнати: <span>@Model.rooms</span></p>
     </div>
 </div>
-<div class="change-profile" id="change-profileUs" style="display: none;" onclick="openFileExplorer()">
-    <div class="photo-change" id="uploadedImage">
-        <img  src="../img/photo.ico">
+@using (Html.BeginForm("ChangeUserProfil", "Home", FormMethod.Post))
+{
+    <div id="editButtonContainer">
+        <button class="buttonroom2" type="submit">Редагувати</button>
     </div>
-</div>
-<input type="file" id="fileInput" style="display: none" onchange=" previewImage()"> 
-
-<div class="dataUs-changes" id="dataUsContainer" style="display: none;">
-    <p class="data-changes">Нікнейм: <input type="text" name="username"></p>
-    <p class="data-changes">Ваші дані:  <textarea name="message"></textarea> </p>
-    <p class="data-changes">Статус: 
-         <input type="radio" id="status1" name="status" value="status1">
-         <label for="status1">Онлайн</label>
-                                        
-         <input type="radio" id="status2" name="status" value="status2">
-         <label for="status2">Оффлайн</label> 
-    </p>
- </div>
-
- 
- 
-<div id="editButtonContainer">
-    <button class="buttonroom2" type="submit"  onclick="toggleContainers()">Редагувати</button>
-</div>
- <div id="saveButtonContainer" style="display: none;">
-     <button class="buttonroom2" id="buttonChanges" type="submit"  onclick="saveChanges()">Зберегти зміни</button>
- </div>
+}
