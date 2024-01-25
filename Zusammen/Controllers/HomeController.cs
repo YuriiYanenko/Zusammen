@@ -72,6 +72,6 @@ public class HomeController : Controller
     {
         var dbController = new ZusammenDbController(_context);
         var allFilms = dbController.GetFilms();
-        return View("FilmsGenerAndYear", allFilms.Result.Value.ToList());
+        return View("FilmsGenerAndYear", allFilms.Result.Value);
     }
 }

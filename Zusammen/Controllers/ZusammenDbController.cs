@@ -19,7 +19,7 @@ public class ZusammenDbController : Controller
 
     //Gets List of values from films table Method GET.
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<films>>> GetFilms()
+    public async Task<ActionResult<List<films>>> GetFilms()
     {
         return await _context.films.ToListAsync();
     }
@@ -112,12 +112,22 @@ public class ZusammenDbController : Controller
     {
         var filteredFilmsList = await _context.films.Where(e => e.year > years[0] && e.year < years[1]).ToListAsync();
         return filteredFilmsList;
-    } 
-
+    }
+    
     public async Task AddUser(users newUser)
     {
         _context.users.Add(newUser);
         await _context.SaveChangesAsync();
+    }
+
+    public async Task<ActionResult<users>> GetUserData(int userId)
+    {
+        var user = await _context.users.FindAsync(userId);
+        if (user == null)
+        {
+            return NotFound();
+        }
+        return user;
     }
 
     private async Task<bool> ContainsAllGenres(string[] filmGenres, string[] filterGenres)
