@@ -688,73 +688,33 @@ header{
   background-color: #059696;
   border-color: #035454;
 }
-.image-cont
-{
-  position: relative;
-  width: 260px;
-  height: 385px;
-  background: none;
-  border: none;
-  padding-top: 20px
-}
-.NANfilter{
-  padding-top: 70px;
-  color: #a4a3a3;
-  text-align: center;
-  margin: auto;
-}
-li.film-data {
-  flex: 1;
-  max-width: 30vmin;
-  min-width: 20vmax;
-}
-#search-result-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.film-container{
-  display: flex;
-  flex-direction: column;
-}
-.film-data:hover .overlay {
-  margin-left: 5px;
-  height: 20%;
-  opacity: .8;
-  width: 250px;
-  overflow:  visible;
-}
-.photo-change
-{
+.photo-change {
   width: 180px;
   height: 180px;
-  background-color:#296B6A ;
+  background-color: #296B6A;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
-.change-profile
-{
-  width: 180px;
-  height: 180px;
-  display: flex;
+
+.change-profile {
+  display: flex; 
   align-items: center;
+  margin-right: 20px; 
 }
-.change-profile.photo-change
-{
-  margin-right: 100px;
-}
+
 .dataUs-changes {
   display: flex;
   flex-direction: column;
+ margin-top: -16.5%;
 }
 
-.data-changes
-{
+.data-changes {
   font-size: 20px;
   text-align: justify;
-  color:rgb(200, 200, 200) ;
+  color: rgb(200, 200, 200);
+  margin-left: 230px;
 }
 
 .buttonroom2
@@ -781,12 +741,11 @@ li.film-data {
 {
   width: 180px;
   height: 180px;
-  background-color:#296B6A ;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-
+  background-color:#296B6A ;
 }
 .dataUs 
 {
