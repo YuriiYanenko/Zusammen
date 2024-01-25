@@ -17,22 +17,25 @@ public class AutorizationController : Controller
     }
 
 
+    [HttpPost("Register")]
     public async Task<ActionResult> Register(RegisterModel model)
     {
-            ZusammenDbController dbController = new ZusammenDbController(_context);
-            var userToAdd = new users()
-            {
-                name = model.name,
-                email = model.email,
-                password = model.password,
-                profile_description = "",
-                rooms = new List<int>(),
-                profile_image_path = "../img/users/std.png"
-            };
-            dbController.AddUser(userToAdd);
+        ZusammenDbController dbController = new ZusammenDbController(_context);
+        Console.WriteLine($"Nick: {model.name}");
+        var userToAdd = new users()
+        {
+            nickname = model.name,
+            email = model.email,
+            password = model.password,
+            profile_description = "",
+            rooms = new List<int>(),
+            profile_image_path = "../img/users/std.png",
+            status = "offline"
+        };
+        await dbController.AddUser(userToAdd);
 
         //return RedirectToAction("Index", "Home");
-        
+
         return RedirectToAction("Login_Sign", "Home");
     }
 
@@ -42,8 +45,9 @@ public class AutorizationController : Controller
         {
             var userDetails =
                 await _context.users.SingleOrDefaultAsync(m => m.email == model.email && m.password == model.password);
-            HttpContext.Session.SetString("id", userDetails.name);
+            HttpContext.Session.SetString("id", userDetails.nickname);
         }
-            return RedirectToAction("Index", "Home");
+
+        return RedirectToAction("Index", "Home");
     }
 }

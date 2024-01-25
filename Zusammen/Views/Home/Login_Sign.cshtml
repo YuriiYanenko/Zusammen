@@ -47,11 +47,11 @@
         <div class="login-sign-form-item sign-up">
           <div class="login-sign-table">
             <form class="login-sign-table-cell" role="form" asp-action="Register" asp-controller="Autorization" method="post">
-              <input asp-for="@Model.register.name" name="Username" type="text" autocomplete="off" data-val="true" data-val-required="Дане поле є обов'язковим для вводу"  placeholder="Username"/>
+              <input asp-for="@Model.register.name" name="name" type="text" autocomplete="off" data-val="true" data-val-required="Дане поле є обов'язковим для вводу"  placeholder="Username"/>
               <span asp-validation-for="@Model.register.name" class="text-danger"></span>
-              <input asp-for="@Model.register.email" name="Email" type="text" autocomplete="off" data-val="true" data-val-required="Дане поле є обов'язковим для вводу" placeholder="Email"/>
+              <input asp-for="@Model.register.email" name="email" type="text" autocomplete="off" data-val="true" data-val-required="Дане поле є обов'язковим для вводу" placeholder="Email"/>
               <span asp-validation-for="@Model.register.email" class="text-danger"></span>
-              <input asp-for="@Model.register.password" name="Password" type="Password" autocomplete="off" data-val="true" data-val-required="Дане поле є обов'язковим для вводу." placeholder="Password"/>
+              <input asp-for="@Model.register.password" name="password" type="Password" autocomplete="off" data-val="true" data-val-required="Дане поле є обов'язковим для вводу." placeholder="Password"/>
               <span asp-validation-for="@Model.register.password" class="text-danger"></span>
               <input type="submit" value="Зареєструватися" class="login-sign-btn" style="width: 160px"/>
             </form>

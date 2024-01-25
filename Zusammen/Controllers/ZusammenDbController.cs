@@ -117,7 +117,7 @@ public class ZusammenDbController : Controller
     public async Task AddUser(users newUser)
     {
         var allUsers = await _context.users.ToListAsync();
-        newUser.id = allUsers[allUsers.Count - 1].id;
+        newUser.id = allUsers[allUsers.Count - 1].id+1;
         _context.users.Add(newUser);
         await _context.SaveChangesAsync();
     }
