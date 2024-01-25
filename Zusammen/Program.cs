@@ -1,6 +1,8 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Npgsql.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Zusammen.Hubs;
 
 namespace Zusammen;
@@ -14,9 +16,13 @@ public class Program
         // Add services to the container.
         builder.Services.AddControllersWithViews();
         builder.Services.AddSignalR();
+        builder.Services.AddSession();
         // Connect to database using "DefaultConnection" field from 'appsetings.json'. 
         builder.Services.AddDbContext<ZusammenDbContext>(
             options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+        // builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<ZusammenDbContext>().AddDefaultTokenProviders();
+        
+        
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
@@ -38,7 +44,7 @@ public class Program
         app.MapControllerRoute(
             name: "default",
             pattern: "{controller=Home}/{action=Index}/{id?}");
-
+        
         app.Run();
     }
 }

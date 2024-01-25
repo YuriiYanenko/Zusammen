@@ -45,7 +45,7 @@ public class users
     public string password { get; set; }
     public string status { get; set; }
     public string profile_description { get; set; }
-    public int[] rooms { get; set; }
+    public List<int> rooms { get; set; }
     public string profile_image_path { get; set; }
 }
 
@@ -53,4 +53,17 @@ public class RoomAndFilm
 {
     public rooms Room { get; set; }
     public string FilmPath { get; set; }
+}
+
+public class RegisterModel
+{
+    public string name { get; set; }
+    public string email { get; set; }
+    public string password { get; set; }
+}
+
+public class LoginModel
+{
+    public string email { get; set; }
+    public string password { get; set; }
 }
