@@ -110,7 +110,7 @@ public class ZusammenDbController : Controller
 
     public async Task<ActionResult<List<films>>> GetFilmsByYear(int[] years)
     {
-        var filteredFilmsList = await _context.films.Where(e => e.year > years[0] && e.year < years[1]).ToListAsync();
+        var filteredFilmsList = await _context.films.Where(e => e.year >= years[0] && e.year <= years[1]).ToListAsync();
         return filteredFilmsList;
     }
     
