@@ -688,6 +688,42 @@ header{
   background-color: #059696;
   border-color: #035454;
 }
+.image-cont
+{
+  position: relative;
+  width: 260px;
+  height: 385px;
+  background: none;
+  border: none;
+  padding-top: 20px
+}
+.NANfilter{
+  padding-top: 70px;
+  color: #a4a3a3;
+  text-align: center;
+  margin: auto;
+}
+li.film-data {
+  flex: 1;
+  max-width: 30vmin;
+  min-width: 20vmax;
+}
+#search-result-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.film-container{
+  display: flex;
+  flex-direction: column;
+}
+.film-data:hover .overlay {
+  margin-left: 5px;
+  height: 20%;
+  opacity: .8;
+  width: 250px;
+  overflow:  visible;
+}
 .photo-change {
   width: 180px;
   height: 180px;
