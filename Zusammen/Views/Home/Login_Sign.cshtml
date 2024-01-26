@@ -35,13 +35,13 @@
       <div class="login-sign-container-form">
         <div class="login-sign-form-item log-in">
           <div class="login-sign-table">
-            <div class="login-sign-table-cell">
-              <input name="Username" placeholder="Username" type="text" />
-              <input name="Password" placeholder="Password" type="Password" />
-              <div class="login-sign-btn" style="width: 100px">
-                Увійти
-              </div>
-            </div>
+            <form class="login-sign-table-cell" role="form" asp-action="Login" asp-controller="Autorization" method="post">
+              <input asp-for="@Model.login.name" name="name" placeholder="Username" type="text" autocomplete="off" data-val="true" data-val-required="Дане поле є обов'язковим для вводу" />
+               <span asp-validation-for="@Model.login.name" class="text-danger"></span>
+              <input asp-for="@Model.login.password" name="password" type="Password" autocomplete="off" data-val="true" data-val-required="Дане поле є обов'язковим для вводу." placeholder="Password"/>
+                 <span asp-validation-for="@Model.register.password" class="text-danger"></span>
+             <input type="submit" value="Увійти" class="login-sign-btn" style="width: 160px"/>
+            </form>
           </div>
         </div>
         <div class="login-sign-form-item sign-up">

@@ -20,10 +20,18 @@ public class Program
         // Connect to database using "DefaultConnection" field from 'appsetings.json'. 
         builder.Services.AddDbContext<ZusammenDbContext>(
             options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+        builder.Services.AddSession(
+            options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(30);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
         // builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<ZusammenDbContext>().AddDefaultTokenProviders();
-        
-        
+
+
         var app = builder.Build();
+        app.UseSession();
 
         // Configure the HTTP request pipeline.
         if (!app.Environment.IsDevelopment())
@@ -44,7 +52,7 @@ public class Program
         app.MapControllerRoute(
             name: "default",
             pattern: "{controller=Home}/{action=Index}/{id?}");
-        
+
         app.Run();
     }
 }

@@ -22,18 +22,20 @@ public class AutorizationController : Controller
     {
         ZusammenDbController dbController = new ZusammenDbController(_context);
         Console.WriteLine($"Nick: {model.name}");
-        var userToAdd = new users()
+        if (ModelState.IsValid)
         {
-            nickname = model.name,
-            email = model.email,
-            password = model.password,
-            profile_description = "",
-            rooms = new List<int>(),
-            profile_image_path = "../img/users/std.png",
-            status = "offline"
-        };
-        await dbController.AddUser(userToAdd);
-
+            var userToAdd = new users()
+            {
+                nickname = model.name,
+                email = model.email,
+                password = model.password,
+                profile_description = "",
+                rooms = new List<int>(),
+                profile_image_path = "../img/users/std.png",
+                status = "offline"
+            };
+            await dbController.AddUser(userToAdd);
+        }
         //return RedirectToAction("Index", "Home");
 
         return RedirectToAction("Login_Sign", "Home");
@@ -43,8 +45,9 @@ public class AutorizationController : Controller
     {
         if (ModelState.IsValid)
         {
+            
             var userDetails =
-                await _context.users.SingleOrDefaultAsync(m => m.email == model.email && m.password == model.password);
+                await _context.users.SingleOrDefaultAsync(m => m.nickname == model.name && m.password == model.password);
             HttpContext.Session.SetString("id", userDetails.nickname);
         }
 
