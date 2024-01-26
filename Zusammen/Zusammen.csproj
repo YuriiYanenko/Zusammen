@@ -38,4 +38,8 @@
       <Content Remove="wwwroot\js\upload_foto.js" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Compile Remove="Views\Home\user.cs" />
+    </ItemGroup>
+
 </Project>
