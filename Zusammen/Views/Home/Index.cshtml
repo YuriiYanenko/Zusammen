@@ -10,6 +10,9 @@
           {
               <button style=" background: none; border: none; width: 100%; height: 100%;">
                   <img src="../img/Napoleon.jpg" alt="Image">
+                  <div class="overlay">
+                      <div class="text">Наполеон</div>
+                  </div>
               </button>
           }
       </div>
@@ -18,6 +21,9 @@
           { 
               <button style=" background: none; border: none; width: 100%; height: 100%;">
                   <img src="../img/NunII.jpg" alt="Image">
+                  <div class="overlay">
+                      <div class="text">Монахиня 2</div>
+                  </div>
               </button>
           }
       </div>
@@ -26,6 +32,9 @@
                    { 
                        <button style=" background: none; border: none; width: 100%; height: 100%;">
                            <img src="../img/Casablanca.jpg" alt="Image">
+                           <div class="overlay">
+                               <div class="text">Касабланка</div>
+                           </div>
                        </button>
                    }
       </div>
@@ -34,6 +43,9 @@
                    { 
                        <button style=" background: none; border: none; width: 100%; height: 100%;">
                            <img src="../img/Bird_Box.jpg" alt="Image">
+                           <div class="overlay">
+                               <div class="text">Пташиний короб</div>
+                           </div>
                        </button>
                    }
       </div>
@@ -46,17 +58,39 @@
   </button>
       <p>Рекомендації</p>
   <div class="cont">
-  <div class="image-container">
-      <img src="../img/film1.png" alt="Image">
-      <div class="image-caption">Велика сім'я</div>
-  </div>
-  <div class="image-container">
-      <img src="../img/film2.png" alt="Image">
-      <div class="image-caption">Людина невидимка. Повернення</div>
-  </div>
-  <div class="image-container">
-      <img src="../img/film3.png" alt="Image">
-      <div class="image-caption">Диявол носить Прада</div>
+      <div class="image-container">
+         @using (Html.BeginForm("FilmView", "Home", new { filmId = 5 }))
+         {
+             <button style=" background: none; border: none; width: 100%; height: 100%;">
+                 <img class="image-name" src="../img/BigFamily.png" alt="Image">
+                   <div class="overlay">
+                      <div class="text">Велика сім'я</div>
+                   </div>
+             </button>
+         }
+      </div>
+      <div class="image-container">
+          @using (Html.BeginForm("FilmView", "Home", new { filmId = 5 }))
+          {
+          <button style=" background: none; border: none; width: 100%; height: 100%;">
+            <img class="image-name"src="../img/FearTheInvisibleMan.png" alt="Image">
+               <div class="overlay">
+                   <div class="text">Людина невидимка. Повернення</div>
+               </div>
+          </button>
+          }
+         
+      </div>
+      <div class="image-container">
+         @using (Html.BeginForm("FilmView", "Home", new { filmId = 5 }))
+         {
+         <button style=" background: none; border: none; width: 100%; height: 100%;">
+             <img class="image-name"src="../img/TheDevilWearsPrada.png" alt="Image">
+             <div class="overlay">
+                 <div class="text">Диявол носить Прада</div>
+             </div>
+         </button>
+         }  
       </div>
   </div>  
 </div>

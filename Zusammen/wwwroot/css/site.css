@@ -185,19 +185,43 @@ p
 {
   display: flex;
   flex-direction: row;
+  justify-content: center; 
+  align-items: center;
 }
-.image-container
+.image-container 
 {
   position: relative;
-  text-align: center;
-  margin-right: 100px;
-  width: 100%;
-  height: auto;
 }
 
+.image-container .overlay 
+{
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  transition: .5s ease;
+}
+
+.image-container:hover .overlay 
+{
+  opacity: 1;
+  height: 20%;
+}
+.image-container .overlay .text {
+  white-space: normal;
+  font-size: 16px;
+}
+.image-container 
+{
+  position: relative;
+  margin-right: 50px; 
+}
 .image-container img
 {
-  margin-left: 65px;
   margin-top: 50px;
   border-radius: 1.5rem;
   border: 2px solid white;

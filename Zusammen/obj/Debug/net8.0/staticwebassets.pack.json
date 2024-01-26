@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
+      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/BigFamily.png",
+      "PackagePath": "staticwebassets/img/BigFamily.png"
+    },
+    {
       "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/Bird_Box.jpg",
       "PackagePath": "staticwebassets/img/Bird_Box.jpg"
     },
@@ -23,6 +27,10 @@
     {
       "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/Casablanca.jpg",
       "PackagePath": "staticwebassets/img/Casablanca.jpg"
+    },
+    {
+      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/FearTheInvisibleMan.png",
+      "PackagePath": "staticwebassets/img/FearTheInvisibleMan.png"
     },
     {
       "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/Five_Nights_at_Freddy.jpg",
@@ -49,20 +57,12 @@
       "PackagePath": "staticwebassets/img/NunII.jpg"
     },
     {
+      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/TheDevilWearsPrada.png",
+      "PackagePath": "staticwebassets/img/TheDevilWearsPrada.png"
+    },
+    {
       "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/favicon.ico",
       "PackagePath": "staticwebassets/img/favicon.ico"
-    },
-    {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/film1.png",
-      "PackagePath": "staticwebassets/img/film1.png"
-    },
-    {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/film2.png",
-      "PackagePath": "staticwebassets/img/film2.png"
-    },
-    {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/film3.png",
-      "PackagePath": "staticwebassets/img/film3.png"
     },
     {
       "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/footer.jpg",

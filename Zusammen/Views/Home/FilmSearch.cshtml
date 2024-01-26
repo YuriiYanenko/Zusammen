@@ -19,12 +19,14 @@
 <script>
 
     $("#search-result-list").append(
-         '<li class="film-data">'+
-             '<div class="image-cont">'+    
-                  '<img class="film-image" src="@path" alt=""">'+
-             '</div>'+
-             '<span style=" margin-left: 5px; color: white; font-size: 20px ">Назва фільму: @movie</span>' +
-         '</li>'
+        ' <li class="film-data">'+
+          '<button class="image-cont">'+
+             '<img class="image-name" style="border-radius: 20px" src="@path">'+
+              '<div class="overlay">'+
+                '<div class="text">@movie</div>'+
+               '</div>'+
+         ' </button>'+
+          '</li>'
     );
             
 </script>
