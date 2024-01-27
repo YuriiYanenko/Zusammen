@@ -13,9 +13,13 @@ public class rooms
     public int id { get; set; }
     public string name { get; set; }
     public int admin_id { get; set; }
-    public int[] members_id { get; set; }
-
+    public List<int> members_id { get; set; }
     public int film_id { get; set; }
+
+    public rooms()
+    {
+        members_id = new List<int>();
+    }
 }
 
 // Films table object model.
@@ -50,14 +54,12 @@ public class users
     public string profile_description { get; set; }
     public string profile_image_path { get; set; }
     public string status { get; set; }
-    
     public int id { get; set; }
 
     public users()
     {
         rooms = new List<int>();
     }
-    
 }
 
 public class RoomAndFilm

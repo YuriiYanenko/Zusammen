@@ -1,1275 +1,1291 @@
 {
   "Files": [
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/obj/Debug/net8.0/scopedcss/projectbundle/Zusammen.bundle.scp.css",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/obj/Debug/net8.0/scopedcss/projectbundle/Zusammen.bundle.scp.css",
       "PackagePath": "staticwebassets/Zusammen.bundle.scp.css"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/css/site.css",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/Bird_Box.jpg",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/BigFamily.png",
+      "PackagePath": "staticwebassets/img/BigFamily.png"
+    },
+    {
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/Bird_Box.jpg",
       "PackagePath": "staticwebassets/img/Bird_Box.jpg"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/Carret_Left.png",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/Carret_Left.png",
       "PackagePath": "staticwebassets/img/Carret_Left.png"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/Carret_Right.png",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/Carret_Right.png",
       "PackagePath": "staticwebassets/img/Carret_Right.png"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/Casablanca.jpg",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/Casablanca.jpg",
       "PackagePath": "staticwebassets/img/Casablanca.jpg"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/Five_Nights_at_Freddy.jpg",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/DevilVearsPrada.jpg",
+      "PackagePath": "staticwebassets/img/DevilVearsPrada.jpg"
+    },
+    {
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/FearTheInvisibleMan.png",
+      "PackagePath": "staticwebassets/img/FearTheInvisibleMan.png"
+    },
+    {
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/Five_Nights_at_Freddy.jpg",
       "PackagePath": "staticwebassets/img/Five_Nights_at_Freddy.jpg"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/Furry_Vegnance.jpg",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/Furry_Vegnance.jpg",
       "PackagePath": "staticwebassets/img/Furry_Vegnance.jpg"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/Idiocracy.jpg",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/Idiocracy.jpg",
       "PackagePath": "staticwebassets/img/Idiocracy.jpg"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/It.jpg",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/It.jpg",
       "PackagePath": "staticwebassets/img/It.jpg"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/Napoleon.jpg",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/Napoleon.jpg",
       "PackagePath": "staticwebassets/img/Napoleon.jpg"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/NunII.jpg",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/NunII.jpg",
       "PackagePath": "staticwebassets/img/NunII.jpg"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/TheDevilWearsPrada.png",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/TheDevilWearsPrada.png",
       "PackagePath": "staticwebassets/img/TheDevilWearsPrada.png"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/favicon.ico",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/favicon.ico",
       "PackagePath": "staticwebassets/img/favicon.ico"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/footer.jpg",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/footer.jpg",
       "PackagePath": "staticwebassets/img/footer.jpg"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/left.ico",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/left.ico",
       "PackagePath": "staticwebassets/img/left.ico"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/photo.ico",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/photo.ico",
       "PackagePath": "staticwebassets/img/photo.ico"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/right.ico",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/right.ico",
       "PackagePath": "staticwebassets/img/right.ico"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/search.ico",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/search.ico",
       "PackagePath": "staticwebassets/img/search.ico"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/user.ico",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/user.ico",
       "PackagePath": "staticwebassets/img/user.ico"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/users/user1.png",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/users/user1.png",
       "PackagePath": "staticwebassets/img/users/user1.png"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/users/user2.png",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/users/user2.png",
       "PackagePath": "staticwebassets/img/users/user2.png"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/users/user3.png",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/users/user3.png",
       "PackagePath": "staticwebassets/img/users/user3.png"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/users/user4.png",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/users/user4.png",
       "PackagePath": "staticwebassets/img/users/user4.png"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/users/user5.png",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/users/user5.png",
       "PackagePath": "staticwebassets/img/users/user5.png"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/users/user6.png",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/users/user6.png",
       "PackagePath": "staticwebassets/img/users/user6.png"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/МонахиняII.jpg",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/МонахиняII.jpg",
       "PackagePath": "staticwebassets/img/МонахиняII.jpg"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/js/Login_Signup.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/js/Login_Signup.js",
       "PackagePath": "staticwebassets/js/Login_Signup.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/js/new_photo.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/js/new_photo.js",
       "PackagePath": "staticwebassets/js/new_photo.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/js/site.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/js/users_into_bd.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/js/users_into_bd.js",
       "PackagePath": "staticwebassets/js/users_into_bd.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/js/videoRecieve.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/js/videoRecieve.js",
       "PackagePath": "staticwebassets/js/videoRecieve.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/LICENSE",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/LICENSE",
       "PackagePath": "staticwebassets/lib/bootstrap"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/jquery-validation/LICENSE.md",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/jquery-validation/LICENSE.md",
       "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/jquery-validation/dist/additional-methods.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/jquery/LICENSE.txt",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/jquery/LICENSE.txt",
       "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/jquery/dist/jquery.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/jquery/dist/jquery.js",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/jquery/dist/jquery.min.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/jquery/dist/jquery.min.js",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/jquery/dist/jquery.min.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/jquery/dist/jquery.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/README.md",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/README.md",
       "PackagePath": "staticwebassets/lib/signalr/README.md"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/browser/signalr.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/browser/signalr.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/browser/signalr.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/browser/signalr.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/browser/signalr.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/browser/signalr.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/browser/signalr.min.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/browser/signalr.min.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/browser/signalr.min.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/browser/signalr.min.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/browser/signalr.min.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/browser/signalr.min.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/AbortController.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/AbortController.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/AbortController.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/AbortController.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/AbortController.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/AbortController.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/AccessTokenHttpClient.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/AccessTokenHttpClient.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/AccessTokenHttpClient.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/AccessTokenHttpClient.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/AccessTokenHttpClient.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/AccessTokenHttpClient.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/DefaultHttpClient.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/DefaultHttpClient.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/DefaultHttpClient.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/DefaultHttpClient.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/DefaultHttpClient.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/DefaultHttpClient.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/DefaultReconnectPolicy.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/DefaultReconnectPolicy.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/DefaultReconnectPolicy.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/DefaultReconnectPolicy.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/DefaultReconnectPolicy.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/DefaultReconnectPolicy.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/DynamicImports.browser.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/DynamicImports.browser.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/DynamicImports.browser.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/DynamicImports.browser.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/DynamicImports.browser.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/DynamicImports.browser.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/DynamicImports.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/DynamicImports.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/DynamicImports.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/DynamicImports.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/DynamicImports.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/DynamicImports.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/Errors.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/Errors.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/Errors.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/Errors.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/Errors.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/Errors.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/FetchHttpClient.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/FetchHttpClient.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/FetchHttpClient.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/FetchHttpClient.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/FetchHttpClient.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/FetchHttpClient.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/HandshakeProtocol.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/HandshakeProtocol.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/HandshakeProtocol.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/HandshakeProtocol.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/HandshakeProtocol.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/HandshakeProtocol.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/HeaderNames.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/HeaderNames.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/HeaderNames.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/HeaderNames.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/HeaderNames.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/HeaderNames.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/HttpClient.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/HttpClient.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/HttpClient.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/HttpClient.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/HttpClient.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/HttpClient.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/HttpConnection.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/HttpConnection.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/HttpConnection.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/HttpConnection.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/HttpConnection.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/HttpConnection.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/HubConnection.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/HubConnection.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/HubConnection.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/HubConnection.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/HubConnection.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/HubConnection.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/HubConnectionBuilder.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/HubConnectionBuilder.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/HubConnectionBuilder.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/HubConnectionBuilder.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/HubConnectionBuilder.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/HubConnectionBuilder.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/IConnection.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/IConnection.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/IConnection.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/IConnection.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/IConnection.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/IConnection.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/IHttpConnectionOptions.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/IHttpConnectionOptions.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/IHttpConnectionOptions.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/IHttpConnectionOptions.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/IHttpConnectionOptions.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/IHttpConnectionOptions.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/IHubProtocol.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/IHubProtocol.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/IHubProtocol.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/IHubProtocol.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/IHubProtocol.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/IHubProtocol.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/ILogger.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/ILogger.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/ILogger.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/ILogger.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/ILogger.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/ILogger.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/IRetryPolicy.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/IRetryPolicy.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/IRetryPolicy.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/IRetryPolicy.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/IRetryPolicy.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/IRetryPolicy.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/IStatefulReconnectOptions.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/IStatefulReconnectOptions.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/IStatefulReconnectOptions.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/IStatefulReconnectOptions.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/IStatefulReconnectOptions.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/IStatefulReconnectOptions.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/ITransport.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/ITransport.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/ITransport.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/ITransport.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/ITransport.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/ITransport.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/JsonHubProtocol.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/JsonHubProtocol.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/JsonHubProtocol.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/JsonHubProtocol.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/JsonHubProtocol.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/JsonHubProtocol.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/Loggers.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/Loggers.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/Loggers.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/Loggers.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/Loggers.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/Loggers.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/LongPollingTransport.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/LongPollingTransport.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/LongPollingTransport.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/LongPollingTransport.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/LongPollingTransport.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/LongPollingTransport.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/MessageBuffer.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/MessageBuffer.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/MessageBuffer.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/MessageBuffer.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/MessageBuffer.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/MessageBuffer.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/Polyfills.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/Polyfills.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/Polyfills.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/Polyfills.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/Polyfills.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/Polyfills.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/ServerSentEventsTransport.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/ServerSentEventsTransport.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/ServerSentEventsTransport.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/ServerSentEventsTransport.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/ServerSentEventsTransport.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/ServerSentEventsTransport.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/Stream.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/Stream.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/Stream.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/Stream.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/Stream.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/Stream.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/Subject.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/Subject.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/Subject.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/Subject.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/Subject.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/Subject.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/TextMessageFormat.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/TextMessageFormat.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/TextMessageFormat.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/TextMessageFormat.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/TextMessageFormat.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/TextMessageFormat.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/Utils.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/Utils.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/Utils.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/Utils.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/Utils.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/Utils.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/WebSocketTransport.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/WebSocketTransport.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/WebSocketTransport.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/WebSocketTransport.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/WebSocketTransport.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/WebSocketTransport.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/XhrHttpClient.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/XhrHttpClient.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/XhrHttpClient.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/XhrHttpClient.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/XhrHttpClient.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/XhrHttpClient.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/browser-index.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/browser-index.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/browser-index.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/browser-index.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/browser-index.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/browser-index.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/index.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/index.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/index.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/index.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/cjs/index.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/cjs/index.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/AbortController.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/AbortController.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/AbortController.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/AbortController.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/AbortController.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/AbortController.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/AbortController.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/AbortController.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/AbortController.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/AccessTokenHttpClient.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/AccessTokenHttpClient.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/AccessTokenHttpClient.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/AccessTokenHttpClient.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/AccessTokenHttpClient.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/AccessTokenHttpClient.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/AccessTokenHttpClient.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/AccessTokenHttpClient.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/AccessTokenHttpClient.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/DefaultHttpClient.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/DefaultHttpClient.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/DefaultHttpClient.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/DefaultHttpClient.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/DefaultHttpClient.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/DefaultHttpClient.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/DefaultHttpClient.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/DefaultHttpClient.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/DefaultHttpClient.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/DefaultReconnectPolicy.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/DefaultReconnectPolicy.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/DefaultReconnectPolicy.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/DefaultReconnectPolicy.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/DefaultReconnectPolicy.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/DefaultReconnectPolicy.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/DefaultReconnectPolicy.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/DefaultReconnectPolicy.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/DefaultReconnectPolicy.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/DynamicImports.browser.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/DynamicImports.browser.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/DynamicImports.browser.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/DynamicImports.browser.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/DynamicImports.browser.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/DynamicImports.browser.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/DynamicImports.browser.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/DynamicImports.browser.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/DynamicImports.browser.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/DynamicImports.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/DynamicImports.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/DynamicImports.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/DynamicImports.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/DynamicImports.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/DynamicImports.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/DynamicImports.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/DynamicImports.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/DynamicImports.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Errors.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Errors.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/Errors.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Errors.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Errors.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/Errors.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Errors.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Errors.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/Errors.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/FetchHttpClient.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/FetchHttpClient.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/FetchHttpClient.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/FetchHttpClient.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/FetchHttpClient.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/FetchHttpClient.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/FetchHttpClient.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/FetchHttpClient.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/FetchHttpClient.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HandshakeProtocol.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HandshakeProtocol.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/HandshakeProtocol.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HandshakeProtocol.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HandshakeProtocol.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/HandshakeProtocol.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HandshakeProtocol.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HandshakeProtocol.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/HandshakeProtocol.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HeaderNames.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HeaderNames.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/HeaderNames.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HeaderNames.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HeaderNames.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/HeaderNames.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HeaderNames.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HeaderNames.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/HeaderNames.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HttpClient.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HttpClient.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/HttpClient.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HttpClient.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HttpClient.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/HttpClient.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HttpClient.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HttpClient.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/HttpClient.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HttpConnection.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HttpConnection.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/HttpConnection.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HttpConnection.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HttpConnection.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/HttpConnection.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HttpConnection.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HttpConnection.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/HttpConnection.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HubConnection.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HubConnection.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/HubConnection.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HubConnection.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HubConnection.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/HubConnection.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HubConnection.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HubConnection.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/HubConnection.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HubConnectionBuilder.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HubConnectionBuilder.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/HubConnectionBuilder.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HubConnectionBuilder.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HubConnectionBuilder.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/HubConnectionBuilder.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HubConnectionBuilder.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/HubConnectionBuilder.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/HubConnectionBuilder.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IConnection.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IConnection.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/IConnection.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IConnection.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IConnection.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/IConnection.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IConnection.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IConnection.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/IConnection.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IHttpConnectionOptions.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IHttpConnectionOptions.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/IHttpConnectionOptions.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IHttpConnectionOptions.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IHttpConnectionOptions.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/IHttpConnectionOptions.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IHttpConnectionOptions.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IHttpConnectionOptions.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/IHttpConnectionOptions.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IHubProtocol.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IHubProtocol.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/IHubProtocol.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IHubProtocol.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IHubProtocol.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/IHubProtocol.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IHubProtocol.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IHubProtocol.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/IHubProtocol.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/ILogger.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/ILogger.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/ILogger.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/ILogger.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/ILogger.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/ILogger.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/ILogger.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/ILogger.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/ILogger.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IRetryPolicy.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IRetryPolicy.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/IRetryPolicy.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IRetryPolicy.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IRetryPolicy.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/IRetryPolicy.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IRetryPolicy.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IRetryPolicy.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/IRetryPolicy.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IStatefulReconnectOptions.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IStatefulReconnectOptions.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/IStatefulReconnectOptions.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IStatefulReconnectOptions.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IStatefulReconnectOptions.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/IStatefulReconnectOptions.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IStatefulReconnectOptions.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/IStatefulReconnectOptions.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/IStatefulReconnectOptions.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/ITransport.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/ITransport.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/ITransport.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/ITransport.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/ITransport.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/ITransport.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/ITransport.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/ITransport.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/ITransport.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/JsonHubProtocol.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/JsonHubProtocol.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/JsonHubProtocol.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/JsonHubProtocol.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/JsonHubProtocol.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/JsonHubProtocol.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/JsonHubProtocol.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/JsonHubProtocol.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/JsonHubProtocol.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Loggers.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Loggers.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/Loggers.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Loggers.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Loggers.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/Loggers.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Loggers.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Loggers.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/Loggers.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/LongPollingTransport.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/LongPollingTransport.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/LongPollingTransport.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/LongPollingTransport.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/LongPollingTransport.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/LongPollingTransport.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/LongPollingTransport.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/LongPollingTransport.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/LongPollingTransport.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/MessageBuffer.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/MessageBuffer.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/MessageBuffer.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/MessageBuffer.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/MessageBuffer.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/MessageBuffer.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/MessageBuffer.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/MessageBuffer.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/MessageBuffer.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Polyfills.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Polyfills.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/Polyfills.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Polyfills.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Polyfills.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/Polyfills.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Polyfills.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Polyfills.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/Polyfills.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/ServerSentEventsTransport.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/ServerSentEventsTransport.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/ServerSentEventsTransport.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/ServerSentEventsTransport.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/ServerSentEventsTransport.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/ServerSentEventsTransport.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/ServerSentEventsTransport.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/ServerSentEventsTransport.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/ServerSentEventsTransport.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Stream.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Stream.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/Stream.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Stream.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Stream.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/Stream.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Stream.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Stream.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/Stream.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Subject.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Subject.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/Subject.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Subject.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Subject.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/Subject.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Subject.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Subject.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/Subject.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/TextMessageFormat.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/TextMessageFormat.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/TextMessageFormat.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/TextMessageFormat.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/TextMessageFormat.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/TextMessageFormat.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/TextMessageFormat.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/TextMessageFormat.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/TextMessageFormat.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Utils.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Utils.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/Utils.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Utils.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Utils.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/Utils.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Utils.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/Utils.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/Utils.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/WebSocketTransport.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/WebSocketTransport.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/WebSocketTransport.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/WebSocketTransport.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/WebSocketTransport.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/WebSocketTransport.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/WebSocketTransport.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/WebSocketTransport.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/WebSocketTransport.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/XhrHttpClient.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/XhrHttpClient.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/XhrHttpClient.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/XhrHttpClient.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/XhrHttpClient.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/XhrHttpClient.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/XhrHttpClient.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/XhrHttpClient.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/XhrHttpClient.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/browser-index.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/browser-index.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/browser-index.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/browser-index.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/browser-index.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/browser-index.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/browser-index.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/browser-index.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/browser-index.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/index.d.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/index.d.ts",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/index.d.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/index.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/index.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/index.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/index.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/esm/index.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/esm/index.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/webworker/signalr.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/webworker/signalr.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/webworker/signalr.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/webworker/signalr.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/webworker/signalr.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/webworker/signalr.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/webworker/signalr.min.js",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/webworker/signalr.min.js",
       "PackagePath": "staticwebassets/lib/signalr/dist/webworker/signalr.min.js"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/webworker/signalr.min.js.map",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/dist/webworker/signalr.min.js.map",
       "PackagePath": "staticwebassets/lib/signalr/dist/webworker/signalr.min.js.map"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/package.json",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/package.json",
       "PackagePath": "staticwebassets/lib/signalr/package.json"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/AbortController.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/AbortController.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/AbortController.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/AccessTokenHttpClient.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/AccessTokenHttpClient.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/AccessTokenHttpClient.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/DefaultHttpClient.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/DefaultHttpClient.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/DefaultHttpClient.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/DefaultReconnectPolicy.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/DefaultReconnectPolicy.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/DefaultReconnectPolicy.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/DynamicImports.browser.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/DynamicImports.browser.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/DynamicImports.browser.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/DynamicImports.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/DynamicImports.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/DynamicImports.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/Errors.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/Errors.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/Errors.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/FetchHttpClient.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/FetchHttpClient.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/FetchHttpClient.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/HandshakeProtocol.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/HandshakeProtocol.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/HandshakeProtocol.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/HeaderNames.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/HeaderNames.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/HeaderNames.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/HttpClient.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/HttpClient.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/HttpClient.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/HttpConnection.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/HttpConnection.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/HttpConnection.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/HubConnection.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/HubConnection.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/HubConnection.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/HubConnectionBuilder.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/HubConnectionBuilder.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/HubConnectionBuilder.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/IConnection.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/IConnection.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/IConnection.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/IHttpConnectionOptions.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/IHttpConnectionOptions.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/IHttpConnectionOptions.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/IHubProtocol.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/IHubProtocol.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/IHubProtocol.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/ILogger.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/ILogger.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/ILogger.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/IRetryPolicy.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/IRetryPolicy.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/IRetryPolicy.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/IStatefulReconnectOptions.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/IStatefulReconnectOptions.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/IStatefulReconnectOptions.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/ITransport.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/ITransport.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/ITransport.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/JsonHubProtocol.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/JsonHubProtocol.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/JsonHubProtocol.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/Loggers.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/Loggers.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/Loggers.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/LongPollingTransport.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/LongPollingTransport.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/LongPollingTransport.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/MessageBuffer.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/MessageBuffer.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/MessageBuffer.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/Polyfills.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/Polyfills.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/Polyfills.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/ServerSentEventsTransport.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/ServerSentEventsTransport.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/ServerSentEventsTransport.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/Stream.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/Stream.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/Stream.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/Subject.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/Subject.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/Subject.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/TextMessageFormat.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/TextMessageFormat.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/TextMessageFormat.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/Utils.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/Utils.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/Utils.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/WebSocketTransport.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/WebSocketTransport.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/WebSocketTransport.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/XhrHttpClient.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/XhrHttpClient.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/XhrHttpClient.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/browser-index.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/browser-index.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/browser-index.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/index.ts",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/index.ts",
       "PackagePath": "staticwebassets/lib/signalr/src/index.ts"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/third-party-notices.txt",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/lib/signalr/src/third-party-notices.txt",
       "PackagePath": "staticwebassets/lib/signalr/src/third-party-notices.txt"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/videos/Bird.mp4",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/videos/Bird.mp4",
       "PackagePath": "staticwebassets/videos/Bird.mp4"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/videos/Casablanca.mp4",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/videos/Casablanca.mp4",
       "PackagePath": "staticwebassets/videos/Casablanca.mp4"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/videos/FNaF.mp4",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/videos/DevilVearsPrada.mp4",
+      "PackagePath": "staticwebassets/videos/DevilVearsPrada.mp4"
+    },
+    {
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/videos/FNaF.mp4",
       "PackagePath": "staticwebassets/videos/FNaF.mp4"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/videos/Furry.mp4",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/videos/Furry.mp4",
       "PackagePath": "staticwebassets/videos/Furry.mp4"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/videos/Idiocracy.mp4",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/videos/Idiocracy.mp4",
       "PackagePath": "staticwebassets/videos/Idiocracy.mp4"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/videos/It.mp4",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/videos/It.mp4",
       "PackagePath": "staticwebassets/videos/It.mp4"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/videos/Napoleon.mp4",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/videos/Napoleon.mp4",
       "PackagePath": "staticwebassets/videos/Napoleon.mp4"
     },
     {
-      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/videos/NunII.mp4",
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/videos/NunII.mp4",
       "PackagePath": "staticwebassets/videos/NunII.mp4"
     },
     {
