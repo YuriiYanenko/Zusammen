@@ -1,3 +1,4 @@
+@model Zusammen.Models.users;
 @{
     ViewBag.Title = "Зміна облікового запису";
     Layout = "_Layout";
@@ -11,8 +12,8 @@
 </div>
 
 <div class="dataUs-changes" id="dataUsContainer" >
-    <p class="data-changes">Нікнейм: <input type="text" name="username" style="height: 20px;font-size: 14px;"></p>
-    <p class="data-changes">Про себе:  <textarea name="message"></textarea> </p>
+    <p class="data-changes">Нікнейм: <input asp-for="@Model.nickname" type="text" name="username" style="height: 20px;font-size: 14px;"></p>
+    <p class="data-changes">Про себе:  <textarea asp-for="@Model.profile_description" name="message"></textarea> </p>
  </div>
 @using (Html.BeginForm("UserProfil", "Home", FormMethod.Post))
 {
