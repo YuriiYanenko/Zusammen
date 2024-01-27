@@ -48,6 +48,12 @@ public class AutorizationController : Controller
         {   
             var userDetails =
                 await _context.users.SingleOrDefaultAsync(m => m.nickname == model.name && m.password == model.password);
+            if (userDetails == null)
+            {
+                ModelState.AddModelError("Password", "Invalid login attempt.");
+                return RedirectToAction("Login_Sign", "Home");
+            }
+
             HttpContext.Session.SetString("userName", userDetails.nickname);
             
             Console.WriteLine($"User: {userDetails.nickname}, id: {HttpContext.Session.GetString("userName")}");
