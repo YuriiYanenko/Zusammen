@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+53fbYa9nfA59+MFkEKkjrWfUVLz0nCxmnI0o/vLm4k=",
+  "Hash": "nbN0kgAODw2J/fHNw6AJ0015ttODg/nuy1itMu7l5ks=",
   "Source": "Zusammen",
   "BasePath": "_content/Zusammen",
   "Mode": "Default",
@@ -91,25 +91,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/МонахиняII.jpg"
-    },
-    {
-      "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/BigFamily.png",
-      "SourceId": "Zusammen",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/",
-      "BasePath": "_content/Zusammen",
-      "RelativePath": "img/BigFamily.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/BigFamily.png"
     },
     {
       "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/Bird_Box.jpg",
@@ -205,25 +186,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/favicon.ico"
-    },
-    {
-      "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/FearTheInvisibleMan.png",
-      "SourceId": "Zusammen",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/",
-      "BasePath": "_content/Zusammen",
-      "RelativePath": "img/FearTheInvisibleMan.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/FearTheInvisibleMan.png"
     },
     {
       "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/Five_Nights_at_Freddy.jpg",

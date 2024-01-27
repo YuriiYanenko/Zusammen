@@ -37,6 +37,10 @@
       <Content Remove="wwwroot\img\upload.jpg" />
       <Content Remove="wwwroot\js\upload_foto.js" />
       <Content Remove="wwwroot\js\new.js" />
+      <Content Remove="wwwroot\img\FearTheInvisibleMan.png" />
+      <Content Remove="wwwroot\img\BigFamily.png" />
+      <Content Remove="wwwroot\img\users\Снимок экрана 2024-01-27 в 22.15.44.png" />
+      <Content Remove="wwwroot\img\TheDewilWearsPrada.png" />
     </ItemGroup>
 
     <ItemGroup>
