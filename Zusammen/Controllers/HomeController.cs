@@ -47,6 +47,8 @@ public class HomeController : Controller
 
     public IActionResult UserProfil()
     {
+        ZusammenDbController dbController = new ZusammenDbController(_context);
+        var userData = dbController.GetUserData(HttpContext.Session.Id);
         return View();
     }
     

@@ -1,6 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Runtime.CompilerServices;
 
 namespace Zusammen.Models;
 
@@ -37,16 +38,24 @@ public class films
     public int quality { get; set; }
 }
 
+[Table("users")]
 public class users
 {
-    public int id { get; set; }
-    public string name { get; set; }
+    public string nickname { get; set; }
     public string email { get; set; }
     public string password { get; set; }
-    public string status { get; set; }
+    
+    public List<int>? rooms { get; set; }
     public string profile_description { get; set; }
-    public List<int> rooms { get; set; }
     public string profile_image_path { get; set; }
+    public string status { get; set; }
+    [Key]
+    public int id { get; set; }
+
+    public users()
+    {
+        rooms = new List<int>();
+    }
 }
 
 public class RoomAndFilm
@@ -57,14 +66,22 @@ public class RoomAndFilm
 
 public class RegisterModel
 {
+    [Required]
+    [StringLength(15, MinimumLength = 3)]
     public string name { get; set; }
+    
+    [Required]
+    [EmailAddress]
     public string email { get; set; }
+    
+    [Required]
+    [StringLength(10, MinimumLength = 6)]
     public string password { get; set; }
 }
 
 public class LoginModel
 {
-    public string email { get; set; }
+    public string name { get; set; }
     public string password { get; set; }
 }
 

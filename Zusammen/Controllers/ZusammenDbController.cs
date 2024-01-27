@@ -116,13 +116,15 @@ public class ZusammenDbController : Controller
     
     public async Task AddUser(users newUser)
     {
+        var allUsers = await _context.users.ToListAsync();
+        newUser.id = allUsers[allUsers.Count - 1].id+1;
         _context.users.Add(newUser);
         await _context.SaveChangesAsync();
     }
 
-    public async Task<ActionResult<users>> GetUserData(int userId)
+    public async Task<ActionResult<users>> GetUserData(string userName)
     {
-        var user = await _context.users.FindAsync(userId);
+        var user = await _context.users.FindAsync(userName);
         if (user == null)
         {
             return NotFound();
