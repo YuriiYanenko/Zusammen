@@ -26,6 +26,5 @@ function previewImage()
 
 function saveChanges()
 {
-
-    location.reload();
+    
 }
