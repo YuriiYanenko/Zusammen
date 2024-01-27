@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets/img/Casablanca.jpg"
     },
     {
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/DevilVearsPrada.jpg",
+      "PackagePath": "staticwebassets/img/DevilVearsPrada.jpg"
+    },
+    {
       "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/FearTheInvisibleMan.png",
       "PackagePath": "staticwebassets/img/FearTheInvisibleMan.png"
     },
@@ -1255,6 +1259,10 @@
     {
       "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/videos/Casablanca.mp4",
       "PackagePath": "staticwebassets/videos/Casablanca.mp4"
+    },
+    {
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/videos/DevilVearsPrada.mp4",
+      "PackagePath": "staticwebassets/videos/DevilVearsPrada.mp4"
     },
     {
       "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/videos/FNaF.mp4",

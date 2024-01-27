@@ -56,6 +56,7 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult FilmView(int filmId)
     {
+        Console.WriteLine(HttpContext.Session.GetString("userName"));
         var dbController = new ZusammenDbController(_context);
         var filmData = dbController.GetFilmById(filmId);
         return View(filmData.Result.Value);

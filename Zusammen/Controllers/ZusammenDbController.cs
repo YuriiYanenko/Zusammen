@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Security.Cryptography;
+using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.SqlServer.Management.Smo;
 using Zusammen.Models;
@@ -75,21 +77,22 @@ public class ZusammenDbController : Controller
     [HttpPost]
     public async Task<IActionResult> CreateRoom(int filmId)
     {
+        var userName = HttpContext.Session.GetString("userName");
+        Console.WriteLine("The admin is " +userName);
         var film = GetFilmById(filmId).Result.Value;
         var roomList = await _context.rooms.ToListAsync();
         var lastRoom = roomList[roomList.Count - 1];
         var room = new rooms();
+        var user = await GetUserData(userName);
         // Автоматичне інкременування id кімнати.
-        room.name = film.name;
+        room.name = $"{HttpContext.Session.GetString("userName")}_{film.name}";
         room.id = lastRoom.id + 1;
-
-        room.admin_id = 1;
+        room.admin_id = user.Value.id;
         room.film_id = filmId;
-        room.members_id = new[] { 1 };
+        room.members_id.Add(room.admin_id);
         _context.rooms.Add(room);
         await _context.SaveChangesAsync();
         return View("~/Views/Video/Room.cshtml", CreateCombinedTable(room).Result.Value);
-        //return CreatedAtAction("OpenRoomById", new {roomId = room.id}, room);
     }
 
     public async Task<ActionResult<RoomAndFilm>> CreateCombinedTable(rooms room)
@@ -118,6 +121,7 @@ public class ZusammenDbController : Controller
     {
         var allUsers = await _context.users.ToListAsync();
         newUser.id = allUsers[allUsers.Count - 1].id+1;
+        newUser.password = PasswordHasher.HashPassword(newUser.password, PasswordHasher.salt);
         _context.users.Add(newUser);
         await _context.SaveChangesAsync();
     }
@@ -140,5 +144,17 @@ public class ZusammenDbController : Controller
                 return false;
         }
         return true;
+    }
+
+    public string HashPassword(string password)
+    {
+        byte[] salt = RandomNumberGenerator.GetBytes(128 / 8); // divide by 8 to convert bits to bytes
+        string hashed = Convert.ToBase64String(KeyDerivation.Pbkdf2(
+            password: password!,
+            salt: salt,
+            prf: KeyDerivationPrf.HMACSHA256,
+            iterationCount: 100000,
+            numBytesRequested: 256 / 8));
+        return hashed;
     }
 }

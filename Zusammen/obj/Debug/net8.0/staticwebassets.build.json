@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aU15Vr72wDz97TW/n8rUQTJc4fn6Bvl9isSCVX1S0EA=",
+  "Hash": "NO8RryCtNkY3wNfAUplhiN9R8S4QPvkdg3VaAKDsoV0=",
   "Source": "Zusammen",
   "BasePath": "_content/Zusammen",
   "Mode": "Default",
@@ -186,6 +186,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/Casablanca.jpg"
+    },
+    {
+      "Identity": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/DevilVearsPrada.jpg",
+      "SourceId": "Zusammen",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/",
+      "BasePath": "_content/Zusammen",
+      "RelativePath": "img/DevilVearsPrada.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/DevilVearsPrada.jpg"
     },
     {
       "Identity": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/favicon.ico",
@@ -6000,6 +6019,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/videos/Casablanca.mp4"
+    },
+    {
+      "Identity": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/videos/DevilVearsPrada.mp4",
+      "SourceId": "Zusammen",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/",
+      "BasePath": "_content/Zusammen",
+      "RelativePath": "videos/DevilVearsPrada.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/videos/DevilVearsPrada.mp4"
     },
     {
       "Identity": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/videos/FNaF.mp4",

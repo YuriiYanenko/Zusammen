@@ -13,9 +13,13 @@ public class rooms
     public int id { get; set; }
     public string name { get; set; }
     public int admin_id { get; set; }
-    public int[] members_id { get; set; }
-
+    public List<int> members_id { get; set; }
     public int film_id { get; set; }
+
+    public rooms()
+    {
+        members_id = new List<int>();
+    }
 }
 
 // Films table object model.
@@ -41,6 +45,7 @@ public class films
 [Table("users")]
 public class users
 {
+    [Key]
     public string nickname { get; set; }
     public string email { get; set; }
     public string password { get; set; }
@@ -49,7 +54,6 @@ public class users
     public string profile_description { get; set; }
     public string profile_image_path { get; set; }
     public string status { get; set; }
-    [Key]
     public int id { get; set; }
 
     public users()
