@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using MySqlX.XDevAPI;
 using Zusammen.Models;
 
 namespace Zusammen.Controllers;
@@ -44,13 +45,18 @@ public class AutorizationController : Controller
     public async Task<IActionResult> Login(LoginModel model)
     {
         if (ModelState.IsValid)
-        {
-            
+        {   
             var userDetails =
                 await _context.users.SingleOrDefaultAsync(m => m.nickname == model.name && m.password == model.password);
-            HttpContext.Session.SetString("id", userDetails.nickname);
+            HttpContext.Session.SetString("userName", userDetails.nickname);
+            
+            Console.WriteLine($"User: {userDetails.nickname}, id: {HttpContext.Session.GetString("userName")}");
         }
-
+        else
+        {
+            return RedirectToAction("Login_Sign", "Home");
+        }
+    
         return RedirectToAction("Index", "Home");
     }
 }

@@ -75,13 +75,17 @@ public class RegisterModel
     public string email { get; set; }
     
     [Required]
-    [StringLength(10, MinimumLength = 6)]
+    [StringLength(50, MinimumLength = 6)]
     public string password { get; set; }
 }
 
 public class LoginModel
 {
+    [Required]
+    [StringLength(15, MinimumLength = 3)]
     public string name { get; set; }
+    [Required]
+    [StringLength(50, MinimumLength = 6)]
     public string password { get; set; }
 }
 

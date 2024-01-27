@@ -18,6 +18,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        Console.WriteLine($"User: {HttpContext.Session.GetString("userName")}");
         return View();
     }
 

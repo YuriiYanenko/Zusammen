@@ -31,7 +31,6 @@ public class Program
 
 
         var app = builder.Build();
-        app.UseSession();
 
         // Configure the HTTP request pipeline.
         if (!app.Environment.IsDevelopment())
@@ -41,6 +40,10 @@ public class Program
             app.UseHsts();
         }
 
+        app.UseCookiePolicy();
+        app.UseStaticFiles();
+        app.UseSession();   
+        
         app.UseHttpsRedirection();
         app.UseStaticFiles();
 
