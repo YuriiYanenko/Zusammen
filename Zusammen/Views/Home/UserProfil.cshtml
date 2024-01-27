@@ -11,7 +11,7 @@
     <div class="dataUs">
         <p class="data">Нікнейм:<span>@Model.nickname</span> </p>
         <p class="data">Про себе:<span>@Model.profile_description</span> </p>
-        <p class="data">Кімнати: <span>@Model.rooms</span></p>
+        <p class="data">Кімнати: <span>@Model.rooms.Count</span></p>
     </div>
 </div>
 @using (Html.BeginForm("ChangeUserProfil", "Home", FormMethod.Post))
