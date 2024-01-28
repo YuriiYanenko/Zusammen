@@ -23,6 +23,7 @@ public class AutorizationController : Controller
     {
         ZusammenDbController dbController = new ZusammenDbController(_context);
         Console.WriteLine($"Nick: {model.name}");
+        LoginModel? login = new LoginModel(); 
         if (ModelState.IsValid)
         {
             var userToAdd = new users()
@@ -36,10 +37,16 @@ public class AutorizationController : Controller
                 status = "offline"
             };
             await dbController.AddUser(userToAdd);
+            login.name = model.name;
+            login.password = model.password;
         }
-        //return RedirectToAction("Index", "Home");
+        else
+        {
+            return RedirectToAction("Login_Sign", "Home");
+        }
 
-        return RedirectToAction("Login_Sign", "Home");
+        Login(login);
+        return RedirectToAction("Index", "Home");
     }
 
     public async Task<IActionResult> Login(LoginModel model)
@@ -60,6 +67,8 @@ public class AutorizationController : Controller
             }
 
             HttpContext.Session.SetString("userName", userDetails.nickname);
+            userDetails.status = "online";
+            await _context.SaveChangesAsync();
             
             Console.WriteLine($"User: {userDetails.nickname}, id: {HttpContext.Session.GetString("userName")}");
         }
