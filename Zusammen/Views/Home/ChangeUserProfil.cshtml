@@ -11,13 +11,13 @@
     <input type="file" id="fileInput" style="display: none;" onchange="previewImage()">
 </div>
 
-<div class="dataUs-changes" id="dataUsContainer" >
+<form class="dataUs-changes" id="dataUsContainer" asp-action="" asp-controller="" method="post" >
     <p class="data-changes">Нікнейм: <input asp-for="@Model.nickname" type="text" name="username" style="height: 20px;font-size: 14px;"></p>
     <p class="data-changes">Про себе:  <textarea asp-for="@Model.profile_description" name="message"></textarea> </p>
- </div>
-@using (Html.BeginForm("UserProfil", "Home", FormMethod.Post))
-{
-    <div id="saveButtonContainer">
-        <button class="buttonroom2" id="buttonChanges" type="submit" onclick="saveChanges()">Зберегти зміни</button>
-    </div>
-}
+<div id="saveButtonContainer">
+        <button class="buttonroom2" id="buttonChanges" type="submit" >Зберегти зміни</button>
+</div>
+</form>
+
+    
+

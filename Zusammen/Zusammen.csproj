@@ -41,6 +41,8 @@
       <Content Remove="wwwroot\img\BigFamily.png" />
       <Content Remove="wwwroot\img\users\Снимок экрана 2024-01-27 в 22.15.44.png" />
       <Content Remove="wwwroot\img\TheDewilWearsPrada.png" />
+      <Content Remove="wwwroot\js\status.js" />
+      <Content Remove="wwwroot\js\users_into_bd.js" />
     </ItemGroup>
 
     <ItemGroup>

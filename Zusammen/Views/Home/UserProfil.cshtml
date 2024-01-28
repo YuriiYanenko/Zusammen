@@ -4,13 +4,21 @@
     ViewData["ShowHeader"] = true;
 }
 <script src="~/js/new_photo.js"></script> 
-<div class="profile" id="profileUs" >
-    <div class="photo" id="uploadedImage1">
+<div class="profile" id="profileUs"> 
+    <div class="photo" id="uploadedImage1">   
+       <div class="status-container">
+          @{
+             if (@Model.status=="online")
+             {
+               <div class="status-indicator online" id="statusIndicator"></div>   
+             }
+          }
+           </div>
         <img src="../img/photo.ico">
     </div>
     <div class="dataUs">
-        <p class="data">Нікнейм:<span>@Model.nickname</span> </p>
-        <p class="data">Про себе:<span>@Model.profile_description</span> </p>
+        <p class="data">Нікнейм: <span> @Model.nickname</span> </p>
+        <p class="data">Про себе: <span>@Model.profile_description</span> </p>
         <p class="data">Кімнати: <span>@Model.rooms.Count</span></p>
     </div>
 </div>
