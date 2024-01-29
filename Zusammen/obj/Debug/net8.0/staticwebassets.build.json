@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/iDPxGeHRYo7MI5xZzA+71s/7W0nYk/ukDES/tQmiBg=",
+  "Hash": "5oEZSDP8Ldi7sh7bFsNTZ9a7Ur8Ut9e1c87hYBbhmCg=",
   "Source": "Zusammen",
   "BasePath": "_content/Zusammen",
   "Mode": "Default",
@@ -433,6 +433,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/search.ico"
+    },
+    {
+      "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/test.png",
+      "SourceId": "Zusammen",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/",
+      "BasePath": "_content/Zusammen",
+      "RelativePath": "img/test.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/test.png"
     },
     {
       "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/TheDevilWearsPrada.png",

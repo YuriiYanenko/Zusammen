@@ -43,6 +43,9 @@
       <Content Remove="wwwroot\img\TheDewilWearsPrada.png" />
       <Content Remove="wwwroot\js\status.js" />
       <Content Remove="wwwroot\js\users_into_bd.js" />
+      <Content Remove="Views\Home\AboutUs.cshtml" />
+      <Content Remove="wwwroot\img\test.png" />
+      <Content Remove="wwwroot\img\image.jpg" />
     </ItemGroup>
 
     <ItemGroup>

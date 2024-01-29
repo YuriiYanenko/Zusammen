@@ -1,10 +1,53 @@
 ﻿@model Zusammen.Models.films
 
 @{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Про розробників";
     ViewData["ShowHeader"] = true;
 }
-<h1>@ViewData["Title"]</h1>
+<div class="container-photo">
+  <div class="card">
+    <div class="image-box">
+      <img src="../img/lera.jpeg">     
+    </div>
+    <div class="content">
+      <h2 style="color: white">Валерія</h2>
+      <p>Всім привіт! Я навчаюся в університеті та займаюся фронтент розробкою цього сайту</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="image-box">
+      <img src="../img/test1.jpg">
+    </div>
+    <div class="content">
+      <h2 style="color: white">Юрій</h2>
+      <p>ВАШ ТЕКСТ ВАШ ТЕКСТ ВАШ ТЕКСТ ВАШ ТЕКСТ ВАШ ТЕКСТ ВАШ ТЕКСТ ВАШ ТЕКСТ ВАШ ТЕКСТ ВАШ ТЕКСТ</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="image-box">
+      <img src="../img/test1.jpg">
+    </div>
+    <div class="content">
+      <h2 style="color: white">Марія</h2>
+      <p>ВАШ ТЕКСТ ВАШ ТЕКСТ ВАШ ТЕКСТ ВАШ ТЕКСТ ВАШ ТЕКСТ ВАШ ТЕКСТ ВАШ ТЕКСТ ВАШ ТЕКСТ ВАШ ТЕКСТ</p>
+    </div>
+  </div>
+</div> 
+<div class="round" style="display: flex; justify-content: space-between;">      
+  <div style="margin-left: 110px;">
+  <a href="mailto:lerakovalenko11@gmail.com" class="button" style="text-decoration: none; text-transform: uppercase;  ">Зв'язатися</a>     
+</div>
+<div style="  ">
+  <a href="mailto:youremail@gmail.com" class="button" style="text-decoration: none; text-transform: uppercase; ">Зв'язатися</a>     
+</div>
+<div style=" margin-right: 110px; "> 
+  <a href="mailto:youremail@gmail.com" class="button" style="text-decoration: none; text-transform: uppercase;">Зв'язатися</a>     
+</div>
+  </div> 
+
+
+       
 @using (Html.BeginForm("Room", "Video", FormMethod.Post))
 {
     <input type="number" name="roomId"/>
