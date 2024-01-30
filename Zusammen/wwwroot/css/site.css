@@ -877,3 +877,152 @@ textarea
 .status-indicator.online {
   background-color: #006fff;
 }
+.container-photo {
+  display: flex;
+}
+.card {
+  width: 400px;
+  aspect-ratio: 1 / 0.7;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.card .image-box {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  
+}
+.card .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 20%;
+  border-radius: inherit;
+  transition: 0.5s ease-in-out;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid #296B6A;
+  border-radius: inherit;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.card:hover img {
+  filter:  brightness(0.4);
+}
+.card:hover::after {
+  opacity: 1;
+  inset: 20px;
+}
+
+.content {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content h2,
+.content p {
+  opacity: 0;
+  transition: 0.4s 0.2s ease;
+}
+.content h2 {
+  margin-bottom: 12px;
+  scale: 0.7;
+}
+.content p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #d1d1d1;
+  transform: translateY(50%);
+}
+.card:hover .content h2 {
+  scale: 1;
+  opacity: 1;
+}
+.card:hover .content p {
+  opacity: 1;
+  transform: translateY(0);
+}
+a
+{
+  font-size: 20px;
+}
+.round
+{
+  text-align: center;
+  width: auto;
+  margin:0 auto;
+}
+
+.round a {
+  color: #296B6A;
+  align-items: center; 
+  justify-content: center;
+}
+
+.round .button {
+  display: inline-block;
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #296B6A;
+  transition: color .5s;
+}
+
+.round .button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #296B6A;
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.round .button:hover {
+  color: #fff;
+}
+
+.round .button:before {
+  top: 100%;
+  left: 100%;
+  transition: all .7s;
+}
+
+.round .button:hover:before {
+  top: -30px;
+  left: -30px;
+}
+.round .button2:nth-child(2):before {
+  left: -30px;
+  bottom: 100%;
+  transition: all .7s;
+}
+
+.round .button2:hover:before {
+  bottom: -50px;
+}
+
+.round .button3:before {
+  top: 0;
+  left: -200%;
+  transition: all .7s;
+}
+
+.round .button3:hover:before {
+  top: -30px;
+  left: -30px;
+}
