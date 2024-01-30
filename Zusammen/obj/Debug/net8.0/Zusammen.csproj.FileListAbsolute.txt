@@ -379,3 +379,4 @@ D:/Projects/Zusammen/Zusammen/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
 /home/yurii/RiderProjects/Zusammen/Zusammen/bin/Debug/net8.0/Microsoft.Extensions.Identity.Core.dll
 /home/yurii/RiderProjects/Zusammen/Zusammen/bin/Debug/net8.0/Microsoft.Extensions.Identity.Stores.dll
 /home/yurii/RiderProjects/Zusammen/Zusammen/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+/home/yurii/RiderProjects/Zusammen/Zusammen/bin/Debug/net8.0/AspNetCoreRateLimit.dll

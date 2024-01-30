@@ -1,3 +1,4 @@
+using AspNetCoreRateLimit;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Npgsql.EntityFrameworkCore;
@@ -20,6 +21,7 @@ public class Program
         // Connect to database using "DefaultConnection" field from 'appsetings.json'. 
         builder.Services.AddDbContext<ZusammenDbContext>(
             options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
         builder.Services.AddSession(
             options =>
             {
@@ -42,7 +44,8 @@ public class Program
 
         app.UseCookiePolicy();
         app.UseStaticFiles();
-        app.UseSession();   
+        app.UseSession();
+        
         
         app.UseHttpsRedirection();
         app.UseStaticFiles();
