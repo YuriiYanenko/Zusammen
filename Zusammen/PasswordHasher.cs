@@ -5,7 +5,7 @@ namespace Zusammen;
 
 public class PasswordHasher
 {
-    public static string salt = GenerateSalt();
+    public static string salt = "1940GzF+GNOBbg+fjRkWjA==";
     public static string HashPassword(string password, string salt)
     {
         using (var sha256 = SHA256.Create())
@@ -23,6 +23,8 @@ public class PasswordHasher
         {
             rng.GetBytes(saltBytes);
         }
+
+        
         return Convert.ToBase64String(saltBytes);
     }
 }

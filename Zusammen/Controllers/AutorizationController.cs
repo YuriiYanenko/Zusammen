@@ -17,7 +17,6 @@ public class AutorizationController : Controller
         _context = context;
     }
 
-
     [HttpPost("Register")]
     public async Task<ActionResult> Register(RegisterModel model)
     {
@@ -45,7 +44,7 @@ public class AutorizationController : Controller
             return RedirectToAction("Login_Sign", "Home");
         }
 
-        Login(login);
+        await Login(login);
         return RedirectToAction("Index", "Home");
     }
 
