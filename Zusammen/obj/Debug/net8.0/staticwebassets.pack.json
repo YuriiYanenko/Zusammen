@@ -73,6 +73,10 @@
       "PackagePath": "staticwebassets/img/left.ico"
     },
     {
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/lera.jpeg",
+      "PackagePath": "staticwebassets/img/lera.jpeg"
+    },
+    {
       "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/photo.ico",
       "PackagePath": "staticwebassets/img/photo.ico"
     },
@@ -83,6 +87,10 @@
     {
       "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/search.ico",
       "PackagePath": "staticwebassets/img/search.ico"
+    },
+    {
+      "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/test1.jpg",
+      "PackagePath": "staticwebassets/img/test1.jpg"
     },
     {
       "Id": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/user.ico",

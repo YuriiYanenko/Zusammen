@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hfRViWXXcri2TeOBP3dmdsoT0yTJ1cUzTsYTdm2H0nk=",
+  "Hash": "OmsJO+zK/ONHtGrad75tNr4BHB+rAxwVg8B92RutZYY=",
   "Source": "Zusammen",
   "BasePath": "_content/Zusammen",
   "Mode": "Default",
@@ -340,6 +340,25 @@
       "OriginalItemSpec": "wwwroot/img/left.ico"
     },
     {
+      "Identity": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/lera.jpeg",
+      "SourceId": "Zusammen",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/",
+      "BasePath": "_content/Zusammen",
+      "RelativePath": "img/lera.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/lera.jpeg"
+    },
+    {
       "Identity": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/Napoleon.jpg",
       "SourceId": "Zusammen",
       "SourceType": "Discovered",
@@ -433,6 +452,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/search.ico"
+    },
+    {
+      "Identity": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/test1.jpg",
+      "SourceId": "Zusammen",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/",
+      "BasePath": "_content/Zusammen",
+      "RelativePath": "img/test1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/test1.jpg"
     },
     {
       "Identity": "/home/yurii/RiderProjects/Zusammen/Zusammen/wwwroot/img/TheDevilWearsPrada.png",

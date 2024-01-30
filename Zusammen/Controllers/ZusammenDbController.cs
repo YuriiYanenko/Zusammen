@@ -137,6 +137,16 @@ public class ZusammenDbController : Controller
         return user;
     }
 
+    public async Task UpdateUser(RedactUserModel data, string userName)
+    {
+        var user = await GetUserData(userName);
+        user.Value.nickname = data.name==null?user.Value.nickname:data.name;
+        user.Value.profile_description = data.about;
+        user.Value.profile_image_path = $"../img/users/{data.imageName}";
+        await _context.SaveChangesAsync();
+    }
+    
+    
     private async Task<bool> ContainsAllGenres(string[] filmGenres, string[] filterGenres)
     {
         foreach (var filter in filterGenres)
