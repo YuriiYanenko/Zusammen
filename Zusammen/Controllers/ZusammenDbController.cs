@@ -115,13 +115,12 @@ public class ZusammenDbController : Controller
 
     public async Task AddUser(users newUser)
     {
-        var userExists = _context.users.FindAsync(newUser.nickname);
+        var userExists = await _context.users.FindAsync(newUser.nickname);
         if (userExists == null)
         {
             var allUsers = await _context.users.ToListAsync();
             newUser.id = allUsers[allUsers.Count - 1].id + 1;
             newUser.password = PasswordHasher.HashPassword(newUser.password, PasswordHasher.salt);
-            Console.WriteLine(PasswordHasher.salt);
             _context.users.Add(newUser);
             await _context.SaveChangesAsync();
         }
