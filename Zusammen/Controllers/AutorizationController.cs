@@ -20,11 +20,15 @@ public class AutorizationController : Controller
     [HttpPost("Register")]
     public async Task<ActionResult> Register(RegisterModel model)
     {
+        var tempModel = new RegAndLogModel() { register = model };
         ZusammenDbController dbController = new ZusammenDbController(_context);
-        Console.WriteLine($"Nick: {model.name}");
         LoginModel? login = new LoginModel(); 
         if (ModelState.IsValid)
         {
+            if (await dbController.GetUserData(model.name) != null)
+            {
+                return View("~/Views/Home/Login_Sign.cshtml", tempModel);
+            }
             var userToAdd = new users()
             {
                 nickname = model.name,
@@ -38,19 +42,19 @@ public class AutorizationController : Controller
             await dbController.AddUser(userToAdd);
             login.name = model.name;
             login.password = model.password;
+            await Login(login);
         }
         else
         {
-            return RedirectToAction("Login_Sign", "Home");
+            return View("~/Views/Home/Login_Sign.cshtml", tempModel);
         }
 
-        await Login(login);
         return RedirectToAction("Index", "Home");
     }
 
     public async Task<IActionResult> Login(LoginModel model)
     {
-        
+        var tempModel = new RegAndLogModel() { login = model };
         var dbController = new ZusammenDbController(_context);
         if (ModelState.IsValid)
         {   
@@ -58,7 +62,7 @@ public class AutorizationController : Controller
                 await _context.users.SingleOrDefaultAsync(m => 
                     m.nickname == model.name &&
                     m.password == PasswordHasher.HashPassword(model.password, PasswordHasher.salt));
-            Console.WriteLine($"Hash: {dbController.HashPassword(model.password)}");
+            
             if (userDetails == null)
             {
                 ModelState.AddModelError("Password", "Invalid login attempt.");
