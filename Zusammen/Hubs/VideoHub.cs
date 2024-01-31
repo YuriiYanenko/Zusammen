@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.SignalR;
+using MySql.Data.MySqlClient.Memcached;
 
 namespace Zusammen.Hubs;
 
@@ -36,6 +37,11 @@ public class VideoHub : Hub
     public async Task PlayVideo(int roomId)
     {
         await Clients.Group(roomId.ToString()).SendAsync("Play", roomId);
+    }
+
+    public async Task SeekVideo(int roomId, int newPosition)
+    {
+        await Clients.Group(roomId.ToString()).SendAsync("Seek", roomId, newPosition);
     }
     
 }
