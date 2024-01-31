@@ -7,29 +7,40 @@
 }
 
 <h2 style="color:white" >Результат пошуку</h2>
+
+@if (Model.Count == 0)
+{
+    <p>Фільмів не знайдено. Будь ласка введіть назву філмьу</p>
+}
+else
+{
 <div class="film-container">
     <ul id="search-result-list" style=" margin-left: 10px; color: white"></ul>
 </div>
+ 
 
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
-@foreach(var item in Model)
+@foreach (var item in Model)
 {
     var path = item.image_path;
     var movie = item.name;
-<script>
+    var idfilm = item.id;
+
+    <script>
 
     $("#search-result-list").append(
-        ' <li class="film-data">'+
-          '<button class="image-cont">'+
-             '<img class="image-name" style="border-radius: 20px" src="@path">'+
-              '<div class="overlay">'+
-                '<div class="text">@movie</div>'+
-               '</div>'+
-         ' </button>'+
-          '</li>'
+        ' <li class="film-data">' +
+        '<button class="image-cont">' +
+        '<img class="image-name" style="border-radius: 20px" src="@path">' +
+        '<div class="overlay">' +
+        '<div class="text">@movie</div>' +
+        '</div>' +
+        ' </button>' +
+        '</li>'
     );
-            
+    
 </script>
+}
 }
 
 <style>
