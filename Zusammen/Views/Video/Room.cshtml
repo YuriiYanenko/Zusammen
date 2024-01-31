@@ -1,4 +1,3 @@
-
 @model Zusammen.Models.RoomAndFilm
 
 @{
@@ -9,16 +8,29 @@
 
 <h2 style="color:white;" id="film-name">Фільм @Model.Room.name </h2>
 <div class="flexdivrow" style="width: 115%;margin-left: -100px;">
-    <button id="start" style="width: 60%; height: 600px; background-color: rgb(88, 87, 87);">
+    <button id="start" style="width: 60%; height: 550px; background-color: black">
         <video id="film-video" src='' preload="auto" autoplay="autoplay" controls="controls"></video>
     </button>
-    <div style="width: 40%; height: 600px; background-color: rgb(3, 91, 93); padding-left: 20px">
+    <div style="width: 40%; height: 550px; background-color: rgb(3, 91, 93); padding-left: 20px">
     </div>
 </div>
+@using (Html.BeginForm( FormMethod.Post))
+{
+    <div>
+        <input type="hidden" name="filmId" value="@Model.Room.id"/>
+        <button id="create-invitation" class="buttonMYroom" type="submit">Створити запрошення</button>
+    </div>
+}
 
-<script src = "~/lib/signalr/dist/browser/signalr.js"></script>
+<script src="~/lib/signalr/dist/browser/signalr.js"></script>
 
 <script type="text/javascript">
+document.getElementById('create-invitation').addEventListener('click', function() {
+    // Отримуємо дані моделі
+    const modelData = getModelData();
+    // Показуємо повідомлення з інформацією
+    alert('Створено запрошення для кімнати ${modelData.id}.');
+}); 
 
 // Функція для отримання даних з моделі. Повертає об'єкт, який містить id кімнати та шлях до відео.
 function getModelData(){
@@ -34,4 +46,3 @@ function getModelData(){
 }
 </script>
 <script src="~/js/videoRecieve.js"></script>
-
