@@ -25,24 +25,27 @@ public class AutorizationController : Controller
         LoginModel? login = new LoginModel(); 
         if (ModelState.IsValid)
         {
-            if (await _context.users.FindAsync(model.name) != null)
+            var isUserExist = await _context.users.FirstOrDefaultAsync(u => u.nickname == model.name);
+            
+            if (isUserExist == null)
             {
-                return View("~/Views/Home/Login_Sign.cshtml", tempModel);
+                var userToAdd = new users()
+                {
+                    nickname = model.name,
+                    email = model.email,
+                    password = model.password,
+                    profile_description = "",
+                    rooms = new List<int>(),
+                    profile_image_path = "../img/users/std.png",
+                    status = "offline"
+                };
+                await dbController.AddUser(userToAdd);
+                login.name = model.name;
+                login.password = model.password;
+                await Login(login);
             }
-            var userToAdd = new users()
-            {
-                nickname = model.name,
-                email = model.email,
-                password = model.password,
-                profile_description = "",
-                rooms = new List<int>(),
-                profile_image_path = "../img/users/std.png",
-                status = "offline"
-            };
-            await dbController.AddUser(userToAdd);
-            login.name = model.name;
-            login.password = model.password;
-            await Login(login);
+            else
+                return View("~/Views/Home/Login_Sign.cshtml", tempModel);
         }
         else
         {
