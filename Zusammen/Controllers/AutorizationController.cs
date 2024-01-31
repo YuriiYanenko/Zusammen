@@ -58,17 +58,14 @@ public class AutorizationController : Controller
                 await _context.users.SingleOrDefaultAsync(m => 
                     m.nickname == model.name &&
                     m.password == PasswordHasher.HashPassword(model.password, PasswordHasher.salt));
-            Console.WriteLine($"Hash: {dbController.HashPassword(model.password)}");
             if (userDetails == null)
             {
                 ModelState.AddModelError("Password", "Invalid login attempt.");
                 return RedirectToAction("Login_Sign", "Home");
             }
-
             HttpContext.Session.SetString("userName", userDetails.nickname);
             userDetails.status = "online";
             await _context.SaveChangesAsync();
-            
             Console.WriteLine($"User: {userDetails.nickname}, id: {HttpContext.Session.GetString("userName")}");
         }
         else

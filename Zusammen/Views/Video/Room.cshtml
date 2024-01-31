@@ -14,7 +14,8 @@
     <div style="width: 40%; height: 550px; background-color: rgb(3, 91, 93); padding-left: 20px">
     </div>
 </div>
-@using (Html.BeginForm( FormMethod.Post))
+<!-- Створення кнопки запрошення -->
+@using (Html.BeginForm("GenerateRoomConnectUrl", "Video", FormMethod.Post))
 {
     <div>
         <input type="hidden" name="filmId" value="@Model.Room.id"/>
@@ -22,27 +23,50 @@
     </div>
 }
 
-<script src="~/lib/signalr/dist/browser/signalr.js"></script>
+<!-- Сповіщення -->
+<div id="notification-wrapper"></div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Підключення jQuery -->
 
 <script type="text/javascript">
-document.getElementById('create-invitation').addEventListener('click', function() {
-    // Отримуємо дані моделі
-    const modelData = getModelData();
-    // Показуємо повідомлення з інформацією
-    alert('Створено запрошення для кімнати ${modelData.id}.');
-}); 
+document.getElementById('create-invitation').addEventListener('click', function(event) {
+    event.preventDefault(); // Запобігаємо дії за замовчуванням (відправці форми)
+    // Отримуємо дані з метода за допомогою AJAX-запиту
+    $.ajax({
+        url: '/Video/GenerateRoomConnectUrl',
+        type: 'POST',
+        data: { roomId: @Model.Room.id },
+        success: function(modelData) {
+            // Видаляємо попереднє повідомлення, якщо воно є
+            var previousNotification = document.querySelector('.custom-notification');
+            if (previousNotification) {
+                previousNotification.parentNode.removeChild(previousNotification);
+            }
 
-// Функція для отримання даних з моделі. Повертає об'єкт, який містить id кімнати та шлях до відео.
-function getModelData(){
-    
-    const roomId = @Model.Room.id;
-    const filmPath = "@Model.FilmPath";
-    
-    let modelInfo = {
-        id: parseInt(roomId),
-        videoPath: filmPath
-    };  
-    return modelInfo;
-}
+            // Створення власного сповіщення
+            var notification = document.createElement('div');
+            notification.className = 'custom-notification';
+            notification.innerHTML = 'Створено запрошення для кімнати: ' + modelData + '.</br>';
+            
+            // Додаємо кнопку для закриття сповіщення
+            var closeButton = document.createElement('button');
+            closeButton.innerHTML = 'Закрити';
+            closeButton.className = 'close-button';
+            closeButton.addEventListener('click', function() {
+                notification.style.opacity = '0';
+                setTimeout(function() {
+                    document.getElementById('notification-wrapper').removeChild(notification);
+                }, 300);
+            });
+            
+            notification.appendChild(closeButton);
+            
+            document.getElementById('notification-wrapper').appendChild(notification);
+        },
+        error: function() {
+            alert('Помилка при створенні запрошення.');
+        }
+    });
+});
 </script>
 <script src="~/js/videoRecieve.js"></script>

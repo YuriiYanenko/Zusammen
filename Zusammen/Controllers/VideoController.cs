@@ -23,19 +23,19 @@ public class VideoController : Controller
     
     // Returns new View of room page.
     [HttpGet]
-    public IActionResult Room(int roomId)
+    public async Task<IActionResult> Room(int roomId)
     {
         var dbController = new ZusammenDbController(_dbContext);
         
         var activeRoom = new RoomAndFilm();
         
         // Getting room by id. 
-        var room = dbController.OpenRoomById(roomId);
+        var room = await dbController.OpenRoomById(roomId);
         // Getting path to film video from room.
-        var filmPath = dbController.GetFilmById(room.Result.Value.film_id);
+        var filmPath = await dbController.GetFilmById(room.Value.film_id);
         
-        activeRoom.Room = room.Result.Value;
-        activeRoom.FilmPath = filmPath.Result.Value.video_path;
+        activeRoom.Room = room.Value;
+        activeRoom.FilmPath = filmPath.Value.video_path;
         
         return View(activeRoom);
     }
