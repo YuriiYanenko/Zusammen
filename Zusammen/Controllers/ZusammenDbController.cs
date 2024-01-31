@@ -145,7 +145,15 @@ public class ZusammenDbController : Controller
         user.Value.profile_image_path = $"../img/users/{data.imageName}";
         await _context.SaveChangesAsync();
     }
-    
+
+    public async Task AddUserToRoom(int roomId, string userName)
+    {
+        var room = await _context.rooms.FindAsync(roomId);
+        var user = await _context.users.FindAsync(userName);
+        user.rooms.Add(roomId);
+        room.members_id.Add(user.id);
+        await _context.SaveChangesAsync(); 
+    }
     
     private async Task<bool> ContainsAllGenres(string[] filmGenres, string[] filterGenres)
     {
