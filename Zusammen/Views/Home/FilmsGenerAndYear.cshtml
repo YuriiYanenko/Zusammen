@@ -174,3 +174,37 @@
         </div>
     </div>
 </div>
+<script>
+    // Функція для збереження вибраних значень чекбоксів в локальному сховищі
+    function saveCheckboxState() {
+        var checkboxes = document.querySelectorAll('.checkbox-filter');
+        var checkboxState = {};
+        checkboxes.forEach(function(checkbox) {
+            checkboxState[checkbox.value] = checkbox.checked;
+        });
+        localStorage.setItem('checkboxState', JSON.stringify(checkboxState));
+    }
+    
+    // Функція для відновлення вибраних значень чекбоксів з локального сховища
+    function restoreCheckboxState() {
+        var checkboxState = JSON.parse(localStorage.getItem('checkboxState'));
+        if (checkboxState) {
+            var checkboxes = document.querySelectorAll('.checkbox-filter');
+            checkboxes.forEach(function(checkbox) {
+                if (checkboxState.hasOwnProperty(checkbox.value)) {
+                    checkbox.checked = checkboxState[checkbox.value];
+                }
+            });
+        }
+    }
+    
+    // Викликаємо функцію відновлення після завантаження сторінки
+    document.addEventListener('DOMContentLoaded', function() {
+        restoreCheckboxState();
+    });
+    
+    // Викликаємо функцію збереження перед відправкою форми
+    document.getElementById('submit-filter').addEventListener('click', function() {
+        saveCheckboxState();
+    });
+</script>
