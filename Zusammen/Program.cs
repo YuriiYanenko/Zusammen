@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Npgsql.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
 using Zusammen.Hubs;
 
 namespace Zusammen;
@@ -21,6 +22,10 @@ public class Program
         // Connect to database using "DefaultConnection" field from 'appsetings.json'. 
         builder.Services.AddDbContext<ZusammenDbContext>(
             options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+        builder.Services.Configure<ApiBehaviorOptions>(options =>
+        {
+            options.SuppressModelStateInvalidFilter = false; // Виводити помилки валідації
+        });
 
         builder.Services.AddSession(
             options =>

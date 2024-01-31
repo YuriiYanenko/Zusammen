@@ -1,4 +1,5 @@
-@model Zusammen.Models.RegAndLogModel;
+@using Microsoft.SqlServer.Management.Smo
+@model Zusammen.Models.RegAndLogModel
 @{
     ViewBag.Title = "Login & Signup";
     ViewData["ShowHeader"] = false;
@@ -34,32 +35,30 @@
       <div class="login-sign-container-form">
         <div class="login-sign-form-item log-in">
           <div class="login-sign-table">
-            <form class="login-sign-table-cell" role="form" asp-action="Login" asp-controller="Autorization" method="post">
-              <input asp-for="@Model.login.name" name="name" placeholder="Username" type="text" autocomplete="off" data-val="true" data-val-required="Дане поле є обов'язковим для вводу" />
-               <span asp-validation-for="@Model.login.name" class="text-danger"></span>
-              <input asp-for="@Model.login.password" name="password" type="Password" autocomplete="off" data-val="true" data-val-required="Дане поле є обов'язковим для вводу." placeholder="Password"/>
-                 <span asp-validation-for="@Model.register.password" class="text-danger"></span>
-             <input type="submit" value="Увійти" class="login-sign-btn" style="width: 160px"/>
+            <form class="login-sign-table-cell log-in" role="form" asp-action="Login" asp-controller="Autorization" method="post">
+              <input asp-for="@Model.login.name" name="name" placeholder="Username" type="text" autocomplete="off" />
+              <span id="log-in-error-name" class="text-danger"></span>
+              <input asp-for="@Model.login.password" name="password" type="Password" placeholder="Password"/>
+              <span id="log-in-error-password" class="text-danger"></span>
+              <input type="submit" value="Увійти" class="login-sign-btn" style="width: 160px"/>
             </form>
           </div>
         </div>
         <div class="login-sign-form-item sign-up">
           <div class="login-sign-table">
-            <form class="login-sign-table-cell" role="form" asp-action="Register" asp-controller="Autorization" method="post">
-              <input asp-for="@Model.register.name" name="Name" type="text" autocomplete="off" data-val="true" data-val-required="Дане поле є обов'язковим для вводу"  placeholder="Username"/>
-              <span asp-validation-for="@Model.register.name" class="text-danger"></span>
-              <input asp-for="@Model.register.email" name="Email" type="text" autocomplete="off" data-val="true" data-val-required="Дане поле є обов'язковим для вводу" placeholder="Email"/>
-              <span asp-validation-for="@Model.register.email" class="text-danger"></span>
-              <input asp-for="@Model.register.password" name="Password" type="Password" autocomplete="off" data-val="true" data-val-required="Дане поле є обов'язковим для вводу." placeholder="Password"/>
-              <span asp-validation-for="@Model.register.password" class="text-danger"></span>
-                <input type="submit" value="Зареєструватися" class="login-sign-btn" style="width: 160px"/>
+            <form class="login-sign-table-cell sign-up" role="form" asp-action="Register" asp-controller="Autorization" method="post">
+              <input asp-for="@Model.register.name" name="name" type="text" autocomplete="off" placeholder="Username"/>
+              <span id="sign-up-error-name" class="text-danger"></span>
+              <input asp-for="@Model.register.email" name="email" type="text" autocomplete="off" placeholder="Email"/>
+              <span id="sign-up-error-email" class="text-danger"></span>
+              <input asp-for="@Model.register.password" name="password" type="password" autocomplete="off" placeholder="Password"/>
+              <span id="sign-up-error-password" class="text-danger"></span>
+              <input type="submit" value="Зареєструватися" class="login-sign-btn" style="width: 160px"/>
             </form>
           </div>
         </div>
       </div>
     </div>
   </div>
-<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
-
-        

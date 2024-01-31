@@ -50,12 +50,15 @@ public class AutorizationController : Controller
 
     public async Task<IActionResult> Login(LoginModel model)
     {
+        
+        var dbController = new ZusammenDbController(_context);
         if (ModelState.IsValid)
         {   
             var userDetails =
                 await _context.users.SingleOrDefaultAsync(m => 
                     m.nickname == model.name &&
                     m.password == PasswordHasher.HashPassword(model.password, PasswordHasher.salt));
+            Console.WriteLine($"Hash: {dbController.HashPassword(model.password)}");
             if (userDetails == null)
             {
                 ModelState.AddModelError("Password", "Invalid login attempt.");
@@ -72,6 +75,7 @@ public class AutorizationController : Controller
         {
             return RedirectToAction("Login_Sign", "Home");
         }
+    
         return RedirectToAction("Index", "Home");
     }
 }
