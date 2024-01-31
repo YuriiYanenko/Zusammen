@@ -58,13 +58,14 @@ public class ZusammenDbController : Controller
     // Add row to films table and returns that film object. HTTP method POST.
     [HttpPost]
     public async Task<IActionResult> AddFilm(films filmToAdd)
-    {   
+    {
         _context.films.Add(filmToAdd);
         await _context.SaveChangesAsync();
         return CreatedAtAction("GetFilmById", new { id = filmToAdd.id }, filmToAdd);
     }
 
     // Return room with specified id.
+    [HttpGet]
     public async Task<ActionResult<rooms>> OpenRoomById(int roomId)
     {
         var room = await _context.rooms.FindAsync(roomId);
@@ -78,7 +79,7 @@ public class ZusammenDbController : Controller
     public async Task<IActionResult> CreateRoom(int filmId)
     {
         var userName = HttpContext.Session.GetString("userName");
-        Console.WriteLine("The admin is " +userName);
+        Console.WriteLine("The admin is " + userName);
         var film = GetFilmById(filmId).Result.Value;
         var roomList = await _context.rooms.ToListAsync();
         var lastRoom = roomList[roomList.Count - 1];
@@ -116,15 +117,19 @@ public class ZusammenDbController : Controller
         var filteredFilmsList = await _context.films.Where(e => e.year >= years[0] && e.year <= years[1]).ToListAsync();
         return filteredFilmsList;
     }
-    
+
     public async Task AddUser(users newUser)
     {
-        var allUsers = await _context.users.ToListAsync();
-        newUser.id = allUsers[allUsers.Count - 1].id+1;
-        newUser.password = PasswordHasher.HashPassword(newUser.password, PasswordHasher.salt);
-        Console.WriteLine(PasswordHasher.salt);
-        _context.users.Add(newUser);
-        await _context.SaveChangesAsync();
+        var userExists = _context.users.FindAsync(newUser.nickname);
+        if (userExists == null)
+        {
+            var allUsers = await _context.users.ToListAsync();
+            newUser.id = allUsers[allUsers.Count - 1].id + 1;
+            newUser.password = PasswordHasher.HashPassword(newUser.password, PasswordHasher.salt);
+            Console.WriteLine(PasswordHasher.salt);
+            _context.users.Add(newUser);
+            await _context.SaveChangesAsync();
+        }
     }
 
     public async Task<ActionResult<users>> GetUserData(string userName)
@@ -134,13 +139,14 @@ public class ZusammenDbController : Controller
         {
             return NotFound();
         }
+
         return user;
     }
 
     public async Task UpdateUser(RedactUserModel data, string userName)
     {
         var user = await GetUserData(userName);
-        user.Value.nickname = data.name==null?user.Value.nickname:data.name;
+        user.Value.nickname = data.name == null ? user.Value.nickname : data.name;
         user.Value.profile_description = data.about;
         user.Value.profile_image_path = $"../img/users/{data.imageName}";
         await _context.SaveChangesAsync();
@@ -152,9 +158,9 @@ public class ZusammenDbController : Controller
         var user = await _context.users.FindAsync(userName);
         user.rooms.Add(roomId);
         room.members_id.Add(user.id);
-        await _context.SaveChangesAsync(); 
+        await _context.SaveChangesAsync();
     }
-    
+
     private async Task<bool> ContainsAllGenres(string[] filmGenres, string[] filterGenres)
     {
         foreach (var filter in filterGenres)
@@ -162,18 +168,7 @@ public class ZusammenDbController : Controller
             if (!filmGenres.Contains(filter))
                 return false;
         }
-        return true;
-    }
 
-    public string HashPassword(string password)
-    {
-        byte[] salt = RandomNumberGenerator.GetBytes(128 / 8); // divide by 8 to convert bits to bytes
-        string hashed = Convert.ToBase64String(KeyDerivation.Pbkdf2(
-            password: password!,
-            salt: salt,
-            prf: KeyDerivationPrf.HMACSHA256,
-            iterationCount: 100000,
-            numBytesRequested: 256 / 8));
-        return hashed;
+        return true;
     }
 }
