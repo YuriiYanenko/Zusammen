@@ -50,9 +50,18 @@ document.getElementById('create-invitation').addEventListener('click', function(
             
             // Додаємо кнопку для закриття сповіщення
             var closeButton = document.createElement('button');
-            closeButton.innerHTML = 'Закрити';
+            closeButton.innerHTML = 'Копіювати';
             closeButton.className = 'close-button';
             closeButton.addEventListener('click', function() {
+                // Копіюємо посилання в буфер обміну
+                var textArea = document.createElement("textarea");
+                textArea.value = modelData;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand("Copy");
+                document.body.removeChild(textArea);
+
+                // Закриваємо сповіщення
                 notification.style.opacity = '0';
                 setTimeout(function() {
                     document.getElementById('notification-wrapper').removeChild(notification);
