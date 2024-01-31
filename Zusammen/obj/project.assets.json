@@ -8172,24 +8172,25 @@
     ]
   },
   "packageFolders": {
-    "/home/yurii/.nuget/packages/": {}
+    "/Users/valeriya/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/yurii/RiderProjects/Zusammen/Zusammen/Zusammen.csproj",
+      "projectUniqueName": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/Zusammen.csproj",
       "projectName": "Zusammen",
-      "projectPath": "/home/yurii/RiderProjects/Zusammen/Zusammen/Zusammen.csproj",
-      "packagesPath": "/home/yurii/.nuget/packages/",
-      "outputPath": "/home/yurii/RiderProjects/Zusammen/Zusammen/obj/",
+      "projectPath": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/Zusammen.csproj",
+      "packagesPath": "/Users/valeriya/.nuget/packages/",
+      "outputPath": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/yurii/.nuget/NuGet/NuGet.Config"
+        "/Users/valeriya/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8256,7 +8257,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/yurii/.dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
