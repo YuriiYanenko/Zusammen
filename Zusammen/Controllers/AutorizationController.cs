@@ -20,11 +20,12 @@ public class AutorizationController : Controller
     [HttpPost("Register")]
     public async Task<ActionResult> Register(RegisterModel model)
     {
-        ZusammenDbController dbController = new ZusammenDbController(_context);
-        Console.WriteLine($"Nick: {model.name}");
-        LoginModel? login = new LoginModel(); 
+        var tempModel = new RegAndLogModel() { register = model };
         if (ModelState.IsValid)
         {
+            ZusammenDbController dbController = new ZusammenDbController(_context);
+            LoginModel? login = new LoginModel(); 
+            
             var userToAdd = new users()
             {
                 nickname = model.name,
@@ -36,21 +37,22 @@ public class AutorizationController : Controller
                 status = "offline"
             };
             await dbController.AddUser(userToAdd);
+            
             login.name = model.name;
             login.password = model.password;
+            await Login(login);
         }
         else
         {
-            return RedirectToAction("Login_Sign", "Home");
+            ModelState.AddModelError(String.Empty, "error");
+            return View("~/Views/Home/Login_Sign.cshtml", tempModel);
         }
-
-        await Login(login);
         return RedirectToAction("Index", "Home");
     }
 
     public async Task<IActionResult> Login(LoginModel model)
     {
-        
+        var tempModel = new RegAndLogModel() { login = model };
         var dbController = new ZusammenDbController(_context);
         if (ModelState.IsValid)
         {   
@@ -68,12 +70,10 @@ public class AutorizationController : Controller
             HttpContext.Session.SetString("userName", userDetails.nickname);
             userDetails.status = "online";
             await _context.SaveChangesAsync();
-            
-            Console.WriteLine($"User: {userDetails.nickname}, id: {HttpContext.Session.GetString("userName")}");
         }
         else
         {
-            return RedirectToAction("Login_Sign", "Home");
+            return View("~/Views/Home/Login_Sign.cshtml", tempModel);
         }
     
         return RedirectToAction("Index", "Home");

@@ -557,7 +557,7 @@ header{
   padding: 10px 15px;
 }
 .login-sign-container input {
-  margin: 0 auto 15px;
+  margin: 0 auto;
   display: block;
   width: 220px;
   -moz-transition: all 0.3s;
@@ -1025,4 +1025,9 @@ a
 .round .button3:hover:before {
   top: -30px;
   left: -30px;
+}
+.text-danger{
+  font-size: 11px;
+  margin-left: 50px;
+  padding-top: -50px;
 }
