@@ -31,9 +31,14 @@
 <script type="text/javascript">
 
 function getModelData(){
-    let obj = {
-            
-    };
+    const roomId = @Model.Room.id;
+    const filmPath = "@Model.FilmPath";
+    
+    let modelInfo = {
+        id: parseInt(roomId),
+        videoPath: filmPath
+    };  
+    return modelInfo;
 }
 
 document.getElementById('create-invitation').addEventListener('click', function(event) {
