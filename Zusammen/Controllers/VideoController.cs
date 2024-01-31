@@ -22,7 +22,7 @@ public class VideoController : Controller
     }
     
     // Returns new View of room page.
-    [HttpPost]
+    [HttpGet]
     public IActionResult Room(int roomId)
     {
         var dbController = new ZusammenDbController(_dbContext);
@@ -38,5 +38,10 @@ public class VideoController : Controller
         activeRoom.FilmPath = filmPath.Result.Value.video_path;
         
         return View(activeRoom);
+    }
+    
+    public string GenerateRoomConnectUrl(int roomId)
+    {
+        return $"http://localhost:5133/Video/Room?roomId={roomId}";
     }
 }
