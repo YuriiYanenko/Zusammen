@@ -25,7 +25,7 @@ public class AutorizationController : Controller
         LoginModel? login = new LoginModel(); 
         if (ModelState.IsValid)
         {
-            if (await dbController.GetUserData(model.name) != null)
+            if (await _context.users.FindAsync(model.name) != null)
             {
                 return View("~/Views/Home/Login_Sign.cshtml", tempModel);
             }
@@ -59,7 +59,7 @@ public class AutorizationController : Controller
         if (ModelState.IsValid)
         {   
             var userDetails =
-                await _context.users.SingleOrDefaultAsync(m => 
+                 _context.users.SingleOrDefault(m => 
                     m.nickname == model.name &&
                     m.password == PasswordHasher.HashPassword(model.password, PasswordHasher.salt));
             

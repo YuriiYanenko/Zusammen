@@ -42,16 +42,11 @@ public class ZusammenDbController : Controller
     }
 
     // Returns list of films with specified string in name. 
-    public async Task<ActionResult<List<films>>> GetFilmByName(string name)
+    public async Task<ActionResult<List<films>>> GetFilmByName(string? name)
     {
         // Get all films where name contains specified value and convert it to list.
         var film = await _context.films.Where(e => EF.Functions.Like(e.name.ToLower(), $"%{name.ToLower()}%"))
             .ToListAsync();
-        if (film.Count == 0)
-        {
-            return NotFound();
-        }
-
         return film;
     }
 
