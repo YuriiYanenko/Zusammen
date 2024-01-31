@@ -208,14 +208,17 @@
                 </div>
             </div>
             <!-- CreateRoom, куди буде відправлений POST-запит -->
-            @using (Html.BeginForm("CreateRoom", "ZusammenDb", FormMethod.Post))
-            {
-                <div>
-                    <!-- Перекід на строінку "Моя кімната" -->
-                    <input type="hidden" name="filmId" value="@Model.id"/>
-                    <button class="buttonroom" type="submit">Створити кімнату</button>
-                    @* </form> *@
-                </div>
+            @if(ViewContext.HttpContext.Session.GetString("userName")!=null){
+                @using (Html.BeginForm("CreateRoom", "ZusammenDb", FormMethod.Post))
+                {
+                    <div>
+                        <input type="hidden" name="filmId" value="@Model.id"/>
+                        <button class="buttonroom" type="submit">Створити кімнату</button>
+                    </div>
+                }
+            }
+            else{
+                <h3 class="h3films" style="margin-top: 50px; text-align: center; color: #5c636a"> Для спільного перегляду фільму "@Model.name" вам потрібно <a style="color: #1E797C" asp-controller="Home" asp-action="Login_Sign">зареєструватися</a>.</h3>
             }
         </div>
     </div>
