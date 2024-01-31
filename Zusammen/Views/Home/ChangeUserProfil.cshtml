@@ -3,6 +3,9 @@
     ViewBag.Title = "Зміна облікового запису";
     Layout = "_Layout";
 }
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
 <script src="~/js/new_photo.js"></script> 
 <div class="change-profile" id="change-profileUs">
     <div class="photo-change" id="uploadedImageContainer" onclick="openFileExplorer()">
@@ -11,13 +14,19 @@
     <input type="file" id="fileInput" style="display: none;" onchange="previewImage()">
 </div>
 
-<form class="dataUs-changes" id="dataUsContainer" asp-action="" asp-controller="" method="post" >
-    <p class="data-changes">Нікнейм: <input asp-for="@Model.nickname" type="text" name="username" style="height: 20px;font-size: 14px;"></p>
-    <p class="data-changes">Про себе:  <textarea asp-for="@Model.profile_description" name="message"></textarea> </p>
-<div id="saveButtonContainer">
-        <button class="buttonroom2" id="buttonChanges" type="submit" >Зберегти зміни</button>
+<div class="dataUs-changes" id="dataUsContainer">    
+    <div class="form__group field"> 
+        <input asp-for="@Model.nickname" type="text" class="form__field" placeholder="Name" name="name"  required />
+        <label for="name" class="form__label">Нікнейм:</label>
+    </div>     
+    <div class="form__group field">  
+        <input asp-for="@Model.profile_description" type="text" class="form__field" placeholder="Name" name="text"  required />
+        <label for="name" class="form__label">Про себе:</label>
+    </div>
+    <div id="saveButtonContainer">
+        @using (Html.BeginForm("UserProfil", "Home", FormMethod.Post))
+        {
+            <button class="buttonroom2" id="buttonChanges" type="submit" onclick="saveChanges()">Зберегти зміни</button>
+        }
+    </div>
 </div>
-</form>
-
-    
-
