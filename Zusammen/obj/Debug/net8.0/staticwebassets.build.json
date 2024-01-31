@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dPU0kMUTzGIamKBNcjkPtpvTC/2LQidYBtuGXYfx7aY=",
+  "Hash": "UkXL6XCbURkMeZATRmRJQMphNHrX+zVk4/1pPCKvMFo=",
   "Source": "Zusammen",
   "BasePath": "_content/Zusammen",
   "Mode": "Default",
@@ -359,6 +359,25 @@
       "OriginalItemSpec": "wwwroot/img/lera.jpeg"
     },
     {
+      "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/masha.jpeg",
+      "SourceId": "Zusammen",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/",
+      "BasePath": "_content/Zusammen",
+      "RelativePath": "img/masha.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/masha.jpeg"
+    },
+    {
       "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/Napoleon.jpg",
       "SourceId": "Zusammen",
       "SourceType": "Discovered",
@@ -623,6 +642,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/users/user6.png"
+    },
+    {
+      "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/yura.jpeg",
+      "SourceId": "Zusammen",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/",
+      "BasePath": "_content/Zusammen",
+      "RelativePath": "img/yura.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/yura.jpeg"
     },
     {
       "Identity": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/js/Login_Signup.js",

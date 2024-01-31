@@ -77,6 +77,10 @@
       "PackagePath": "staticwebassets/img/lera.jpeg"
     },
     {
+      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/masha.jpeg",
+      "PackagePath": "staticwebassets/img/masha.jpeg"
+    },
+    {
       "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/photo.ico",
       "PackagePath": "staticwebassets/img/photo.ico"
     },
@@ -119,6 +123,10 @@
     {
       "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/users/user6.png",
       "PackagePath": "staticwebassets/img/users/user6.png"
+    },
+    {
+      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/yura.jpeg",
+      "PackagePath": "staticwebassets/img/yura.jpeg"
     },
     {
       "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/img/МонахиняII.jpg",
