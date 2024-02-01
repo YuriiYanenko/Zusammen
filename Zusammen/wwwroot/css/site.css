@@ -1230,7 +1230,8 @@ a
   background-color: #37817d;
   color: #fff;
   cursor: pointer;
-  margin-right: 20px;
+  margin-right: 0;
+  width: 90px;
 }
 
 .chat-input button:hover {
