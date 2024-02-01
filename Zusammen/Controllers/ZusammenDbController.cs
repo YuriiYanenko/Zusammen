@@ -124,7 +124,7 @@ public class ZusammenDbController : Controller
         {
             var allUsers = await _context.users.ToListAsync();
             newUser.id = allUsers[allUsers.Count - 1].id + 1;
-            newUser.password = PasswordHasher.HashPassword(newUser.password, PasswordHasher.salt);
+            newUser.password = PasswordHasher.HashPassword(newUser.password);
             await _context.users.AddAsync(newUser);
             await _context.SaveChangesAsync();
         }
