@@ -56,6 +56,7 @@ public class Program
         app.UseStaticFiles();
 
         app.MapHub<VideoHub>("/Video/Room/video");
+        app.MapHub<ChatHub>("/Video/Room/chat");
         app.UseRouting();
 
         app.UseAuthorization();
