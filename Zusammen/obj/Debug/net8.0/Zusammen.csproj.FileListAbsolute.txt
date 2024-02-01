@@ -381,3 +381,4 @@ D:/Projects/Zusammen/Zusammen/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
 /home/yurii/RiderProjects/Zusammen/Zusammen/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
 /home/yurii/RiderProjects/Zusammen/Zusammen/bin/Debug/net8.0/AspNetCoreRateLimit.dll
 D:/Projects/Zusammen/Zusammen/bin/Debug/net8.0/AspNetCoreRateLimit.dll
+/Users/valeriya/RiderProjects/Zusammen/Zusammen/bin/Debug/net8.0/AspNetCoreRateLimit.dll

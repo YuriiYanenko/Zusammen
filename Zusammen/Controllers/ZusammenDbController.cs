@@ -44,6 +44,10 @@ public class ZusammenDbController : Controller
     // Returns list of films with specified string in name. 
     public async Task<ActionResult<List<films>>> GetFilmByName(string? name)
     {
+        if (name == null || name == "")
+        {
+            return await _context.films.ToListAsync();
+        }
         // Get all films where name contains specified value and convert it to list.
         var film = await _context.films.Where(e => EF.Functions.Like(e.name.ToLower(), $"%{name.ToLower()}%"))
             .ToListAsync();
@@ -115,13 +119,13 @@ public class ZusammenDbController : Controller
 
     public async Task AddUser(users newUser)
     {
-        var userExists = await _context.users.FindAsync(newUser.nickname);
+        var userExists = await _context.users.FirstOrDefaultAsync(u => u.nickname == newUser.nickname);
         if (userExists == null)
         {
             var allUsers = await _context.users.ToListAsync();
             newUser.id = allUsers[allUsers.Count - 1].id + 1;
             newUser.password = PasswordHasher.HashPassword(newUser.password, PasswordHasher.salt);
-            _context.users.Add(newUser);
+            await _context.users.AddAsync(newUser);
             await _context.SaveChangesAsync();
         }
     }
@@ -162,7 +166,6 @@ public class ZusammenDbController : Controller
             if (!filmGenres.Contains(filter))
                 return false;
         }
-
         return true;
     }
 }

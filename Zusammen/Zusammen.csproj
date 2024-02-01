@@ -47,6 +47,7 @@
       <Content Remove="Views\Home\AboutUs.cshtml" />
       <Content Remove="wwwroot\img\test.png" />
       <Content Remove="wwwroot\img\image.jpg" />
+      <Content Remove="wwwroot\js\notextinsearch.js" />
     </ItemGroup>
 
     <ItemGroup>
