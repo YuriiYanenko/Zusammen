@@ -879,6 +879,7 @@ textarea
 .status-indicator.online {
   background-color: #006fff;
 }
+
 .container-photo {
   display: flex;
 }
@@ -888,7 +889,7 @@ textarea
   border-radius: 8px;
   position: relative;
   cursor: pointer;
-  margin-right: 10px;
+  margin-right: 30px;
 }
 .card .image-box {
   width: 100%;
@@ -903,10 +904,6 @@ textarea
   object-position: 50% 30%;
   border-radius: inherit;
   transition: 0.5s ease-in-out;
-}
-.card #yura
-{
-  
 }
 .card::after {
   content: "";
@@ -927,7 +924,7 @@ textarea
 }
 
 .content {
-  width: 80%;
+  width: 70%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -945,7 +942,7 @@ textarea
   scale: 0.7;
 }
 .content p {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.5;
   color: #d1d1d1;
   transform: translateY(50%);
@@ -957,6 +954,15 @@ textarea
 .card:hover .content p {
   opacity: 1;
   transform: translateY(0);
+}
+.round #lera
+{
+  margin-left: 110px;
+}
+
+.round #masha
+{
+  margin-right: 110px;
 }
 a
 {
@@ -1043,9 +1049,21 @@ a
   • overlay{
     width: 75%;
   }
-  .card::after
+  .container-photo {
+    height: 300px;
+    width: 110%;
+  }
+  .content p {
+    font-size: 14px;
+  }
+  .round #yura
   {
-    
+    margin-left: 70px;
+  }
+  .round #masha
+  {
+    margin-left: 30px;
+    margin-right: 50px;
   }
 }
 
