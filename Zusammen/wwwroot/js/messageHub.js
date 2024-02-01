@@ -1,6 +1,6 @@
 let modelData = getModelData();
 
-let message = document.getElementById("messageBox");
+let message = document.getElementById("chat-messages");
 let userName = getUserName();
 
 let connection = new signalR.HubConnectionBuilder().withUrl("/Video/Room/chat").build();
