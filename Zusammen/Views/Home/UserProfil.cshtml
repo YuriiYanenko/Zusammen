@@ -28,3 +28,10 @@
         <button class="buttonroom2" type="submit">Редагувати</button>
     </div>
 }
+
+<script>
+    function getUserName(){
+        console.log('OK');
+        return '@ViewContext.HttpContext.Session.GetString("userName")';
+    }
+</script>

@@ -24,27 +24,25 @@ function previewImage()
     }
 }
 
+var user = getUserName();
 function saveChanges()
 {
     var nickname = $("input[name='name']").val();
     var about = $("input[name='text']").val();
-
-   
+    
     var data = 
         {
         name: nickname,
         about: about
-        
     };
     
     $.ajax({
-        url: '/ZusammenDb/UpdateUser/', 
+        url: '/ZusammenDb/UpdateUser', 
         type: 'POST',
-        contentType: 'application/json',
-        data: JSON.stringify(data),
+        data: {data: data, userName:user},
         success: function (response) {
-            
-            console.log(response);
+            open("/Home/UserProfil/");
+            console.log(response);  
         }
     });
 }
