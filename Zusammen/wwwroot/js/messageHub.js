@@ -22,4 +22,5 @@ chatConnection.start().then(function () {
 $("#send").click(function(){
     console.log(message.value);
     chatConnection.invoke("SendMessage", parseInt(modelData.id), userName, message.value);
+    message.value="";
 });
