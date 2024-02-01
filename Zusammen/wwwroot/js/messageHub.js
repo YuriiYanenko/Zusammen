@@ -17,7 +17,7 @@ chatConnection.start().then(function () {
     });
 }).catch(function (err) {
     return console.error(err.toString());
-});
+}); 
 
 $("#send").click(function(){
     console.log(message.value);
