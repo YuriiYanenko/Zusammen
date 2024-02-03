@@ -137,6 +137,10 @@
       "PackagePath": "staticwebassets/js/Login_Signup.js"
     },
     {
+      "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/js/messageHub.js",
+      "PackagePath": "staticwebassets/js/messageHub.js"
+    },
+    {
       "Id": "/Users/valeriya/RiderProjects/Zusammen/Zusammen/wwwroot/js/new_photo.js",
       "PackagePath": "staticwebassets/js/new_photo.js"
     },

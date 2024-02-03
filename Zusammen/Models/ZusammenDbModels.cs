@@ -102,5 +102,4 @@ public class RedactUserModel
 {
     public string? name { get; set; }
     public string? about { get; set; }
-    public string? imageName { get; set; }
 } 

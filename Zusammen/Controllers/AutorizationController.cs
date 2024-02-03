@@ -64,7 +64,7 @@ public class AutorizationController : Controller
             var userDetails =
                  _context.users.SingleOrDefault(m => 
                     m.nickname == model.name &&
-                    m.password == PasswordHasher.HashPassword(model.password, PasswordHasher.salt));
+                    m.password == PasswordHasher.HashPassword(model.password));
             
             if (userDetails == null)
             {
@@ -84,5 +84,24 @@ public class AutorizationController : Controller
         }
     
         return RedirectToAction("Index", "Home");
+    }
+    
+    // Повертає true якщо існує користувач із заданим ім'ям.
+    public bool IsUserExist(string userName)
+    {
+        return _context.users.FirstOrDefault(v => v.nickname == userName) == null;
+    }
+
+    // Повертає true кщо існує користувач із заданою поштою.
+    public bool IsEmailExist(string email)
+    {
+        return _context.users.FirstOrDefault(v => v.email == email) == null;
+    }
+
+    // Визначає чи правильно введено пароль для користувача.
+    public bool IsPasswordCorrect(string userName, string password)
+    {
+        var hashedPassword = PasswordHasher.HashPassword(password);
+        return _context.users.FirstOrDefault(v => v.nickname == userName && v.password == hashedPassword) == null;
     }
 }

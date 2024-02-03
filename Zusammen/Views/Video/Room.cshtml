@@ -12,8 +12,24 @@
         <video id="film-video" src='' preload="auto" autoplay="autoplay" controls="controls"></video>
     </button>
     <div style="width: 40%; height: 550px; background-color: rgb(3, 91, 93); padding-left: 20px">
+        <div class="chat-container">
+                <div class="chat-header">
+                    <h2>Chat</h2>
+                </div>
+                <div class="chat-messages" id="chat-messages">
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="message" placeholder="Type your message">
+                    <button id="send" >Send</button>
+                </div>
+            </div>
     </div>
+    
 </div>
+
+
+
+
 <!-- Створення кнопки запрошення -->
 @using (Html.BeginForm("GenerateRoomConnectUrl", "Video", FormMethod.Post))
 {
@@ -27,7 +43,23 @@
 <div id="notification-wrapper"></div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Підключення jQuery -->
+<script src="~/lib/signalr/dist/browser/signalr.min.js"></script>
+
 <script type="text/javascript">
+// Отримання даних про кімнату.
+function getModelData(){
+    let modelData = {
+        id: @Model.Room.id,
+        videoPath: "@Model.FilmPath"
+    };
+    return modelData;
+}
+
+// Отримання імені користувача.
+function getUserName(){
+    return '@ViewContext.HttpContext.Session.GetString("userName")';
+}
+
 document.getElementById('create-invitation').addEventListener('click', function(event) {
     event.preventDefault(); // Запобігаємо дії за замовчуванням (відправці форми)
     // Отримуємо дані з метода за допомогою AJAX-запиту
@@ -78,3 +110,4 @@ document.getElementById('create-invitation').addEventListener('click', function(
 });
 </script>
 <script src="~/js/videoRecieve.js"></script>
+<script src='~/js/messageHub.js'></script>

@@ -124,7 +124,7 @@ public class ZusammenDbController : Controller
         {
             var allUsers = await _context.users.ToListAsync();
             newUser.id = allUsers[allUsers.Count - 1].id + 1;
-            newUser.password = PasswordHasher.HashPassword(newUser.password, PasswordHasher.salt);
+            newUser.password = PasswordHasher.HashPassword(newUser.password);
             await _context.users.AddAsync(newUser);
             await _context.SaveChangesAsync();
         }
@@ -143,10 +143,11 @@ public class ZusammenDbController : Controller
 
     public async Task UpdateUser(RedactUserModel data, string userName)
     {
+        Console.WriteLine(userName);
         var user = await GetUserData(userName);
         user.Value.nickname = data.name == null ? user.Value.nickname : data.name;
-        user.Value.profile_description = data.about;
-        user.Value.profile_image_path = $"../img/users/{data.imageName}";
+        user.Value.profile_description = data.about == null? user.Value.profile_description: data.about;
+        //user.Value.profile_image_path = data.imageName == null?user.Value.profile_image_path:$"../img/users/{data.imageName}";
         await _context.SaveChangesAsync();
     }
 

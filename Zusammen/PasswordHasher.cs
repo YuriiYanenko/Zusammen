@@ -5,8 +5,8 @@ namespace Zusammen;
 
 public class PasswordHasher
 {
-    public static string salt = "1940GzF+GNOBbg+fjRkWjA==";
-    public static string HashPassword(string password, string salt)
+    private static string salt = "1940GzF+GNOBbg+fjRkWjA==";
+    public static string HashPassword(string password)
     {
         using (var sha256 = SHA256.Create())
         {
