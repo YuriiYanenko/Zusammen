@@ -100,6 +100,5 @@ public class RegAndLogModel
 }
 public class RedactUserModel
 {
-    public string? name { get; set; }
     public string? about { get; set; }
 } 
