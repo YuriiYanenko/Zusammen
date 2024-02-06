@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Security.Cryptography;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Microsoft.EntityFrameworkCore;
@@ -122,17 +123,17 @@ public class ZusammenDbController : Controller
         var userExists = await _context.users.FirstOrDefaultAsync(u => u.nickname == newUser.nickname);
         if (userExists == null)
         {
-            var allUsers = await _context.users.ToListAsync();
+            var allUsers = await _context.users.OrderBy(o => o.id).ToListAsync();
             newUser.id = allUsers[allUsers.Count - 1].id + 1;
             newUser.password = PasswordHasher.HashPassword(newUser.password);
             await _context.users.AddAsync(newUser);
             await _context.SaveChangesAsync();
         }
     }
-
+    
     public async Task<ActionResult<users>> GetUserData(string userName)
     {
-        var user = await _context.users.FindAsync(userName);
+        var user = await _context.users.FirstOrDefaultAsync(v => v.nickname == userName);
         if (user == null)
         {
             return NotFound();

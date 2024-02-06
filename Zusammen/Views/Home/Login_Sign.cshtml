@@ -36,7 +36,7 @@
         <div class="login-sign-form-item log-in">
           <div class="login-sign-table">
             <form class="login-sign-table-cell log-in" role="form" asp-action="Login" asp-controller="Autorization" method="post">
-              <input asp-for="@Model.login.name" name="name" placeholder="Username" type="text" autocomplete="off" />
+              <input asp-for="@Model.login.email" name="email" placeholder="Email" type="text" autocomplete="off" />
               <span id="log-in-error-name" class="text-danger"></span>
               <input asp-for="@Model.login.password" name="password" type="Password" placeholder="Password"/>
               <span id="log-in-error-password" class="text-danger"></span>

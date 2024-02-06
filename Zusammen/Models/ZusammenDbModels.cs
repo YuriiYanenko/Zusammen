@@ -45,8 +45,8 @@ public class films
 [Table("users")]
 public class users
 {
-    [Key]
     public string nickname { get; set; }
+    [Key]
     public string email { get; set; }
     public string password { get; set; }
     
@@ -86,8 +86,8 @@ public class RegisterModel
 public class LoginModel
 {
     [Required]
-    [StringLength(15, MinimumLength = 3)]
-    public string name { get; set; }
+    [EmailAddress]
+    public string email { get; set; }
     [Required]
     [StringLength(50, MinimumLength = 6)]
     public string password { get; set; }
@@ -98,7 +98,3 @@ public class RegAndLogModel
     public RegisterModel register { get; set; }
     public LoginModel login { get; set; }
 }
-public class RedactUserModel
-{
-    public string? about { get; set; }
-} 

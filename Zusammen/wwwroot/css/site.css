@@ -1040,6 +1040,16 @@ a
 
 @media screen and (min-width: 1290px)
 {
+  .slide {
+    display: flex;
+    margin-right: 10px;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    transition: transform 800ms ease-in-out;
+    margin-left: -60px;
+  }
+  
   .slides-container-for-moviepage
   {
     width: 19%;
@@ -1058,12 +1068,16 @@ a
   }
   .round #yura
   {
-    margin-left: 70px;
+    margin-left: 5px;
   }
   .round #masha
   {
-    margin-left: 30px;
-    margin-right: 50px;
+    margin-right: 160px;
+  }
+  li.film-data {
+    flex: 1;
+    max-width: 30vmin;
+    min-width: 10vmax;
   }
 }
 
