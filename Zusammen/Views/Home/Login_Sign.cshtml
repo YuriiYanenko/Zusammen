@@ -37,9 +37,9 @@
           <div class="login-sign-table">
             <form class="login-sign-table-cell log-in" role="form" asp-action="Login" asp-controller="Autorization" method="post">
               <input asp-for="@Model.login.email" name="email" placeholder="Email" type="text" autocomplete="off" />
-              <span id="log-in-error-name" class="text-danger"></span>
+              <span id="log-in-error-email" class="text-danger"></span>
               <input asp-for="@Model.login.password" name="password" type="Password" placeholder="Password"/>
-              <span id="log-in-error-password" class="text-danger"></span>
+              <span id="log-in-error-password" class="text-danger">@TempData["ErrorMessage1"]</span>
               <input type="submit" value="Увійти" class="login-sign-btn" style="width: 160px"/>
             </form>
           </div>
@@ -50,7 +50,7 @@
               <input asp-for="@Model.register.name" name="name" type="text" autocomplete="off" placeholder="Username"/>
               <span id="sign-up-error-name" class="text-danger"></span>
               <input asp-for="@Model.register.email" name="email" type="text" autocomplete="off" placeholder="Email"/>
-              <span id="sign-up-error-email" class="text-danger"></span>
+              <span id="sign-up-error-email" class="text-danger">@TempData["ErrorMessage2"]</span>
               <input asp-for="@Model.register.password" name="password" type="password" autocomplete="off" placeholder="Password"/>
               <span id="sign-up-error-password" class="text-danger"></span>
               <input type="submit" value="Зареєструватися" class="login-sign-btn" style="width: 160px"/>

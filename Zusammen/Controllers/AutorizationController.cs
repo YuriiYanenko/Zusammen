@@ -26,7 +26,7 @@ public class AutorizationController : Controller
         LoginModel? login = new LoginModel(); 
         if (ModelState.IsValid)
         {
-            var isUserExist = await _context.users.FirstOrDefaultAsync(u => u.nickname == model.name) == null
+            var isUserExist = await _context.users.FirstOrDefaultAsync(u => u.email == model.email) == null
                 ? true
                 : false;
             
@@ -48,10 +48,14 @@ public class AutorizationController : Controller
                 await Login(login);
             }
             else
+            {
+                TempData["ErrorMessage2"] = "Користувач з таким email вже існує";
                 return View("~/Views/Home/Login_Sign.cshtml", tempModel);
+            }
         }
         else
         {
+            TempData["ErrorMessage2"] = "Користувач з таким email вже існує";
             return View("~/Views/Home/Login_Sign.cshtml", tempModel);
         }
 
@@ -68,11 +72,10 @@ public class AutorizationController : Controller
                  _context.users.SingleOrDefault(m => 
                     m.email == model.email &&
                     m.password == PasswordHasher.HashPassword(model.password));
-            
             if (userDetails == null)
             {
-                ModelState.AddModelError("Password", "Invalid login attempt.");
-                return RedirectToAction("Login_Sign", "Home");
+                TempData["ErrorMessage1"] = "Логін або пароль введені неправильно";
+                return RedirectToAction("Login_Sign", "Home", tempModel);
             }
 
             HttpContext.Session.SetString("userName", userDetails.nickname);
@@ -83,9 +86,9 @@ public class AutorizationController : Controller
         }
         else
         {
+            TempData["ErrorMessage1"] = "Логін або пароль введені неправильно";
             return RedirectToAction("Login_Sign", "Home");
         }
-    
         return RedirectToAction("Index", "Home");
     }
     
@@ -99,12 +102,5 @@ public class AutorizationController : Controller
     public bool IsEmailExist(string email)
     {
         return _context.users.FirstOrDefault(v => v.email == email) == null;
-    }
-
-    // Визначає чи правильно введено пароль для користувача.
-    public bool IsPasswordCorrect(string userName, string password)
-    {
-        var hashedPassword = PasswordHasher.HashPassword(password);
-        return _context.users.FirstOrDefault(v => v.nickname == userName && v.password == hashedPassword) == null;
     }
 }

@@ -7,17 +7,21 @@ $(".container-form .btn").click(function(){
 $(document).ready(function () {
     $("form").submit(function (event) {
         var isValid = true;
-
         // Перевірка для входу
         if ($(this).hasClass("log-in")) {
-            var username = $(this).find("input[name='name']").val().trim();
+            var email = $(this).find("input[name='email']").val().trim().toLowerCase(); // Нормалізуємо до нижнього регістру
             var password = $(this).find("input[name='password']").val().trim();
 
-            if (username.length === 0) {
+            if (email.length === 0) {
                 isValid = false;
-                $("#log-in-error-name").html("Це поле є обов'язковим для заповнення");
+                $("#log-in-error-email").html("Це поле є обов'язковим для заповнення");
             } else {
-                $("#log-in-error-name").html(""); // Очистити повідомлення про помилку
+                if (!isValidEmail(email)) {
+                    isValid = false;
+                    $("#log-in-error-email").html("Неправильний формат електронної пошти");
+                } else {
+                    $("#log-in-error-email").html(""); // Очистити повідомлення про помилку
+                }
             }
 
             if (password.length === 0) {
@@ -25,11 +29,6 @@ $(document).ready(function () {
                 $("#log-in-error-password").html("Це поле є обов'язковим для заповнення");
             } else {
                 $("#log-in-error-password").html(""); // Очистити повідомлення про помилку
-            }
-
-            if ((username.length < 3 || username.length > 15) && username.length !== 0) {
-                isValid = false;
-                $("#log-in-error-name").html("Ім'я має містити від 3 до 15 символів");
             }
         }
 
@@ -42,9 +41,13 @@ $(document).ready(function () {
             if (username.length === 0) {
                 isValid = false;
                 $("#sign-up-error-name").html("Це поле є обов'язковим для заповнення");
-            } else {
+            } else if (username.length <= 2 || username.length >= 15) {
+                isValid = false;
+                $("#sign-up-error-name").html("Ім'я має містити від 3 до 15 символів");
+            }else {
                 $("#sign-up-error-name").html(""); // Очистити повідомлення про помилку
             }
+            
             if (email.length === 0) {
                 isValid = false;
                 $("#sign-up-error-email").html("Це поле є обов'язковим для заповнення");
@@ -56,20 +59,15 @@ $(document).ready(function () {
                     $("#sign-up-error-email").html(""); // Очистити повідомлення про помилку
                 }
             }
+            
             if (password.length === 0) {
                 isValid = false;
                 $("#sign-up-error-password").html("Це поле є обов'язковим для заповнення");
-            } else {
-                $("#sign-up-error-password").html(""); // Очистити повідомлення про помилку
-            }
-
-            if ((username.length < 3 || username.length > 15) && username.length !== 0) {
-                isValid = false;
-                $("#sign-up-error-name").html("Ім'я має містити від 3 до 15 символів");
-            }
-            if ((password.length < 6 || password.length > 50) && password.length !== 0) {
+            } else if (password.length <= 6) {
                 isValid = false;
                 $("#sign-up-error-password").html("Пароль має містити від 6 до 50 символів");
+            }else {
+                $("#sign-up-error-password").html(""); // Очистити повідомлення про помилку
             }
         }
         if (!isValid) {
