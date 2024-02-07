@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Diagnostics.Metrics;
 using MySqlX.XDevAPI;
 using Zusammen.Models;
 
@@ -25,9 +26,11 @@ public class AutorizationController : Controller
         LoginModel? login = new LoginModel(); 
         if (ModelState.IsValid)
         {
-            var isUserExist = await _context.users.FirstOrDefaultAsync(u => u.nickname == model.name);
+            var isUserExist = await _context.users.FirstOrDefaultAsync(u => u.nickname == model.name) == null
+                ? true
+                : false;
             
-            if (isUserExist == null)
+            if (isUserExist)
             {
                 var userToAdd = new users()
                 {
@@ -40,7 +43,7 @@ public class AutorizationController : Controller
                     status = "offline"
                 };
                 await dbController.AddUser(userToAdd);
-                login.name = model.name;
+                login.email = model.email;
                 login.password = model.password;
                 await Login(login);
             }
@@ -63,7 +66,7 @@ public class AutorizationController : Controller
         {   
             var userDetails =
                  _context.users.SingleOrDefault(m => 
-                    m.nickname == model.name &&
+                    m.email == model.email &&
                     m.password == PasswordHasher.HashPassword(model.password));
             
             if (userDetails == null)
