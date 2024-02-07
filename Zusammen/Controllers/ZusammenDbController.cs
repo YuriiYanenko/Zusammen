@@ -143,14 +143,14 @@ public class ZusammenDbController : Controller
     }
 
     [HttpPost]
-    public async Task UpdateUser(string? data, string userName)
+    public void UpdateUser(RedactModel data, string userName)
     {
-        Console.WriteLine(userName);
-        var user = await GetUserData(userName);
-        Console.WriteLine(userName);
-        user.Value.profile_description = data == null? user.Value.profile_description : data;
-        //user.Value.profile_image_path = data.imageName == null?user.Value.profile_image_path:$"../img/users/{data.imageName}";
-        await _context.SaveChangesAsync();
+        Console.WriteLine($"New user name: {data.name}");
+        var user = GetUserData(userName).Result;
+        user.Value.nickname = data.name == null ? user.Value.nickname : data.name;
+        user.Value.profile_description = data.about == null? user.Value.profile_description : data.about;
+        _context.SaveChanges();
+        HttpContext.Session.SetString("userName", user.Value.nickname);
     }
 
     public async Task AddUserToRoom(int roomId, string userName)

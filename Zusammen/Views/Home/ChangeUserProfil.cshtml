@@ -15,8 +15,12 @@
 
 <div class="dataUs-changes" id="dataUsContainer">  
     <div class="form__group field">  
-        <input asp-for="@Model.profile_description" type="text" class="form__field" placeholder="Name" name="text"  required />
-        <label for="name" class="form__label">Про себе:</label>
+            <input asp-for="@Model.nickname" type="text" class="form__field" placeholder="Name" name="nick"  required />
+            <label for="nick" class="form__label">Нікнейм:</label>
+        </div>
+    <div class="form__group field">  
+        <input asp-for="@Model.profile_description" type="text" class="form__field" placeholder="Name" name="about"  required />
+        <label for="about" class="form__label">Про себе:</label>
     </div>
     <div id="saveButtonContainer">
         <button class="buttonroom2" id="buttonChanges" type="submit">Зберегти зміни</button>
@@ -25,20 +29,25 @@
 
 <script>
     function getUserName(){
-        console.log('OK');
         return '@ViewContext.HttpContext.Session.GetString("userName")';
     }
+    
+    
     
     $(document).ready(function() {
         $("#buttonChanges").click(function (event) {
             event.preventDefault();
-            var about = $("input[name='text']").val();
+            let newUserData = {
+                    name: $("input[name='nick']").val(),
+                    about: $("input[name='about']").val()
+                };
+            console.log(newUserData.about);
+            console.log(newUserData.name);
             let userName = getUserName();
-            console.log("OK");
             $.ajax({
                 url: '/ZusammenDb/UpdateUser/',
                 type: 'POST',
-                data: {data: about, userName: userName},
+                data: {data: newUserData, userName: userName},
                 success: function (response) {
                     console.log(response);
                 }

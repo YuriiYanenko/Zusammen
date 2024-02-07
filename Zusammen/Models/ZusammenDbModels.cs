@@ -98,3 +98,9 @@ public class RegAndLogModel
     public RegisterModel register { get; set; }
     public LoginModel login { get; set; }
 }
+
+public class RedactModel
+{
+    public string? name { get; set; }
+    public string? about { get; set; }
+}
