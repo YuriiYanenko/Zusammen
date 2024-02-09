@@ -3,14 +3,30 @@
     ViewBag.Title = "Зміна облікового запису";
     Layout = "_Layout";
 }
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 
-<div class="change-profile" id="change-profileUs">
-    <div class="photo-change" id="uploadedImageContainer" onclick="openFileExplorer()">
-        <img id="uploadedImage" src="../img/photo.ico">
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> 
+<div id="overlay"></div>
+
+<div class="box-container">
+  <div class="box">
+    <div class="thumbnail"  id="uploadedImageContainer" >
+      <div class="thumbnail-overlay"></div>  
+      <img id="uploadedImage" src="../img/photo.ico">
     </div>
-    <input type="file" id="fileInput" style="display: none;" onchange="previewImage()">
+    
+    <div class="modal">
+         <div class="close">×</div>
+        <div class="modal-content">
+            <img src="../img/users/user1.png" onclick="selectImage('../img/users/user1.png')" alt="Image 1">
+            <img src="../img/users/user2.png" onclick="selectImage('../img/users/user2.png')" alt="Image 2">
+            <img src="../img/users/user3.png" onclick="selectImage('../img/users/user3.png')" alt="Image 3">
+            <img src="../img/users/user4.png" onclick="selectImage('../img/users/user4.png')" alt="Image 4">
+            <img src="../img/users/user5.png" onclick="selectImage('../img/users/user5.png')" alt="Image 5">
+            <img src="../img/users/user6.png" onclick="selectImage('../img/users/user6.png')" alt="Image 6">
+        </div>
+    </div>
+  </div>
 </div>
 
 <div class="dataUs-changes" id="dataUsContainer">  
@@ -22,9 +38,13 @@
         <input asp-for="@Model.profile_description" type="text" class="form__field" placeholder="Name" name="about"  required />
         <label for="about" class="form__label">Про себе:</label>
     </div>
-    <div id="saveButtonContainer">
-        <button class="buttonroom2" id="buttonChanges" type="submit">Зберегти зміни</button>
-    </div>
+   
+        <div id="saveButtonContainer">
+
+            <button class="buttonroom2" id="buttonChanges" type="submit">Зберегти зміни</button>
+
+        </div>
+        
 </div>
 
 <script>
@@ -49,6 +69,7 @@
                 type: 'POST',
                 data: {data: newUserData, userName: userName},
                 success: function (response) {
+                  window.location.href ="/Home/UserProfil/";
                     console.log(response);
                 }
             });
@@ -56,3 +77,68 @@
     });
 </script>
 <script src="~/js/new_photo.js"></script> 
+
+<script>
+    function main() {
+      addListeners();
+    }
+    addEventListener('load',main);
+    
+    function showInfo() {
+      removeListeners();
+      
+      var modal = this.parentNode.getElementsByClassName('modal')[0];
+          modal.style.display = 'block';
+      var close = modal.getElementsByClassName('close')[0];
+          close.addEventListener('click',hideInfo);
+      document.getElementById('overlay').addEventListener('click',hideInfo);
+    }
+    
+    function hideInfo() {
+      var boxes = document.querySelectorAll('.modal');
+      for (var i=0;i<boxes.length;i++) {
+        boxes[i].style.display = 'none';
+      }
+      addListeners();
+    }
+    
+    function addListeners() {
+      var boxes = document.querySelectorAll('.thumbnail');
+      for (var i=0;i<boxes.length;i++) {
+        boxes[i].addEventListener('click',showInfo.bind(boxes[i]));
+      }
+      handleOverlay('none');
+    }
+    
+    function removeListeners() {
+      var boxes = document.querySelectorAll('.thumbnail');
+      for (var i=0;i<boxes.length;i++) {
+        boxes[i].removeEventListener('click',showInfo);
+      }
+      handleOverlay('block');
+    }
+    
+    function handleOverlay(status) {
+      var overlay = document.getElementById('overlay');
+          overlay.style.display = status;
+    }
+</script>
+<script>function selectImage(imagePath) 
+ {
+    var thumbnailImage = document.getElementById("uploadedImage");
+    thumbnailImage.src = imagePath;
+    closeImageSelectionModal();
+ }
+function closeImageSelectionModal() 
+ {
+     var uploadedImageContainer = document.getElementById('uploadedImageContainer');
+       var uploadedImage = document.getElementById('uploadedImage');
+    var reader = new FileReader();
+    
+        reader.onload = function (e) 
+        {
+            uploadedImage.src = e.target.result;
+            uploadedImageContainer.style.background = 'none';
+        };
+ }
+</script>
