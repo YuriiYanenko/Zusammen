@@ -1143,9 +1143,8 @@ a
 .form__field{
   &:required,&:invalid { box-shadow:none; }
 }
-
 .text-danger{
-  font-size: 11px;
+  font-size: 12px;
   margin-left: 50px;
   padding-top: -50px;
 }
