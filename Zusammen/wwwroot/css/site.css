@@ -1353,23 +1353,24 @@ a
       left:190%;
       transform:translate(-50%);
       width:70vw;
-      max-width:700px;
+      max-width:690px;
       height:300px;
       overflow-y:auto;
-      background-color:#FFF;
-      border: 1px solid #888;
+      background-color: #cbcbcb;
+      border: 3px solid #296B6A;
       border-radius: 5px;
       animation: top-to-down .5s;
       animation-fill-mode: forwards;
       }
       .modal-content {
+        background-color: #cbcbcb;
         display: inline;
-        gap: 10px;
+        gap: 40px;
         cursor: pointer;
         align-items: center;
         justify-content: center;
         border: 0 none;
-        margin-left: 40px;
+        margin-left: 10px;
       }
     .close {
       position:absolute;

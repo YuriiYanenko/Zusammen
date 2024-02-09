@@ -18,12 +18,12 @@
     <div class="modal">
          <div class="close">×</div>
         <div class="modal-content">
-            <img src="../img/users/user1.png" onclick="selectImage('../img/users/user1.png')" alt="Image 1">
-            <img src="../img/users/user2.png" onclick="selectImage('../img/users/user2.png')" alt="Image 2">
-            <img src="../img/users/user3.png" onclick="selectImage('../img/users/user3.png')" alt="Image 3">
-            <img src="../img/users/user4.png" onclick="selectImage('../img/users/user4.png')" alt="Image 4">
-            <img src="../img/users/user5.png" onclick="selectImage('../img/users/user5.png')" alt="Image 5">
-            <img src="../img/users/user6.png" onclick="selectImage('../img/users/user6.png')" alt="Image 6">
+            <img src="../img/users/user1.png" onclick="selectImage('../img/users/user1.png')" alt="Image 1" class="user-image">
+            <img src="../img/users/user2.png" onclick="selectImage('../img/users/user2.png')" alt="Image 2" class="user-image">
+            <img src="../img/users/user3.png" onclick="selectImage('../img/users/user3.png')" alt="Image 3" class="user-image">
+            <img src="../img/users/user4.png" onclick="selectImage('../img/users/user4.png')" alt="Image 4" class="user-image">
+            <img src="../img/users/user5.png" onclick="selectImage('../img/users/user5.png')" alt="Image 5" class="user-image">
+            <img src="../img/users/user6.png" onclick="selectImage('../img/users/user6.png')" alt="Image 6" class="user-image">
         </div>
     </div>
   </div>
@@ -50,26 +50,26 @@
 <script>
     function getUserName(){
         return '@ViewContext.HttpContext.Session.GetString("userName")';
-    }
-    
-    
-    
+    }  
     $(document).ready(function() {
+        
         $("#buttonChanges").click(function (event) {
             event.preventDefault();
             let newUserData = {
                     name: $("input[name='nick']").val(),
-                    about: $("input[name='about']").val()
+                    about: $("input[name='about']").val(),
+                   
                 };
             console.log(newUserData.about);
             console.log(newUserData.name);
+            
             let userName = getUserName();
             $.ajax({
                 url: '/ZusammenDb/UpdateUser/',
                 type: 'POST',
-                data: {data: newUserData, userName: userName},
+                data: {data: newUserData, userName: userName },
                 success: function (response) {
-                  window.location.href ="/Home/UserProfil/";
+                  
                     console.log(response);
                 }
             });
