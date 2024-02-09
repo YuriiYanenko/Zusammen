@@ -1,29 +1,18 @@
 
 let message = document.getElementById("message");
 let userName = getUserName();
-
+let anonim= generateRandomName();
 let chatConnection = new signalR.HubConnectionBuilder().withUrl("/Video/Room/chat").build();
 
 document.getElementById("send").disabled = true;
 chatConnection.on("RecieveMessage", function(randomName, message){
 if (!userName) 
 {
-    var alphabet = 'abcdefghijklmnopqrstuvwxyz';
-    var result = '';
-    
-    for (var i = 0; i < 5; i++) 
-    {
-        var randomIndex = Math.floor(Math.random() * alphabet.length);
-        var randomLetter = alphabet.charAt(randomIndex);
-        result += randomLetter;
-    }
-        $("#chat-messages").append("<span style='color:black;'>" + randomName + ': ' + message + "</br>"+"</span>");
-   
+        $("#chat-messages").append("<span style='color:black;'>" + anonim + ': ' + message + "</br>" + "</span>");
 } 
 else 
 {
         $("#chat-messages").append("<span style='color:black;'>" + userName + ': ' + message + "</br>"+"</span>");
-    
 }
 });
 
@@ -41,16 +30,17 @@ $("#send").click(function(){
     chatConnection.invoke("SendMessage", parseInt(modelData.id), userName, message.value);
     message.value="";
 });
-function getRandomLetters() {
+function generateRandomName() {
     var alphabet = 'abcdefghijklmnopqrstuvwxyz';
     var result = '';
-
-
-    for (var i = 0; i < 5; i++) {
-        var randomIndex = Math.floor(Math.random() * alphabet.length);
-        var randomLetter = alphabet.charAt(randomIndex);
-        result += randomLetter;
+    var randomIndex;
+    var randomLetter;
+    for (var i = 0; i < 5; i++)
+    {
+         randomIndex = Math.floor(Math.random() * alphabet.length);
+         randomLetter = alphabet.charAt(randomIndex);
+         result += randomLetter;
     }
-
-    document.getElementById('output').textContent = result;
+   
+    return result;
 }
